@@ -14,7 +14,8 @@ function MapRenderer(CanevasID,MapArray) {
 	this.MapWidth = this.MapArray.length;
 	this.MapHeight = this.MapArray[0].length;	
 	this.Width = this.Canevas.width;
-	this.Height = this.Canevas.height;
+	this.Height = this.Canevas.height;  
+	//alert(this.Width);
 
 	this.CoefWidth=this.Width/this.MapWidth;
 	this.CoefHeight=this.Height/this.MapHeight;
@@ -35,6 +36,7 @@ MapRenderer.prototype.DrawBackground= function () {
 		for	(j = 0; j < this.MapArray[i].length; j++) {
 	   		
 	   		switch(this.MapArray[i][j]) {
+	   		
 			    case 0:
 			      	this.Canevas.addShape(
 			      		new ShapeImage(

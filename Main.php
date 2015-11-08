@@ -18,6 +18,9 @@
 	<script src="Ressources/includes/jquery_min.js"type="text/javascript"></script>
 	<script src="Ressources/includes/jquery_last.js" type="text/javascript" ></script>
     <script src="Ressources/includes/jquery_min_ui.js" type="text/javascript" ></script>
+
+    <script src="Ressources/includes/bootstrap.css"type="text/javascript"></script>
+	<script src="Ressources/includes/bootstrap.js"></script>
     
 
 
@@ -27,10 +30,10 @@
 
 
 
-	<video autoplay loop muted id="bgvid" >
+	<!--<video autoplay loop muted id="bgvid" >
 	    <source src="Ressources/Videos/BackgroundMovie.webm" type="video/webm">
 	    <source src="Ressources/Videos/BackgroundMovie.mp4" type="video/mp4">
-	</video>
+	</video>-->
 
 
 	<div id="Container">
@@ -38,35 +41,35 @@
 			<div class="Clicker">
 				<!--  <progress id="progress"value="0" max="10000"></progress>  -->
 				<div class="TitleContain">
-							<div> Gold :<span id="Gold"></span></div>
-							<div> Bonus :<span id="bonus"></span></div>
+							<div > Gold :<span id="Gold"></span></div>
+							<div > Bonus :<span id="bonus"></span></div>
 				</div>
 				<div class="Center">
-					<div class="ImageClicker">
+					<div class="ImageClicker col-lg-12 col-md-12 col-xs-12 col-sm-12" align="center">
 
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="RightContainer">
+		<div class="RightContainer ">
 			<div class="Menu">
 				<div class="button" value="0" >
-					Home
+					<p>Home</p>
 				</div>
-				<div class="button" value="1">
-					boutique
+				<div class="button " value="1">
+					<p>boutique</p>
 				</div>
-				<div class="button" value="2">
-					Map
+				<div class="button " value="2">
+					<p>Map</p>
 				</div>
-				<div class="button" value="3">
-					Inventaire
+				<div class="button " value="3">
+					<p>Inventaire</p>
 				</div>
-				<div class="button" value="4">
-					Chat
+				<div class="button " value="4">
+					<p>Chat</p>
 				</div>
 				<div class="button" value="5">
-					Options
+					<p>Options</p>
 				</div>
 			</div>
 			<div id="MenuPage">
@@ -78,10 +81,7 @@
 
 					<div class="Inventaire">
 
-						<div class="TitleContain">
-							<div> Gold :<span id="Gold"></span></div>
-							<div> Bonus :<span id="bonus"></span></div>
-						</div>
+						
 						<div id="ItemInventory">
 							
 						</div>
@@ -95,29 +95,30 @@
 
 				</div>
 				<div class="MenuPage_2 MenuPageContained" style="display:none;">
-					
-					<canvas id="Map" width="400" height="400" style="border: 2px solid rgb(250,250,250)">
-						This text is displayed if your browser does not support HTML5 Canvas.
-					</canvas> 
-
+					<div class="Map">
+						<canvas id="Map"  style="border: 2px solid rgb(250,250,250)">
+							This text is displayed if your browser does not support HTML5 Canvas.
+						</canvas> 
+					</div>
 					<div class="TileDescri">
-						<div class="Tile">
+						<div class="Tile col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
 							<u class="nom">
-								Mine sans fond
+									<p>Mine sans fond</p>
 							</u>
 							<div class="caracteristiques">
-								<u>caracteristiques :</u> <br>
-								+1 : fer <br>
-								+5 : pierre
+									<p><u>caracteristiques :</u> <br>
+									+1 : fer <br>
+									+5 : pierre</p>
 							</div>
 							<div class="description">
-								<u>description :</u> <br>
-								une mine raportant de la pierre et un peu de fer ayant autrefois appartenue a Mr Gimli
+									<p><u>description :</u> <br>
+									une mine raportant de la pierre et un peu de fer ayant autrefois appartenue a Mr Gimli</p>
 							</div>
 							<div class="Upgrade">
-								<button> UP :</button> 5 Bois 10 Pierre 100 Argent 
+									<p><button> UP :</button> 5 Bois 10 Pierre 100 Argent </p>
 							</div>
 						</div>
+
 					</div>
 
 				</div>

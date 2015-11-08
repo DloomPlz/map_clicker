@@ -1,6 +1,6 @@
 //créate game instance and param it
 var Game = { };
-paramgame(1000,100,5);
+paramgame(75,100,5);
 
 
 //def game functions
