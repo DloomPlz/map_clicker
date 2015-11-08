@@ -1,0 +1,28 @@
+Neko Clicker :
+
+-possibilitée de choisir une difficultée (3 choix) <!> il est obligé de choisir une difficultée avant de commencer a jouer
+
+-animation utilisant RequestAnimationFrame()lors des clicks sur le coockie
+-de temps en temps le coockie deviens un golden (augmente les olds obtenus en fonctiondu total gagné 0.1 %)
+-(easteregg) rarement le coockie devient carla ou happy, si vous trouvez les deux vous recevez une recompense
+
+-une boutique est implémentée, a chaque achat le prix augment ainsi quel'efficacitée
+-la classe boutique gère les achats et d'autre actions relatives a la boutique, il est impossible d'acheter un item sans les sous
+-une class item est implémenté
+-une class itemincome heritant de Item est implémentée 
+-une class itemMultiplicator  heritant de Item existe mais n'est pas operationnel
+
+-une class Inventaire est implémentée, elle gere l'inventaire ainsi que l'utilisation des items qui y sont contenus
+
+-les class Achievement Manager, Achievement,Achievement sont implémentées,
+pour linstant un seul achievement existe(achievement commencera jouer : 2 click sur coockie) mais il est possible
+d'en créer dautres
+
+-le verre de lait est implémenté (trace la montée des golds) a 10000 gold elle est pleine
+
+//un bug peut apparaitre sur l affichage de gol (nombre a virgule)
+//il est normal que des erreurs apparaisse si aucune difficultée n' été choisie avant decommencer a clicker
+
+
+// utilise jquery,jquery-ui,javascript
+normalement aucune connexion internet est necessaire

@@ -1,0 +1,41 @@
+Tp evaluation :
+
+// twelinmax pour l animation
+
+#done clicker sur le cookie (1 - 2) #animation + nombre de click raportés
+
+#done acheter des objets (2 - 4) # pass pouvoir si pas de moyens + presentation
+
+#near done golden coockie (1-2) #apparait de tempsen temps et rapport plus #rapporte + ou - de coockies en fonction de l avancée
+
+sauvegarde (4)
+
+#done voir ses achats (1-2) #visualisation améliorée de l inventaire
+
+verre  de lait (1) # permet de voir laprogression
+
+#done Request Animation Frame (4)
+
+#done règle arithmetique des achats (1-2) #montée des prix lineaire
+
+#done Personnages multiples (2-4) #choix d'un avatar avec des bonus (different gameplay)
+
+infobull()
+
+
+
+#done Design (1-5)
+
+#done Achievements()
+
+#done Easter egg (?)
+
+sur achat crée un nouvel item en boutique qui coute plus cher
+cela permetra plus tard une sauvegarde simple (regarde le nombre d'items achetés et de quel type)
+
+créer la progression afin de faire des golden coockies proportionnel a la totalité desgolds obtenus (environ 0.1% du total)
+
+205
+415
+835
+1675
