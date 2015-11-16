@@ -57,7 +57,35 @@ html{
 
 /* /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ MENUUUU      /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ */
 
+/*******HOME***********/
 
+.histoire
+ {
+ 	margin-top: 2vw;
+ 	margin-left: 2vw;
+ }
+
+ .contacts 
+ {
+ 	margin-top: 6vw;
+ 	margin-left: 2vw;
+ }
+
+ .contacts a
+ {
+ 	height : 2vw;
+ 	width : 2vw;
+ 	margin-left: 3vw;
+ }
+
+
+/*******INVENTAIRE***********/
+
+.Ages
+{
+	margin-left: 2vw;
+	margin-top: 1vw;
+}
 
 
 .Box{

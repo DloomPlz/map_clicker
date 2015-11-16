@@ -19,8 +19,12 @@
 	<script src="Ressources/includes/jquery_last.js" type="text/javascript" ></script>
     <script src="Ressources/includes/jquery_min_ui.js" type="text/javascript" ></script>
 
-    <script src="Ressources/includes/bootstrap.css"type="text/javascript"></script>
-	<script src="Ressources/includes/bootstrap.js"></script>
+	
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/hover-min.css">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap-min.css">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap-min.js">
+
     
 
 
@@ -57,7 +61,7 @@
 					<p>Home</p>
 				</div>
 				<div class="button " value="1">
-					<p>boutique</p>
+					<p>Boutique</p>
 				</div>
 				<div class="button " value="2">
 					<p>Map</p>
@@ -75,16 +79,34 @@
 			<div id="MenuPage">
 
 				<div class="MenuPage_0 MenuPageContained" style="display:block;">
-					somthing 0
+					<div class="histoire">
+					<h1 align="middle">Home : </h1></br></br>
+					<h2>Histoire : </h2></br>
+					<p> Ecire histoire ici ... </p>	
+					</div>
+
+					<div class="contacts">
+						<h2>Nous contacter :  </h2></br>
+							<div class="logos">
+							<a class="hvr-float" href="mailto:dept.inf43.iut@udamail.fr" style="text-decoration: none; color: inherit; " target="_new"><i class="fa fa-envelope-square fa-3x"></i></a>
+
+							<a class="hvr-float" href="https://www.facebook.com/pages/Le-Puy-En-Velay-Auvergne-France/110239808994555?__mref=message_bubble" target="_new" style="text-decoration: none; color: inherit; "><i class="fa fa-facebook-official fa-3x"></i></a>
+
+							<a class="hvr-float" href="https://www.facebook.com/pages/Le-Puy-En-Velay-Auvergne-France/110239808994555?__mref=message_bubble" target="_new" style="text-decoration: none; color: inherit; "><i class="fa fa-twitter fa-3x"></i></a>
+							</div>
+				    </div>
+
 				</div>
 				<div class="MenuPage_1 MenuPageContained" style="display:none;">
 
 					<div class="Inventaire">
-
 						
 						<div id="ItemInventory">
-							
+								
 						</div>
+						
+						
+						
 					</div>
 
 					<div class="Boutique">
@@ -123,7 +145,22 @@
 
 				</div>
 				<div class="MenuPage_3 MenuPageContained" style="display:none;">
-					3
+					<div class="Ages">
+							<div class="Age 1">
+								<h2>Liste des Items : </h2>
+								<div id="ItemInventory">
+								
+								</div>
+							</div>
+
+							<div class="Age 2">
+
+							</div>
+
+							<div class="Age 3">
+
+							</div>
+					</div>
 				</div>
 				<div class="MenuPage_4 MenuPageContained" style="display:none;">
 					4
