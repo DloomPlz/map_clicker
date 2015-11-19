@@ -22,8 +22,8 @@
 	
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/hover-min.css">
-	<link rel="stylesheet" href="css/bootstrap/bootstrap-min.css">
-	<link rel="stylesheet" href="css/bootstrap/bootstrap-min.js">
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap-min.css">
+	<link rel="stylesheet" href="css/bootstrap/css/bootstrap-min.js">
 
     
 
@@ -82,11 +82,11 @@
 					<div class="contacts">
 						<h2>Nous contacter :  </h2></br>
 							<div class="logos">
-							<a class="hvr-float" href="mailto:dept.inf43.iut@udamail.fr" style="text-decoration: none; color: inherit; " target="_new"><i class="fa fa-envelope-square fa-3x"></i></a>
+							<a class="hvr-float" href="mailto:evolutionclicker@gmail.com " style="text-decoration: none; color: inherit; " target="_new"><i class="fa fa-envelope-square fa-3x"></i></a>
 
-							<a class="hvr-float" href="https://www.facebook.com/pages/Le-Puy-En-Velay-Auvergne-France/110239808994555?__mref=message_bubble" target="_new" style="text-decoration: none; color: inherit; "><i class="fa fa-facebook-official fa-3x"></i></a>
+							<a class="hvr-float" href="https://www.facebook.com/evolutionclicker?hc_location=ufi" target="_new" style="text-decoration: none; color: inherit; "><i class="fa fa-facebook-official fa-3x"></i></a>
 
-							<a class="hvr-float" href="https://www.facebook.com/pages/Le-Puy-En-Velay-Auvergne-France/110239808994555?__mref=message_bubble" target="_new" style="text-decoration: none; color: inherit; "><i class="fa fa-twitter fa-3x"></i></a>
+							<a class="hvr-float" href="https://twitter.com/evoclicker" target="_new" style="text-decoration: none; color: inherit; "><i class="fa fa-twitter fa-3x"></i></a>
 							</div>
 				    </div>
 
