@@ -56,10 +56,8 @@
 
 .Menu .button{
 	display:inline-block;
-	width:18%;
-	margin-left: 5%;
-	margin-top: 2%;
-	margin-bottom: 2%;
+	width:21%;
+	margin-left: 1%;
 }
 .Menu .button:hover{
 	background: rgba(100,100,100,0.55);

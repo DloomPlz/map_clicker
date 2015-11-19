@@ -69,12 +69,6 @@
 				<div class="button " value="3">
 					<p>Inventaire</p>
 				</div>
-				<div class="button " value="4">
-					<p>Chat</p>
-				</div>
-				<div class="button" value="5">
-					<p>Options</p>
-				</div>
 			</div>
 			<div id="MenuPage">
 
