@@ -92,7 +92,13 @@
 						<div class="histoire">
 						<h1 align="middle">Home : </h1></br></br>
 						<h2>Histoire : </h2></br>
-						<p> Ecire histoire ici ... </p>	
+						<p> « Bienvenue à Evo, la planète des vrais bonhommes ! Votre objectif soldat : CLIQUER !
+Vous avez été engagé pour conquérir notre planète à travers le temps et l’espace !
+Pour cela il faudra cliquer afin d’acquérir le maximum de ressources. Vous pourrez ainsi acheter, voir prendre par la force les différentes zones de la Map ! Vous devrez aussi évoluer à travers les Ages car c’est connu : l’ennemi qui a la plus GROSSE technologie ne peut être vaincu !
+Comme tous les bleus, vous commencerez à la base : le bois et la pierre seront vos ressources de base. Sachez utiliser vos ressources à bon escient. 
+Pour ce faire, la boutique (des vrais bonhommes !) est à votre disposition : acheter des items vous rendras plus fort et plus productif ! A vous de les utiliser judicieusement pour conquérir le monde !
+Attention, pas de place pour les poussent cailloux dans notre section ! Le soldat qui ne se pointera à l’heure tous les jours sera sévèrement puni !... »
+ </p>	
 						</div>
 
 						<div class="contacts">

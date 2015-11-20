@@ -26,6 +26,7 @@ $(".ImageClickerfake").on("click", function() {
 	globalID = requestAnimationFrame(AnimetCoockie);
 
 	$("#accueil").hide();
+	
 })
 
 
