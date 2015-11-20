@@ -39,133 +39,149 @@
 	    <source src="Ressources/Videos/BackgroundMovie.mp4" type="video/mp4">
 	</video>-->
 
-
-	<div id="Container">
-		<div class="LeftContainer">
-			<div class="Clicker">
-				<!--  <progress id="progress"value="0" max="10000"></progress>  -->
-				<div class="TitleContain">
-							<div > Gold :<span id="Gold"></span></div>
-							<div > Bonus :<span id="bonus"></span></div>
-				</div>
-				<div class="Center">
-					<div class="ImageClicker col-lg-12 col-md-12 col-xs-12 col-sm-12" align="center">
-
+	<div id="accueil">
+		
+		<div class="Centerfake">
+			<div class="texte-accueil">
+				<h1> BIENVENUE SUR NOTRE SITE !</h1></br>
+					<p>Vous pouvez cliquer sur l'arbre afin de commencer l'aventure  !</br></p></br></br>
+					<div class="ImageClickerfake col-lg-12 col-md-12 col-xs-12 col-sm-12" align="center">
+						<i class="fa fa-arrow-left fa-4x"></i>
 					</div>
-				</div>
+					
+					
 			</div>
+			
 		</div>
-		<div class="RightContainer ">
-			<div class="Menu">
-				<div class="button" value="0" >
-					<p>Home</p>
-				</div>
-				<div class="button " value="1">
-					<p>Boutique</p>
-				</div>
-				<div class="button " value="2">
-					<p>Map</p>
-				</div>
-				<div class="button " value="3">
-					<p>Inventaire</p>
+		
+	</div>
+		<div id="Container">
+			<div class="LeftContainer">
+
+				<div class="Clicker">
+						<!--  <progress id="progress"value="0" max="10000"></progress>  -->
+						<div class="TitleContain">
+									<div > Gold :<span id="Gold"></span></div>
+									<div > Bonus :<span id="bonus"></span></div>
+						</div>
+						<div class="Center">
+							<div class="ImageClicker col-lg-12 col-md-12 col-xs-12 col-sm-12" align="center">
+
+							</div>
+						</div>
 				</div>
 			</div>
-			<div id="MenuPage">
-
-				<div class="MenuPage_0 MenuPageContained" style="display:block;">
-					<div class="histoire">
-					<h1 align="middle">Home : </h1></br></br>
-					<h2>Histoire : </h2></br>
-					<p> Ecire histoire ici ... </p>	
+			<div class="RightContainer ">
+				<div class="Menu">
+					<div class="button" value="0" >
+						<p>Home</p>
 					</div>
-
-					<div class="contacts">
-						<h2>Nous contacter :  </h2></br>
-							<div class="logos">
-							<a class="hvr-float" href="mailto:evolutionclicker@gmail.com " style="text-decoration: none; color: inherit; " target="_new"><i class="fa fa-envelope-square fa-3x"></i></a>
-
-							<a class="hvr-float" href="https://www.facebook.com/evolutionclicker?hc_location=ufi" target="_new" style="text-decoration: none; color: inherit; "><i class="fa fa-facebook-official fa-3x"></i></a>
-
-							<a class="hvr-float" href="https://twitter.com/evoclicker" target="_new" style="text-decoration: none; color: inherit; "><i class="fa fa-twitter fa-3x"></i></a>
-							</div>
-				    </div>
-
+					<div class="button " value="1">
+						<p>Boutique</p>
+					</div>
+					<div class="button " value="2">
+						<p>Map</p>
+					</div>
+					<div class="button " value="3">
+						<p>Inventaire</p>
+					</div>
 				</div>
-				<div class="MenuPage_1 MenuPageContained" style="display:none;">
+				<div id="MenuPage">
 
-					<div class="Inventaire">
-						
-						<div id="ItemInventory">
-								
+					<div class="MenuPage_0 MenuPageContained" style="display:block;">
+						<div class="histoire">
+						<h1 align="middle">Home : </h1></br></br>
+						<h2>Histoire : </h2></br>
+						<p> Ecire histoire ici ... </p>	
 						</div>
-						
-						
-						
+
+						<div class="contacts">
+							<h2>Nous contacter :  </h2></br>
+								<div class="logos">
+								<a class="hvr-float" href="mailto:evolutionclicker@gmail.com " style="text-decoration: none; color: inherit; " target="_new"><i class="fa fa-envelope-square fa-3x"></i></a>
+
+								<a class="hvr-float" href="https://www.facebook.com/evolutionclicker?hc_location=ufi" target="_new" style="text-decoration: none; color: inherit; "><i class="fa fa-facebook-official fa-3x"></i></a>
+
+								<a class="hvr-float" href="https://twitter.com/evoclicker" target="_new" style="text-decoration: none; color: inherit; "><i class="fa fa-twitter fa-3x"></i></a>
+								</div>
+					    </div>
+
 					</div>
+					<div class="MenuPage_1 MenuPageContained" style="display:none;">
 
-					<div class="Boutique">
-						<div id="ItemSelling">
-
+						<div class="Inventaire">
+							
+							<div id="ItemInventory">
+									
+							</div>
+							
+							
+							
 						</div>
-					</div>
 
-				</div>
-				<div class="MenuPage_2 MenuPageContained" style="display:none;">
-					<div class="Map">
-						<canvas id="Map"  style="border: 2px solid rgb(250,250,250)">
-							This text is displayed if your browser does not support HTML5 Canvas.
-						</canvas> 
-					</div>
-					<div class="TileDescri">
-						<div class="Tile col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
-							<u class="nom">
-									<p>Mine sans fond</p>
-							</u>
-							<div class="caracteristiques">
-									<p><u>caracteristiques :</u> <br>
-									+1 : fer <br>
-									+5 : pierre</p>
-							</div>
-							<div class="description">
-									<p><u>description :</u> <br>
-									une mine raportant de la pierre et un peu de fer ayant autrefois appartenue a Mr Gimli</p>
-							</div>
-							<div class="Upgrade">
-									<p><button> UP :</button> 5 Bois 10 Pierre 100 Argent </p>
+						<div class="Boutique">
+							<div id="ItemSelling">
+
 							</div>
 						</div>
 
 					</div>
-
-				</div>
-				<div class="MenuPage_3 MenuPageContained" style="display:none;">
-					<div class="Ages">
-							<div class="Age 1">
-								<h2>Liste des Items : </h2>
-								<div id="ItemInventory">
-								
+					<div class="MenuPage_2 MenuPageContained" style="display:none;">
+						<div class="Map">
+							<canvas id="Map"  style="border: 2px solid rgb(250,250,250)">
+								This text is displayed if your browser does not support HTML5 Canvas.
+							</canvas> 
+						</div>
+						<div class="TileDescri">
+							<div class="Tile col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+								<u class="nom">
+										<p>Mine sans fond</p>
+								</u>
+								<div class="caracteristiques">
+										<p><u>caracteristiques :</u> <br>
+										+1 : fer <br>
+										+5 : pierre</p>
+								</div>
+								<div class="description">
+										<p><u>description :</u> <br>
+										une mine raportant de la pierre et un peu de fer ayant autrefois appartenue a Mr Gimli</p>
+								</div>
+								<div class="Upgrade">
+										<p><button> UP :</button> 5 Bois 10 Pierre 100 Argent </p>
 								</div>
 							</div>
 
-							<div class="Age 2">
+						</div>
 
-							</div>
+					</div>
+					<div class="MenuPage_3 MenuPageContained" style="display:none;">
+						<div class="Ages">
+								<div class="Age 1">
+									<h2>Liste des Items : </h2>
+									<div id="ItemInventory">
+									
+									</div>
+								</div>
 
-							<div class="Age 3">
+								<div class="Age 2">
 
-							</div>
+								</div>
+
+								<div class="Age 3">
+
+								</div>
+						</div>
+					</div>
+					<div class="MenuPage_4 MenuPageContained" style="display:none;">
+						4
+					</div>
+					<div class="MenuPage_5 MenuPageContained" style="display:none;">
+						<button class="mute-video"></button>
 					</div>
 				</div>
-				<div class="MenuPage_4 MenuPageContained" style="display:none;">
-					4
-				</div>
-				<div class="MenuPage_5 MenuPageContained" style="display:none;">
-					<button class="mute-video"></button>
-				</div>
 			</div>
-		</div>
-	</div>	
-
+		</div>	
+	
 	
 	
 </body>

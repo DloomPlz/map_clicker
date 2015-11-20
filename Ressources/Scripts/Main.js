@@ -16,6 +16,19 @@ function AnimetCoockie() {
   cancelAnimationFrame(globalID);
 }
 
+$(".ImageClickerfake").on("click", function() {
+	avancerprogress();
+
+	Game.MonGold.IncrementGold();
+
+	Game.MonGold.Afficher();
+
+	globalID = requestAnimationFrame(AnimetCoockie);
+
+	$("#accueil").hide();
+})
+
+
 
 
 $(".ImageClicker").on("click", function() {

@@ -57,6 +57,11 @@ html{
 
 /* /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ MENUUUU      /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ */
 
+body 
+{
+
+}
+
 /*******HOME***********/
 
 .histoire
@@ -82,6 +87,7 @@ html{
 
 
  /*************************MENU****************/
+
 
  .Menu p{
 	
@@ -167,8 +173,32 @@ html{
 
 }
 
+#accueil 
+{
+	width:100%;
+	height:100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.8);
+	z-index:3;
+}
+
+.texte-accueil{
+	text-align: center;
+	margin-top: 8vw;
+}
+
+.texte-accueil p{
+	font-size: 20px;
+}
+
 .Center{
 	margin-left: 5%;
+	z-index:2;
+}
+
+.Centerfake{
+	margin-left: 5%;
+	z-index:2;
 }
 .ImageClicker{
 	margin-left: 1vw;
@@ -177,6 +207,25 @@ html{
 	background-image: url("./Ressources/Images/NekoClicker.gif");
 	background-size:  contain;
 	background-repeat: no-repeat;
+	z-index: 2;
+	/*position: absolute;*/
+}
+
+.ImageClickerfake{
+	margin-left: 2vw;
+	margin-top:-7vw;
+	height: calc(19vw - 1px);
+	background-image: url("./Ressources/Images/NekoClicker.gif");
+	background-size:  contain;
+	background-repeat: no-repeat;
+	z-index: 2;
+	/*position: absolute;*/
+}
+
+.ImageClickerfake i
+{
+	margin-top: 6vw;
+	margin-right: 10vw;
 }
 
 .Item{
