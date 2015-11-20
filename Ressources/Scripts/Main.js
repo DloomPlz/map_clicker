@@ -40,7 +40,13 @@ $(".ImageClicker").on("click", function() {
 	Game.MonGold.Afficher();
 
 	globalID = requestAnimationFrame(AnimetCoockie);
+
+
 })
+$("#ImageClicker").click(function() {
+
+	$(".ImageClicker").css("-moz-transform:","scale(0.9)");
+});
 
 
 ////////////////////Menu JS////////////////////////
