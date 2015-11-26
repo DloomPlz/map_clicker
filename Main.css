@@ -247,7 +247,7 @@ body h3
 	margin-left: 1vw;
 	margin-top: 6vw;
 	height: calc(20vw - 1px);
-	background-image: url("./Ressources/Images/Arbre.png");
+	background-image: url("./Ressources/Images/arbre.png");
 	background-size:  contain;
 	background-repeat: no-repeat;
 	z-index: 2;
@@ -264,7 +264,7 @@ body h3
 	margin-left: 2vw;
 	margin-top:-7vw;
 	height: calc(19vw - 1px);
-	background-image: url("./Ressources/Images/Arbre.png");
+	background-image: url("./Ressources/Images/arbre.png");
 	background-size:  contain;
 	background-repeat: no-repeat;
 	z-index: 2;
