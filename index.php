@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/hover-min.css">
 	<link rel="stylesheet" href="css/bootstrap/css/bootstrap-min.css">
-	<link rel="stylesheet" href="css/bootstrap/css/bootstrap-min.js">
+	<link rel="stylesheet" href="css/bootstrap/js/bootstrap-min.js">
 
     
 
@@ -45,7 +45,7 @@
 			<div class="texte-accueil">
 				<h1> BIENVENUE SUR NOTRE SITE !</h1></br>
 					<p>Vous pouvez cliquer sur l'arbre afin de commencer l'aventure  !</br></p></br></br>
-					<div class="ImageClickerfake col-lg-12 col-md-12 col-xs-12 col-sm-12" align="center">
+					<div class="ImageClickerfake" align="center">
 						<i class="fa fa-arrow-left fa-4x"></i>
 					</div>
 					
@@ -61,11 +61,11 @@
 				<div class="Clicker">
 						<!--  <progress id="progress"value="0" max="10000"></progress>  -->
 						<div class="TitleContain">
-									<div > Gold :<span id="Gold"></span></div>
-									<div > Bonus :<span id="bonus"></span></div>
+									<div ><p> Gold : <span id="Gold"></span></p></div>
+									<div > <p>Bonus : <span id="bonus"></span></p></div>
 						</div>
 						<div class="Center">
-							<div class="ImageClicker col-lg-12 col-md-12 col-xs-12 col-sm-12" align="center">
+							<div class="ImageClicker" align="center">
 
 							</div>
 						</div>

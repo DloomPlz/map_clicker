@@ -59,9 +59,45 @@ html{
 
 body 
 {
-
+	font-family: GraublauWeb;
+	color : white;
 }
 
+body p
+{
+	color : white;
+	font-family: GraublauWeb;
+	font-size: 25px;
+}
+
+body h1
+{
+	color : white;
+	font-family: GraublauWeb;
+}
+
+body i{
+	color : white;
+	font-family: GraublauWeb;
+}
+
+body h2
+{
+	color : white;
+	font-family: GraublauWeb;
+}
+
+body h3 
+ {
+ 	color : white;
+ 	font-family: GraublauWeb;
+ }
+
+ body span
+ {
+ 	color : white;
+ 	font-family: GraublauWeb;
+ }
 /*******HOME***********/
 
 .histoire
@@ -82,6 +118,8 @@ body
  	width : 2vw;
  	margin-left: 3vw;
  }
+
+ 
 
 
 
@@ -226,7 +264,7 @@ body
 	margin-left: 2vw;
 	margin-top:-7vw;
 	height: calc(19vw - 1px);
-	background-image: url("./Ressources/Images/NekoClicker.gif");
+	background-image: url("./Ressources/Images/Arbre.png");
 	background-size:  contain;
 	background-repeat: no-repeat;
 	z-index: 2;

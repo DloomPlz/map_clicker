@@ -20,10 +20,7 @@
 	display:inline-block;
 	vertical-align: top;
 	width: 65%;
-<<<<<<< HEAD
-	height:90.5%;
-=======
-	height:90%;
+	height:90.6%;
 }
 
 #Container .RightContainer p{
@@ -43,6 +40,7 @@
 	height:5%;
 	padding: 5px;
 	display: inline-block;
+
 }
 
 
@@ -68,12 +66,12 @@
 	display:inline-block;
 <<<<<<< HEAD
 	width:18%;
-	margin-left: 4%;
+	padding-right: 2%;
 =======
 	width:15%;
-	margin-left: 3%;
+	margin-left: 10%;
 >>>>>>> origin/master
-	margin-top: 2%;
+	margin-top: 5%;
 	margin-bottom: 2%;
 }
 .Menu .button:hover{
