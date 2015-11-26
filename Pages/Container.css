@@ -3,6 +3,7 @@
 	position: absolute;
 	width: 100vw;
 	height: 100vh;
+	background-color: rgba(0,0,0,0.4);
 }
 
 #Container .LeftContainer{
@@ -19,7 +20,16 @@
 	display:inline-block;
 	vertical-align: top;
 	width: 65%;
+<<<<<<< HEAD
 	height:90.5%;
+=======
+	height:90%;
+}
+
+#Container .RightContainer p{
+	text-align: center;
+	
+>>>>>>> origin/master
 }
 
 .TitleContain{
@@ -56,8 +66,13 @@
 
 .Menu .button{
 	display:inline-block;
+<<<<<<< HEAD
 	width:18%;
 	margin-left: 4%;
+=======
+	width:15%;
+	margin-left: 3%;
+>>>>>>> origin/master
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
