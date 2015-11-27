@@ -90,8 +90,8 @@
 
 					<div class="MenuPage_0 MenuPageContained" style="display:block;">
 						<div class="histoire">
-						<h1 align="middle">Home : </h1></br></br>
-						<h2>Histoire : </h2></br>
+						<h1 align="middle">Home : </h1></br>
+						<h3>Histoire : </h3></br>
 						<p> « Bienvenue à Evo, la planète des vrais bonhommes ! Votre objectif soldat : CLIQUER !
 Vous avez été engagé pour conquérir notre planète à travers le temps et l’espace !
 Pour cela il faudra cliquer afin d’acquérir le maximum de ressources. Vous pourrez ainsi acheter, voir prendre par la force les différentes zones de la Map ! Vous devrez aussi évoluer à travers les Ages car c’est connu : l’ennemi qui a la plus GROSSE technologie ne peut être vaincu !
@@ -134,7 +134,7 @@ Attention, pas de place pour les poussent cailloux dans notre section ! Le solda
 					</div>
 					<div class="MenuPage_2 MenuPageContained" style="display:none;">
 						<div class="Map">
-							<canvas id="Map"  style="border: 2px solid rgb(250,250,250)">
+							<canvas id="Map" width="200" height="150"  style="border: 2px solid rgb(250,250,250)">
 								This text is displayed if your browser does not support HTML5 Canvas.
 							</canvas> 
 						</div>

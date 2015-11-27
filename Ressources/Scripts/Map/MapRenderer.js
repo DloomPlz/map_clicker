@@ -16,7 +16,7 @@ function MapRenderer(CanevasID,MapArray) {
 	this.Width = this.Canevas.width;
 	this.Height = this.Canevas.height;  
 	//alert(this.Width);
-
+	
 	this.CoefWidth=this.Width/this.MapWidth;
 	this.CoefHeight=this.Height/this.MapHeight;
 }
