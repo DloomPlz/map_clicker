@@ -38,7 +38,8 @@ Game.Acheter=function(achat){
 		Game.MonGold.RemoveGold(Game.MonGold.getGold()-Game.MaBoutique.getItem(achat).getCost());
 		var ItemAchete = Game.MaBoutique.getItem(achat);
 		Game.MonInventaire.AddItem(ItemAchete);
-		Game.MaBoutique.RemoveItem(achat);
+		//Game.MaBoutique.RemoveItem(achat);
+		Game.MaBoutique.getItem(achat).setCost(Game.MaBoutique.getItem(achat).getCost()*1.2);
 
 		
 	}

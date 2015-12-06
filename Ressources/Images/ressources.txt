@@ -1,0 +1,38 @@
+ressources cliquable a 5 stades différents (usure???)
+les differents endroits pour extraire les ressources a mettre sur la carte
+
+Enseigne: 
+camp bucheron (hache croisées)
+
+Mine (pioche croisées)
+
+Fond site différents age:
+	-1er age: fond bois/pierre
+	-2eme age: fond metal/plastique
+	-3eme age: plasma/metal
+ 
+Je pensais mettre les deux images de pompage de pétrole en ressources cliquables (haut-bas) ca peux faire une petite animation cool.
+un objet et un upgrade au changement d'age:
+
+pioche --> pelleteuse
+Hache --> Tronconneuse
+-Upgrade hache bois:
+	hache en bois
+	taillage de de la lame 
+	manche en 
+	fourreau en cuir
+
+-Upgrade pioche:
+	Pioche en bois
+	taillage du pic
+	manche renforcé
+
+-upgrade tronconneuse:
+	guide renforcée
+	tronconneuse de compet
+	poignée renforcée
+	
+-upgrade pelleteuse:
+	godet + grand
+	upgrade moteur
+
