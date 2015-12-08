@@ -21,6 +21,10 @@ function Gold(){
 	    this.gold=int;
 	    this.TotalGold=int;
 	};
+	Gold.prototype.setNormalGold = function(int){
+	    this.gold=int;
+	}
+
 	Gold.prototype.AddGold = function(int){
 	    this.gold=this.gold+int;
 	    this.TotalGold=this.TotalGold+int;

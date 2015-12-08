@@ -1,5 +1,6 @@
 //////CLASS_Inventaire\\\\\\\\\\\\\\\\\\
 //gere le prix des differents items
+
 function Inventaire() {
 	this.ItemArray=[];
 }
@@ -16,8 +17,12 @@ Inventaire.prototype.RemoveItem=function(ind){
 }
 
 Inventaire.prototype.AddItem=function(NouveauItem){
-	this.ItemArray.push(NouveauItem);
-	NouveauItem.Upgrade();
+	var existant= 0;
+	
+		this.ItemArray.push(NouveauItem);
+		NouveauItem.Upgrade();
+	
+
 }
 
 Inventaire.prototype.UseItems=function(){

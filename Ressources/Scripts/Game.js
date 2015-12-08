@@ -1,6 +1,6 @@
 //créate game instance and param it
 var Game = { };
-paramgame(100,100,5);
+paramgame(100000,100,5);
 
 
 //def game functions
@@ -35,7 +35,9 @@ console.log(a.mAchievements[0]);
 Game.Acheter=function(achat){
 	if(Game.MonGold.getGold()>=Game.MaBoutique.getItem(achat).getCost())
 	{
-		Game.MonGold.RemoveGold(Game.MonGold.getGold()-Game.MaBoutique.getItem(achat).getCost());
+		
+
+		Game.MonGold.RemoveGold(Game.MaBoutique.getItem(achat).getCost());
 		var ItemAchete = Game.MaBoutique.getItem(achat);
 		Game.MonInventaire.AddItem(ItemAchete);
 		//Game.MaBoutique.RemoveItem(achat);
