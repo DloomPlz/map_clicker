@@ -174,13 +174,30 @@ body h3
 
 
 .Clicker{
-	text-align: center
+	text-align: center;
 }
 .Inventaire{
-	display: inline-block;
+	display: relative-block;
 	float:left;
 	width: 50%;
 	height: 100%;
+	
+
+}
+
+#ItemInventory
+{
+	overflow-y: scroll;
+	max-height: 100vh;
+	overflow-x : hidden;
+
+}
+
+.Bonus
+{
+	width:50%;
+	display:relative-block;
+	margin-left: 50%;
 }
 .Boutique{
 	border-left: 2px solid rgb(250,250,250);
@@ -328,11 +345,14 @@ background: url("./Ressources/Images/Fond_Site/bois.png")
 }
 
 
+
+
 /********************TileDescription************************/
 .Tile{
 	margin: 2px;
 	padding:5px;
 	border: 2px solid rgb(250,250,250);
+	color : white;
 }
 
 .Tile >div{

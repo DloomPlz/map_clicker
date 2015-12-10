@@ -33,9 +33,7 @@ ItemMine.prototype.Afficher= function (TypeAffichage,value) {
                         "<u>description :</u> <br>"+
                         this.getDescription()+
                     "</div>"+
-                    "<div class='Upgrade'>"+
-                        "<button > UP :</button> 5 Bois 10 Pierre 100 Argent "+
-                    "</div>"+
+                   
                 "</div>";
     }
     else {

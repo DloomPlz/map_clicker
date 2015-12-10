@@ -1,0 +1,14 @@
+RAjouter image par item
+Systeme d'age 
+Rajouter nombre quand plusieurs items 
+Rajouter ressoures cliquables
+Google analytics
+Transition "Clicker" - > Bois : image 
+Debloquage des items par niveau des golds
+Création des bonus ( x 2 cps pour n item exemple)
+Changer background quand changement d'age
+Enlever chiffre virgule sur chaque nombre
+(Seulement 1 chiffre apres virgule)
+ItemInventory : Juste le nom +
+le nombre d'item 
+et income total

@@ -27,6 +27,7 @@ Boutique.prototype.Afficher= function (div) {
 
 }
 
+
 Boutique.prototype.RemoveItem=function(ind){
 	
 	//this.UpgradeAchat(ind);

@@ -41,7 +41,7 @@ Game.Acheter=function(achat){
 		var ItemAchete = Game.MaBoutique.getItem(achat);
 		Game.MonInventaire.AddItem(ItemAchete);
 		//Game.MaBoutique.RemoveItem(achat);
-		Game.MaBoutique.getItem(achat).setCost(Game.MaBoutique.getItem(achat).getCost()*1.2);
+		Game.MaBoutique.getItem(achat).setCost(Game.MaBoutique.getItem(achat).getCost()*1.13);
 
 		
 	}

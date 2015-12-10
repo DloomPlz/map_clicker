@@ -134,22 +134,19 @@ Attention, pas de place pour les poussent cailloux dans notre section ! Le solda
 							</canvas> 
 						</div>
 						<div class="TileDescri">
-							<div class="Tile col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+							<div class="Tile" style="color:white;">
 								<u class="nom">
-										<p>Mine sans fond</p>
+										<p>Item</p>
 								</u>
 								<div class="caracteristiques">
 										<p><u>caracteristiques :</u> <br>
-										+1 : fer <br>
-										+5 : pierre</p>
+										</p>
 								</div>
 								<div class="description">
 										<p><u>description :</u> <br>
-										une mine raportant de la pierre et un peu de fer ayant autrefois appartenue a Mr Gimli</p>
+										</p>
 								</div>
-								<div class="Upgrade">
-										<p><button> UP :</button> 5 Bois 10 Pierre 100 Argent </p>
-								</div>
+								
 							</div>
 
 						</div>
@@ -157,7 +154,7 @@ Attention, pas de place pour les poussent cailloux dans notre section ! Le solda
 					</div>
 					<div class="MenuPage_3 MenuPageContained" style="display:none;">
 						<div class="Ages">
-								<div class="Age 1">
+								
 									<h2>Liste des Items : </h2>
 									<div class="Inventaire" style="color:white; ">
 							
@@ -165,17 +162,18 @@ Attention, pas de place pour les poussent cailloux dans notre section ! Le solda
 										
 										</div>
 									</div>
-								</div>
-
-								<div class="Age 2">
-
-								</div>
-
-								<div class="Age 3">
-
-								</div>
 						</div>
+						<div class="Bonus">
+							<h2> Liste des Bonus : </h2>
+							<div id="BonusInventory">
+
+							</div>
+						</div>
+								
+
+								
 					</div>
+					
 					<div class="MenuPage_4 MenuPageContained" style="display:none;">
 						4
 					</div>

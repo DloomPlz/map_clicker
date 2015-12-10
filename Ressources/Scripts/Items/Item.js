@@ -4,6 +4,7 @@ function Item(cost,nom,description) {
 	this.Name;
     this.setCost(cost);
 
+
 }
 
 Item.prototype.setCost= function (value) {
@@ -22,6 +23,8 @@ Item.prototype.setName=function (name) {
 Item.prototype.getName=function () {
 	return this.Name;
 };
+
+
 
 Item.prototype.setDescription=function (descri) {
 	this.Description=descri;
