@@ -1,6 +1,6 @@
 //créate game instance and param it
 var Game = { };
-paramgame(0,100,5);
+paramgame(100000,100,5);
 
 
 //def game functions
@@ -89,6 +89,7 @@ Game.Start=function(){
 }
 
 Game.Update=function(){	
+	
 	achievementM.Afficher();
 	Game.MaBoutique.Afficher();
 	Game.MonInventaire.Afficher();

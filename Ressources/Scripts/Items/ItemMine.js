@@ -2,6 +2,7 @@
 //ajoute un income passif de pierre
 function ItemMine(cost,IncomeAmount) {
 	this.Name="ItemMine"
+    
     this.Cost=cost;
     this.IncomeAmount=IncomeAmount;
     this.IDlvl=200;
@@ -11,14 +12,19 @@ ItemMine.prototype.constructor= ItemMine;
 
 
 ItemMine.prototype.setIncomeAmount= function (nb) {
+
+
     this.IncomeAmount=nb;
 };
 
 ItemMine.prototype.getIncomeAmount= function () {
+
     return this.IncomeAmount;
 };
 
 ItemMine.prototype.Afficher= function (TypeAffichage,value) {
+    var arrondieIncome = arrondir(this.getIncomeAmount());
+    var arrondieCost = arrondir(this.getCost());
     var affiche;
     if (TypeAffichage=='long'){
         affiche= "<div class='Tile'>"+
@@ -27,7 +33,7 @@ ItemMine.prototype.Afficher= function (TypeAffichage,value) {
                     "</u>"+
                     "<div class='caracteristiques'>"+
                         "<u>caracteristiques :</u> <br>"+
-                        this.getIncomeAmount()+
+                        arrondieIncome+
                     "</div>"+
                     "<div class='description'>"+
                         "<u>description :</u> <br>"+
@@ -37,7 +43,7 @@ ItemMine.prototype.Afficher= function (TypeAffichage,value) {
                 "</div>";
     }
     else {
-        affiche="<div class='Item' value='"+value+"'>"+this.Name+"</br>son cout : "+ this.getCost()+"</br>Son Income :"+this.getIncomeAmount()+"</div>";
+        affiche="<div class='Item' value='"+value+"'>"+this.Name+"</br>son cout : "+ arrondieCost+"</br>Son Income :"+arrondieIncome+"</div>";
     }
     return affiche;
 };
@@ -50,3 +56,10 @@ ItemMine.prototype.Upgrade= function (MapRenderer) {
 ItemMine.prototype.Action= function () {
 	Game.MonGold.AddGold(this.IncomeAmount);
 };
+
+function arrondir(resultat) {
+      resultat2 = resultat;       
+      resultat2 = Math.round(resultat2); 
+
+      return resultat2;
+}

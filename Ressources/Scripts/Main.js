@@ -1,6 +1,8 @@
 
 
 /////////////////////////////////////////////////
+
+var clicked = 0;
 function avancerprogress(){
 	$('#progress').attr("value", Game.MonGold.getTotalGold());
 }
@@ -9,11 +11,11 @@ function avancerprogress(){
 // alert(monIncom.getIncomeAmount());
 // alert(monIncom.getCost());
 function AnimetCoockie() {
-      $(".ImageClicker").effect(
-        "transfer",
-        { to: $( "#Gold" )}
-      )
-  cancelAnimationFrame(globalID);
+  //     $(".ImageClicker").effect(
+  //       "transfer",
+  //       { to: $( "#Gold" )});
+       
+  // cancelAnimationFrame(globalID);
 }
 
 $(".ImageClickerfake").on("click", function() {
@@ -34,6 +36,7 @@ $(".ImageClickerfake").on("click", function() {
 
 
 $(".ImageClicker").on("click", function() {
+
 	achievementM.addValue(["click","clickx10","clickx100","clickx200"],1);
 	avancerprogress();
 

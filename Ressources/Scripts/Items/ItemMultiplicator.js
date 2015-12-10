@@ -8,11 +8,12 @@ function ItemMultiplicator(cost,Multiplicator) {
 ItemMultiplicator.prototype=new Item;
 
 ItemMultiplicator.prototype.setMultiplicator= function () {
+
     return this.Cost;
 };
 
 ItemMultiplicator.prototype.getMultiplicator= function () {
+
     return this.Cost;
 };
-
 

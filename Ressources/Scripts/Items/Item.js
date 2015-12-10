@@ -2,6 +2,7 @@
 //gere le prix des differents items
 function Item(cost,nom,description) {
 	this.Name;
+
     this.setCost(cost);
 
 
@@ -13,6 +14,7 @@ Item.prototype.setCost= function (value) {
 };
 
 Item.prototype.getCost=function () {
+
     return this.Cost;
 };
 
