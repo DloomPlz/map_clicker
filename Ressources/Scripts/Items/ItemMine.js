@@ -43,7 +43,7 @@ ItemMine.prototype.Afficher= function (TypeAffichage,value) {
                 "</div>";
     }
     else {
-        affiche="<div class='Item' value='"+value+"'>"+this.Name+"</br>son cout : "+ arrondieCost+"</br>Son Income :"+arrondieIncome+"</div>";
+        affiche="<div class='Item' value='"+value+"'>"+this.Name+"</br>son cout : "+ arrondieCost+"</br>";
     }
     return affiche;
 };

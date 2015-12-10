@@ -14,11 +14,9 @@ function Boutique() {
 	Mine_3.setName('Atelier');
 	Mine_3.setDescription("L'usine type de l'âge de pierre");
 
-	income = new ItemIncome(100,1);
-	income.setName('income');
-	income.setDescription('inc right!!');
+	
 
-	this.ItemArray=[income,Mine_1, Mine_2, Mine_3];
+	this.ItemArray=[Mine_1, Mine_2, Mine_3];
 }
 
 Boutique.prototype.Afficher= function (div) {

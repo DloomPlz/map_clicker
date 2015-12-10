@@ -1,7 +1,7 @@
 //item ItemIncome
 //ajoute un income passif
 function ItemIncome(cost,IncomeAmount) {
-	this.Name="ItemIncome"
+	  this.Name="ItemIncome"
     this.Cost=cost;
     this.IncomeAmount=IncomeAmount;
 }
@@ -22,7 +22,7 @@ ItemIncome.prototype.getIncomeAmount= function () {
 ItemIncome.prototype.Afficher= function (nb) {
 	var arrondieCost = arrondir(this.getCost());
 	var arrondieIncome = arrondir(this.getIncomeAmount());
-	var affiche="<div class='Item' value='"+nb+"'>"+this.Name+"</br>son cout : "+ arrondieCost +"</br>Son Income :"+arrondieIncome+"</div>";
+	var affiche="<div class='Item' value='"+nb+"'>"+this.Name+"</br>son cout : "+ arrondieCost +"</br>";
     return affiche;
 };
 
@@ -31,7 +31,7 @@ ItemIncome.prototype.Action= function () {
 };
 
 function arrondir(resultat) {
-      resultat2 = resultat;          
+    resultat2 = resultat;          
 	  resultat2 = Math.round(resultat2); 
 
       return resultat2;

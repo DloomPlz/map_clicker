@@ -13,7 +13,12 @@
 	<link href='Main.css' rel='stylesheet' type='text/css'>
 	<link href='Ressources/includes/ProgressBar.css' rel='stylesheet' type='text/css'>
 	<link href='Pages/Container.css' rel='stylesheet' type='text/css'>
-	<script>
+
+	<!-- JQUERY -->
+	<script src="Ressources/includes/jquery_min.js"type="text/javascript"></script>
+	<script src="Ressources/includes/jquery_last.js" type="text/javascript" ></script>
+    <script src="Ressources/includes/jquery_min_ui.js" type="text/javascript" ></script>
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -23,11 +28,6 @@
   ga('send', 'pageview');
 
 </script>
-	<!-- JQUERY -->
-	<script src="Ressources/includes/jquery_min.js"type="text/javascript"></script>
-	<script src="Ressources/includes/jquery_last.js" type="text/javascript" ></script>
-    <script src="Ressources/includes/jquery_min_ui.js" type="text/javascript" ></script>
-
 	
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/hover-min.css">
