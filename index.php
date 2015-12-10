@@ -56,7 +56,7 @@
 		<div class="Centerfake">
 			<div class="texte-accueil">
 				<h1> BIENVENUE SUR NOTRE SITE !</h1></br>
-					<p>Vous pouvez cliquer sur l'arbre afin de commencer l'aventure  !</br></p></br></br>
+					<p>TES PARENTS SONT RENTRES DANS CETTE ARBRE ! NIQUE LUI SA RACE </br></p></br></br>
 					<div class="ImageClickerfake" align="center">
 						<i class="fa fa-arrow-left fa-4x"></i>
 					</div>
@@ -72,7 +72,7 @@
 						<!--  <progress id="progress"value="0" max="10000"></progress>  -->
 						<div class="TitleContain">
 									<div ><p> Gold : <span id="Gold"></span></p></div>
-									<div > <p>Bonus : <span id="bonus"></span></p></div>
+									<div ><p> Rps : <span id="bonus"></span></p></div>
 						</div>
 						<div class="Center">
 							<div class="ImageClicker" align="center">
@@ -81,35 +81,25 @@
 						</div>
 				</div>
 			</div>
+			<div class="MiddleWood">
+			</div>
 			<div class="RightContainer ">
 				<div class="Menu">
-					<div class="button" value="0" >
-						<p>Home</p>
-					</div>
-					<div class="button " value="1">
-						<p>Boutique</p>
-					</div>
-					<div class="button " value="2">
-						<p>Map</p>
-					</div>
-					<div class="button " value="3">
-						<p>Inventaire</p>
-					</div>
+
+					<h1 align="center"> EVOLUTION CLICKER </h1>
+					
+
+					
 				</div>
 				<div id="MenuPage">
 
 					<div class="MenuPage_0 MenuPageContained" style="display:block;">
 						<div class="histoire">
-						<h1 align="middle">Home : </h1></br>
-						<h3>Histoire : </h3></br>
-						<p> « Bienvenue à Evo, la planète des vrais bonhommes ! Votre objectif soldat : CLIQUER !
-Vous avez été engagé pour conquérir notre planète à travers le temps et l’espace !
-Pour cela il faudra cliquer afin d’acquérir le maximum de ressources. Vous pourrez ainsi acheter, voir prendre par la force les différentes zones de la Map ! Vous devrez aussi évoluer à travers les Ages car c’est connu : l’ennemi qui a la plus GROSSE technologie ne peut être vaincu !
-Comme tous les bleus, vous commencerez à la base : le bois et la pierre seront vos ressources de base. Sachez utiliser vos ressources à bon escient. 
-Pour ce faire, la boutique (des vrais bonhommes !) est à votre disposition : acheter des items vous rendras plus fort et plus productif ! A vous de les utiliser judicieusement pour conquérir le monde !
-Attention, pas de place pour les poussent cailloux dans notre section ! Le soldat qui ne se pointera pas à l’heure tous les jours sera sévèrement puni !... »
- </p>	
+
+							<p> LE BUT EST DE DETRUIRE CES PUTAINS D'ARBRE, PENSE A TA PETITE SOEUR ECRASE PAR EUX !
+	 						</p>	
 						</div>
+						<h2 align="center"> Regarde tout les putains d'achievements que t'as eu en éclatant cette putain de mère nature ! </h2>
 						<div id="displayAchievements">
 						</div>
 
@@ -125,13 +115,16 @@ Attention, pas de place pour les poussent cailloux dans notre section ! Le solda
 					    </div>
 
 					</div>
-					<div class="MenuPage_1 MenuPageContained" style="display:none;">
-
-						
-							
-							
-							
-						
+				</div>
+			</div>
+			<div class="FullRightContainer">
+				<div class="StoreText">
+					<h2 align="center"> Boutique : </h2>
+				</div>
+					<div class="Bonus">
+						<div id="BonusSelling" style="color:white;">
+						</div>
+					</div>
 						<div class="Boutique">
 							<div id="ItemSelling" style="color:white;">
 
@@ -139,60 +132,16 @@ Attention, pas de place pour les poussent cailloux dans notre section ! Le solda
 						</div>
 
 					</div>
-					<div class="MenuPage_2 MenuPageContained" style="display:none;">
-						<div class="Map">
-							<canvas id="Map" width="200" height="150"  style="border: 2px solid rgb(250,250,250)">
-								This text is displayed if your browser does not support HTML5 Canvas.
-							</canvas> 
-						</div>
-						<div class="TileDescri">
-							<div class="Tile" style="color:white;">
-								<u class="nom">
-										<p>Item</p>
-								</u>
-								<div class="caracteristiques">
-										<p><u>caracteristiques :</u> <br>
-										</p>
-								</div>
-								<div class="description">
-										<p><u>description :</u> <br>
-										</p>
-								</div>
-								
-							</div>
-
-						</div>
-
-					</div>
-					<div class="MenuPage_3 MenuPageContained" style="display:none;">
-						<div class="Ages">
-								
-									<h2>Liste des Items : </h2>
-									<div class="Inventaire" style="color:white; ">
-							
-										<div id="ItemInventory">
-										
-										</div>
-									</div>
-						</div>
-						<div class="Bonus">
-							<h2> Liste des Bonus : </h2>
-							<div id="BonusInventory">
-
-							</div>
-						</div>
-								
-
-								
-					</div>
+			</div>
 					
-					<div class="MenuPage_4 MenuPageContained" style="display:none;">
-						4
-					</div>
-					<div class="MenuPage_5 MenuPageContained" style="display:none;">
-						<button class="mute-video"></button>
-					</div>
-				</div>
+					
+								
+
+								
+					
+					
+					
+				
 			</div>
 		</div>	
 	

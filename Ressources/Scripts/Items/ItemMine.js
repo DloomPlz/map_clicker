@@ -17,24 +17,33 @@ ItemMine.prototype.setIncomeAmount= function (nb) {
     this.IncomeAmount=nb;
 };
 
+
+ItemMine.prototype.setTotalIncomeAmount= function (nb) {
+    this.TotalIncomeAmount = nb;
+}
+
+ItemMine.prototype.getTotalIncomeAmount= function (nb) {
+    return this.TotalIncomeAmount;
+}
+
 ItemMine.prototype.getIncomeAmount= function () {
 
     return this.IncomeAmount;
 };
 
+
 ItemMine.prototype.Afficher= function (TypeAffichage,value) {
-    var arrondieIncome = arrondir(this.getIncomeAmount());
+
     var arrondieCost = arrondir(this.getCost());
+    var arrondieIncome = arrondir(this.getIncomeAmount());
+    $('#bonus').html(arrondieIncome);
     var affiche;
     if (TypeAffichage=='long'){
         affiche= "<div class='Tile'>"+
                     "<u class='nom'>"+
                         this.getName()+
                     "</u>"+
-                    "<div class='caracteristiques'>"+
-                        "<u>caracteristiques :</u> <br>"+
-                        arrondieIncome+
-                    "</div>"+
+                   
                     "<div class='description'>"+
                         "<u>description :</u> <br>"+
                         this.getDescription()+
@@ -49,7 +58,7 @@ ItemMine.prototype.Afficher= function (TypeAffichage,value) {
 };
 
 ItemMine.prototype.Upgrade= function (MapRenderer) {
-	Game.Map.UpgradeBuild(this.IDlvl,this);
+
 	this.IDlvl= this.IDlvl+1;
 };
 
@@ -58,8 +67,8 @@ ItemMine.prototype.Action= function () {
 };
 
 function arrondir(resultat) {
-      resultat2 = resultat;       
-      resultat2 = Math.round(resultat2); 
+     
+      resultat2 = Math.round(resultat); 
 
       return resultat2;
 }

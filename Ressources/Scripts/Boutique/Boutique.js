@@ -14,6 +14,10 @@ function Boutique() {
 	Mine_3.setName('Atelier');
 	Mine_3.setDescription("L'usine type de l'âge de pierre");
 
+	var nbr_Hache = 0;
+	var nbr_Burcheron = 0;
+	var nbr_Atelier =0;
+
 	
 
 	this.ItemArray=[Mine_1, Mine_2, Mine_3];

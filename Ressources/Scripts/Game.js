@@ -11,8 +11,6 @@ function paramgame(goldstart,pricestart,incomestart){
 	Game.MonGold= new Gold();
 
 	Game.MonGold.AddGold(goldstart);
-
-	Game.Map=new MapRenderer("Map",MapArray_1);
 }
 
 function resetgame(){
@@ -84,7 +82,7 @@ Game.Acheter=function(achat){
 
 Game.Start=function(){
 	Game.Update();
-	Game.Map.DrawBackground();
+
 	Game._intervalId = setInterval(Game.run, 1000 );
 }
 
@@ -100,7 +98,7 @@ Game.Update=function(){
 			Game.Acheter($(this).attr("value"));
 		})
 	});
-	console.log(Game.MonGold.getTotalGold());
+
 }
 
 

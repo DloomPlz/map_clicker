@@ -21,7 +21,7 @@ ItemIncome.prototype.getIncomeAmount= function () {
 
 ItemIncome.prototype.Afficher= function (nb) {
 	var arrondieCost = arrondir(this.getCost());
-	var arrondieIncome = arrondir(this.getIncomeAmount());
+  
 	var affiche="<div class='Item' value='"+nb+"'>"+this.Name+"</br>son cout : "+ arrondieCost +"</br>";
     return affiche;
 };
@@ -31,8 +31,8 @@ ItemIncome.prototype.Action= function () {
 };
 
 function arrondir(resultat) {
-    resultat2 = resultat;          
-	  resultat2 = Math.round(resultat2); 
+       
+	  resultat2 = Math.round(resultat); 
 
       return resultat2;
 }

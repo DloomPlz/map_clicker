@@ -8,7 +8,7 @@ function Gold(){
 
 	// Add methods
 	Gold.prototype.getGold = function(){
-		arrondir (this.gold);
+
 		return this.gold;
 	};
 	Gold.prototype.getTotalGold = function(){
