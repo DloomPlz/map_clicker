@@ -22,15 +22,44 @@ function resetgame(){
 	easteregg=false;
 
 }
-
-
 ///////////////////////////////////////////////////////////////////////////////////
 
 //testachievements
-var a = new AchievementManager();
-a.defineProperty("nb click", 0, AchievementManager.ACTIVE_IF_GREATER_THAN, 1, "10 click");
-a.defineAchievement("clicks", ["nb click"]);
-console.log(a.mAchievements[0]);
+var achievementM = new AchievementManager();
+//////////////////// ACHIEVEMENT CLICKS/////////////////////////
+achievementM.defineProperty("click", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 0, "click !");
+achievementM.defineProperty("clickx10", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 10, "click 10x!");
+achievementM.defineProperty("clickx100", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 100, "click 100x!")
+achievementM.defineProperty("clickx200", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 200, "click 200x!")
+achievementM.defineAchievement("click", ["click"]);
+achievementM.defineAchievement("clickx10", ["clickx10"]);
+achievementM.defineAchievement("clickx100", ["clickx100"]);
+achievementM.defineAchievement("clickx200", ["clickx200"]);
+
+
+///////////////////////ACHIEVEMENT NB_ACHAT/////////////////////////////
+achievementM.defineProperty("achat", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 0, "un achat !");
+achievementM.defineProperty("achatx5", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 5, "un petit village");
+achievementM.defineProperty("achatx10", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 10, "une petite ville");
+achievementM.defineProperty("achatx15", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 15, "CAPITAL ! Bravo !");
+achievementM.defineAchievement("achat", ["achat"]);
+achievementM.defineAchievement("achatx5", ["achatx5"]);
+achievementM.defineAchievement("achatx10", ["achatx10"]);
+achievementM.defineAchievement("achachatx15", ["achatx15"]);
+
+///////////////////////ACHIEVEMENT ACHAT/////////////////////////////
+achievementM.defineProperty("Hache", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 0, "Hache");
+achievementM.defineProperty("Bucheron", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 0, "Bucheron");
+achievementM.defineProperty("Atelier", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO,0 , "Atelier");
+achievementM.defineProperty("income", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 0, "income");
+achievementM.defineAchievement("Hache", ["Hache"]);
+achievementM.defineAchievement("Bucheron", ["Bucheron"]);
+achievementM.defineAchievement("Atelier", ["Atelier"]);
+achievementM.defineAchievement("income", ["income"]);
+achievementM.defineAchievement("La Totale", ["Hache","Bucheron","Atelier",]);
+
+
+//console.log(achievementM.mAchievements[0]);
 
 Game.Acheter=function(achat){
 	if(Game.MonGold.getGold()>=Game.MaBoutique.getItem(achat).getCost())
@@ -42,6 +71,11 @@ Game.Acheter=function(achat){
 		Game.MonInventaire.AddItem(ItemAchete);
 		//Game.MaBoutique.RemoveItem(achat);
 		Game.MaBoutique.getItem(achat).setCost(Game.MaBoutique.getItem(achat).getCost()*1.13);
+
+		console.log(ItemAchete.getName());
+		achievementM.addValue([ItemAchete.getName()],1);
+		achievementM.addValue(["La Totale"],0);
+		achievementM.addValue(["achat","achatx5","achatx10","achatx15"],1);
 
 		
 	}
@@ -55,6 +89,7 @@ Game.Start=function(){
 }
 
 Game.Update=function(){	
+	achievementM.Afficher();
 	Game.MaBoutique.Afficher();
 	Game.MonInventaire.Afficher();
 	Game.MonGold.Afficher();

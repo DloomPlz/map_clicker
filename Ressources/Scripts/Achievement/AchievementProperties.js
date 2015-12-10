@@ -22,6 +22,9 @@ AchievementProperties.prototype.isActive= function ()
       case AchievementManager.ACTIVE_IF_EQUALS_TO: 
 	      aRet = this.mValue == this.mActivationValue; 
 	      break;
+      case AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO: 
+        aRet = this.mValue >= this.mActivationValue; 
+        break;
     }
  
     return aRet;

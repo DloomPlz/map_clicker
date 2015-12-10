@@ -17,6 +17,7 @@ function AnimetCoockie() {
 }
 
 $(".ImageClickerfake").on("click", function() {
+
 	avancerprogress();
 
 	Game.MonGold.IncrementGold();
@@ -33,6 +34,7 @@ $(".ImageClickerfake").on("click", function() {
 
 
 $(".ImageClicker").on("click", function() {
+	achievementM.addValue(["click","clickx10","clickx100","clickx200"],1);
 	avancerprogress();
 
 	Game.MonGold.IncrementGold();

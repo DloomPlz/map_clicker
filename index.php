@@ -38,6 +38,9 @@
 	    <source src="Ressources/Videos/BackgroundMovie.webm" type="video/webm">
 	    <source src="Ressources/Videos/BackgroundMovie.mp4" type="video/mp4">
 	</video>-->
+	<div class="achievement" style="display:none">
+		testbbbbbbbbbbbbbbbbbbbbbbbbbb
+	</div>
 
 	<div id="accueil">
 		
@@ -48,8 +51,6 @@
 					<div class="ImageClickerfake" align="center">
 						<i class="fa fa-arrow-left fa-4x"></i>
 					</div>
-					
-					
 			</div>
 			
 		</div>
@@ -99,6 +100,8 @@ Comme tous les bleus, vous commencerez à la base : le bois et la pierre seront 
 Pour ce faire, la boutique (des vrais bonhommes !) est à votre disposition : acheter des items vous rendras plus fort et plus productif ! A vous de les utiliser judicieusement pour conquérir le monde !
 Attention, pas de place pour les poussent cailloux dans notre section ! Le soldat qui ne se pointera pas à l’heure tous les jours sera sévèrement puni !... »
  </p>	
+						</div>
+						<div id="displayAchievements">
 						</div>
 
 						<div class="contacts">
