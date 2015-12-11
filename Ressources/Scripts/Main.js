@@ -29,8 +29,11 @@ $(".ImageClickerfake").on("click", function() {
 	globalID = requestAnimationFrame(AnimetCoockie);
 
 	$("#accueil").hide();
+
+
 	
 })
+
 
 
 
@@ -46,8 +49,40 @@ $(".ImageClicker").on("click", function() {
 
 	globalID = requestAnimationFrame(AnimetCoockie);
 
+	show();
 
+
+	function show() {
+
+	document.getElementById(randomImg1()).style.display="block";
+
+	setTimeout(function() { hide(); }, 100);  // 5 seconds
+	}
+
+	function hide() {
+	document.getElementById(randomImg1()).style.display="none";
+	}
+
+	
 })
+
+function randomImg1() {
+      var myImages1 = new Array ();
+      myImages1[1] = "image1";
+      myImages1[2] = "image2";
+      myImages1[3] = "image3";
+      var rnd = Math.floor( Math.random() * myImages1.length );
+      if( rnd == 0 ) {
+        rnd =1;
+      }
+      return myImages1[rnd];
+    }
+
+
+
+
+
+
 $("#ImageClicker").click(function() {
 
 	$(".ImageClicker").css("-moz-transform:","scale(0.9)");

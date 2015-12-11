@@ -75,6 +75,13 @@
 									<div ><p> Rps : <span id="bonus"></span></p></div>
 						</div>
 						<div class="Center">
+							<div class="AfficheClick">
+							</div>
+							<div class="ImageClickerPunch">
+								<img id="image1" src="./Ressources/Images/Items/axe.png"></img>
+								<img id="image2" src="./Ressources/Images/Items/chainsaw.png"></img>
+								<img id="image3" src="./Ressources/Images/Items/pickaxe.png"></img>
+							</div>
 							<div class="ImageClicker" align="center">
 
 							</div>

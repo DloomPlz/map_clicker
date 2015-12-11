@@ -392,6 +392,7 @@ body h3
 }
 
 .ImageClicker{
+
 	margin-left: 1vw;
 	margin-top: 6vw;
 	height: calc(20vw - 1px);
@@ -401,6 +402,53 @@ body h3
 	z-index: 2;
 	/*position: absolute;*/
 	transition:all .00000001s ease-in-out;
+}
+
+#image1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height:30%;
+		width:30%;
+		background-repeat: no-repeat;
+		display: none;
+	
+}
+
+#image2
+{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height:30%;
+		width:30%;
+		background-repeat: no-repeat;
+		display: none;
+}
+
+#image3
+{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height:30%;
+		width:30%;
+		background-repeat: no-repeat;
+		display: none;
+}
+
+.ImageClickerPunch
+{
+    position : relative;
+	margin-left: 1vw;
+	margin-top: 6vw;
+	position : fixed ;
+	height : calc(10vw - 1px);
+
+	z-index: 3;
+	width : 20%;
+	background-size:  50% 100%;
+	pointer-events: none;
 }
 
 .ImageClicker:hover
