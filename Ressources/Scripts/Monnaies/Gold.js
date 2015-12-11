@@ -45,9 +45,9 @@ function Gold(){
 	};
 
 function arrondir(resultat) {
-      resultat2 = resultat*100;          
-	  resultat2 = Math.round(resultat2); 
-	  resultat2 = resultat2/100;
+        
+	  resultat2 = Math.round(resultat); 
+
       return resultat2;
 }
 

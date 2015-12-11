@@ -406,8 +406,8 @@ body h3
 
 #image1 {
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: 70px;
+		left: 40px;
 		height:30%;
 		width:30%;
 		background-repeat: no-repeat;
@@ -418,8 +418,8 @@ body h3
 #image2
 {
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: 70px;
+		left: 120px;
 		height:30%;
 		width:30%;
 		background-repeat: no-repeat;
@@ -429,8 +429,8 @@ body h3
 #image3
 {
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: 70px;
+		left: 120px;
 		height:30%;
 		width:30%;
 		background-repeat: no-repeat;

@@ -40,6 +40,11 @@ $(".ImageClickerfake").on("click", function() {
 
 $(".ImageClicker").on("click", function() {
 
+	var ImageClicker = new Array ();
+      ImageClicker[1] = "image1";
+      ImageClicker[2] = "image2";
+      ImageClicker[3] = "image3";
+
 	achievementM.addValue(["click","clickx10","clickx100","clickx200"],1);
 	avancerprogress();
 
@@ -52,19 +57,25 @@ $(".ImageClicker").on("click", function() {
 	show();
 
 
-	function show() {
-
-	document.getElementById(randomImg1()).style.display="block";
-
-	setTimeout(function() { hide(); }, 100);  // 5 seconds
-	}
-
-	function hide() {
-	document.getElementById(randomImg1()).style.display="none";
-	}
+	
 
 	
 })
+
+	function show() {
+		var rand = randomImg1();
+		if (document.getElementById(rand).style.display="block")
+		{
+
+		}
+		document.getElementById(rand).style.display="block";
+
+		setTimeout(function() { hide(rand); }, 100);  // 5 seconds
+	}
+
+	function hide(rand) {
+		document.getElementById(rand).style.display="none";
+	}
 
 function randomImg1() {
       var myImages1 = new Array ();
@@ -75,6 +86,8 @@ function randomImg1() {
       if( rnd == 0 ) {
         rnd =1;
       }
+
+
       return myImages1[rnd];
     }
 
