@@ -1,5 +1,5 @@
 
-
+var ClickAdd=1;
 /////////////////////////////////////////////////
 
 var clicked = 0;
@@ -22,7 +22,7 @@ $(".ImageClickerfake").on("click", function() {
 
 	avancerprogress();
 
-	Game.MonGold.IncrementGold();
+	Game.MonGold.AddGold(ClickAdd);
 
 	Game.MonGold.Afficher();
 
@@ -48,18 +48,13 @@ $(".ImageClicker").on("click", function() {
 	achievementM.addValue(["click","clickx10","clickx100","clickx200"],1);
 	avancerprogress();
 
-	Game.MonGold.IncrementGold();
+	Game.MonGold.AddGold(ClickAdd);
 
 	Game.MonGold.Afficher();
 
 	globalID = requestAnimationFrame(AnimetCoockie);
 
-	show();
-
-
-	
-
-	
+	show();	
 })
 
 	function show() {

@@ -71,7 +71,7 @@
 				<div class="Clicker">
 						<!--  <progress id="progress"value="0" max="10000"></progress>  -->
 						<div class="TitleContain">
-									<div ><p> Ressources : <span id="Gold"></span></p></div>
+									<div ><p> Gold : <span id="Gold"></span></p></div>
 									<div ><p> Rps : <span id="bonus"></span></p></div>
 						</div>
 						<div class="Center">
@@ -103,7 +103,7 @@
 					<div class="MenuPage_0 MenuPageContained" style="display:block;">
 						<div class="histoire">
 
-							<p> LE BUT EST DE DETRUIRE CES PUTAINS D'ARBRE, PENSE A TA PETITE SOEUR ECRASEE PAR EUX !
+							<p> LE BUT EST DE DETRUIRE CES PUTAINS D'ARBRE, PENSE A TA PETITE SOEUR ECRASE PAR EUX !
 	 						</p>	
 						</div>
 						<h2 align="center"> Regarde tout les putains d'achievements que t'as eu en éclatant cette putain de mère nature ! </h2>
@@ -139,21 +139,9 @@
 						</div>
 
 					</div>
+			</div>	
 			</div>
-					
-					
-								
-
-								
-					
-					
-					
-				
-			</div>
-		</div>	
-	
-	
-	
+		</div>		
 </body>
 
 
@@ -164,6 +152,3 @@
     <!-- *******CompileInclude********** -->
     <?php include 'CompileIncludesScripts.php';?>
     <script src="Ressources/Scripts/Main.js" type="text/javascript"></script>
-	<!-- BackgroundMovie -->
-	<link href='Ressources/Videos/BackgroundMovie.css' rel='stylesheet' type='text/css'>
-	<script src="Ressources/Videos/BackgroundMovie.js"type="text/javascript"></script>

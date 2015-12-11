@@ -7,6 +7,7 @@ paramgame(100000,100,5);
 function paramgame(goldstart,pricestart,incomestart){
 	resetgame();
 	Game.MaBoutique = new Boutique();
+	Game.MaBoutiqueBonus = new BoutiqueBonus();
 	Game.MonInventaire= new Inventaire();
 	Game.MonGold= new Gold();
 
@@ -67,15 +68,26 @@ Game.Acheter=function(achat){
 		Game.MonGold.RemoveGold(Game.MaBoutique.getItem(achat).getCost());
 		var ItemAchete = Game.MaBoutique.getItem(achat);
 		Game.MonInventaire.AddItem(ItemAchete);
-		//Game.MaBoutique.RemoveItem(achat);
 		Game.MaBoutique.getItem(achat).setCost(Game.MaBoutique.getItem(achat).getCost()*1.13);
-
 		console.log(ItemAchete.getName());
+		ItemAchete.Add(1);
 		achievementM.addValue([ItemAchete.getName()],1);
 		achievementM.addValue(["La Totale"],0);
 		achievementM.addValue(["achat","achatx5","achatx10","achatx15"],1);
 
 		
+	}
+	Game.Update();
+}
+
+Game.AcheterBonus=function(achat){
+	console.log(achat);
+	if(Game.MonGold.getGold()>=Game.MaBoutiqueBonus.getBonus(achat).getCost())
+	{
+		Game.MonGold.RemoveGold(Game.MaBoutiqueBonus.getBonus(achat).getCost());
+		var ItemAchete = Game.MaBoutiqueBonus.getBonus(achat);
+		ItemAchete.Action();
+		Game.MaBoutiqueBonus.RemoveBonus(achat);	
 	}
 	Game.Update();
 }
@@ -89,6 +101,7 @@ Game.Start=function(){
 Game.Update=function(){	
 	
 	achievementM.Afficher();
+	Game.MaBoutiqueBonus.Afficher();
 	Game.MaBoutique.Afficher();
 	Game.MonInventaire.Afficher();
 	Game.MonGold.Afficher();
@@ -96,6 +109,13 @@ Game.Update=function(){
 		
 		$(this).on("click", function() {
 			Game.Acheter($(this).attr("value"));
+		})
+	});
+
+	$(".Bonus").children().each(function() {
+		
+		$(this).on("click", function() {
+			Game.AcheterBonus($(this).attr("value"));
 		})
 	});
 

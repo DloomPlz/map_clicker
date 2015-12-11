@@ -1,16 +1,18 @@
 //////CLASS_ITEM\\\\\\\\\\\\\\\\\\
 //gere le prix des differents items
-function Item(cost,nom,description) {
+function Item(cost,nom,description,Img) {
 	this.Name;
-
+	this.multiplicator=0;
+	this.Img=Img || null;
     this.setCost(cost);
 
 
 }
-
+Item.prototype.setImg= function(Img){
+	this.Img = Img;
+}
 Item.prototype.setCost= function (value) {
     this.Cost = value;
-    return this;
 };
 
 Item.prototype.getCost=function () {
@@ -36,7 +38,8 @@ Item.prototype.getDescription=function () {
 	return this.Description;
 };
 
-Item.prototype.Upgrade=function () {
+Item.prototype.Increment=function () {
+	this.multiplicator++;
 };
 
 Item.prototype.Afficher=function (TypeAffichage,value) {

@@ -14,13 +14,12 @@
         <script src="Ressources/Scripts/Achievement/AchievementProperties.js" type="text/javascript"></script>
         <script src="Ressources/Scripts/Achievement/Achievement.js" type="text/javascript"></script>
         <script src="Ressources/Scripts/Achievement/AchieveManager.js" type="text/javascript"></script>
-    <!-- Map -->
-        <script src="Ressources/Scripts/Map/MapArray.js" type="text/javascript"></script>
-        <script src="Ressources/Scripts/Map/MapRenderer.js" type="text/javascript"></script>
-        <!-- Shapes -->
-        <script src="Ressources/Scripts/Map/Shapes/ShapeColor.js" type="text/javascript"></script>
-        <script src="Ressources/Scripts/Map/Shapes/ShapeImage.js" type="text/javascript"></script>
-        <!-- Canevas -->
-        <script src="Ressources/Scripts/Map/Canevas/CanevasState.js" type="text/javascript"></script>
-    
+    <!-- Bonus -->
+        <script src="Ressources/Scripts/Bonus/Bonus.js" type="text/javascript"></script>
+        <script src="Ressources/Scripts/Bonus/BonusClick.js" type="text/javascript"></script>
+        <script src="Ressources/Scripts/Bonus/BonusMultiplicator.js" type="text/javascript"></script>
+        <script src="Ressources/Scripts/BoutiqueBonus/BoutiqueBonus.js" type="text/javascript"></script>
+
 <script src="Ressources/Scripts/Game.js" type="text/javascript"></script>
+<?php
+?>

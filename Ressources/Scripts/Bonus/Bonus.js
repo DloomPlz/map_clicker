@@ -36,6 +36,8 @@ Bonus.prototype.getDescription=function () {
 	return this.Description;
 };
 
+Bonus.prototype.Upgrade=function () {
+};
 
 Bonus.prototype.Afficher=function (TypeAffichage,value) {
 };

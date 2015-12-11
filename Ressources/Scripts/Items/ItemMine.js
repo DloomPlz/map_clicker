@@ -2,7 +2,6 @@
 //ajoute un income passif de pierre
 function ItemMine(cost,IncomeAmount) {
 	this.Name="ItemMine"
-    
     this.Cost=cost;
     this.IncomeAmount=IncomeAmount;
     this.IDlvl=200;
@@ -52,7 +51,7 @@ ItemMine.prototype.Afficher= function (TypeAffichage,value) {
                 "</div>";
     }
     else {
-        affiche="<div class='Item' value='"+value+"'>"+this.Name+"</br>son cout : "+ arrondieCost+"</br>";
+        affiche="<div class='Item' value='"+value+"'><div class='img' ><p>"+this.multiplicator+"</p><img src='"+this.Img+"'></div>"+this.Name+"</br>son cout : "+ arrondieCost+"</br></div>";
     }
     return affiche;
 };
@@ -72,3 +71,11 @@ function arrondir(resultat) {
 
       return resultat2;
 }
+
+ItemMine.prototype.Increment=function () {
+    this.multiplicator++;
+};
+
+ItemMine.prototype.Add=function (val) {
+    this.multiplicator+=val;
+};
