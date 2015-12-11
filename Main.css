@@ -210,18 +210,22 @@ body h3
 
 .StoreText
 {
-	height:20%;
+	height:10%;
 }
 
 .Bonus
 {
-
+	background-image: url("./Ressources/Images/Fond_Site/metal.jpg") ;
+	background-size: 200% 200%;
+	position:relative;
 	width:50%;
 	display:relative-block;
+	overflow-y:hidden;
 
 }
 .Boutique{
-
+	background-image: url("./Ressources/Images/Fond_Site/bois.png") ;
+	background-size: 250% 200%;
 	display: inline-block;
 	float:right;
 	width: 100%;
@@ -335,7 +339,10 @@ body h3
 	border-image: url("./Ressources/Images/Fond_Site/bordure.jpg") 42 round stretch;
 }
 
-
+#BonusSelling
+{
+	border:3px solid rgb(250,250,250);
+}
 
 
 
@@ -343,6 +350,8 @@ body h3
 #Container{
 	background-image: url("./Ressources/Images/Fond_Site/foret.jpg");
 	background-size: 100% 100%;
+	background-repeat: no-repeat;
+
 
 }
 
@@ -394,7 +403,7 @@ body h3
 .ImageClicker{
 
 	margin-left: 1vw;
-	margin-top: 6vw;
+
 	height: calc(20vw - 1px);
 	background-image: url("./Ressources/Images/Ressources_Cliquables/arbre.png");
 	background-size:  contain;
@@ -404,37 +413,167 @@ body h3
 	transition:all .00000001s ease-in-out;
 }
 
-#image1 {
-		position: absolute;
-		top: 70px;
-		left: 40px;
-		height:30%;
+
+/*SUR ARBRE */
+#image3 
+{
+		
+		top: 100px;
+		left: 95px;
+		height:60%;
 		width:30%;
-		background-repeat: no-repeat;
-		display: none;
+
+		
+}
+/*alien*/
+#image4
+{
+		
+		top: 50px;
+		left: 110px;
+		height:100%;
+		width:50%;
+		
+		
+}
+/*Gauche Moyenne image*/
+/*bruce*/
+#image5
+{
+		
+		top: 100px;
+		left: -30px;
+		height:70%;
+		width:50%;
+
+		
+		
+}
+/*chuck*/
+#image6
+{
+		
+		top: 120px;
+		left: -20px;
+		height:70%;
+		width:50%;
+
+		
+}
+/*cyclope*/
+#image7
+{
+		
+		top: 100px;
+		left: 115px;
+		height:100%;
+		width:80%;
+		
+}
+/*goku*/
+#image8
+{
+		
+		top: 50px;
+		left: -200px;
+		height:150%;
+		width:150%;
+
+		
+		
+}
+/*hulk*/
+#image9
+{
+		
+		top: 70px;
+		left:-60px;
+		height:100%;
+		width:50%;
+		
+}
+/*jcvd*/
+#image10
+{
+		
+		top: 80px;
+		left: 110px;
+		height:100%;
+		width:50%;
+		
+}
+/*ken*/
+#image11
+{
+		
+		top: 120px;
+		left: -50px;
+		height:70%;
+		width:50%;
+
+}
+/*leesin*/
+#image12
+{
+		
+		top: 50px;
+		left: -100px;
+		height:80%;
+		width:70%;
+		
+}
+/*luffy*/
+#image13
+{
+		
+		top: 80px;
+		left: -50px;
+		height:100%;
+		width:70%;
+		
+}
+/*raiden*/
+#image14
+{
+		
+		top: 80px;
+		left: -60px;
+		height:100%;
+		width:100%;
 	
+		
 }
-
-#image2
+/*roulette*/
+#image15
 {
-		position: absolute;
-		top: 70px;
-		left: 120px;
-		height:30%;
+		
+		top: 100px;
+		left: 15px;
+		height:70%;
 		width:30%;
-		background-repeat: no-repeat;
-		display: none;
+		z-index:0;
+		
 }
-
-#image3
+/*Scorpion*/
+#image16
 {
-		position: absolute;
-		top: 70px;
-		left: 120px;
-		height:30%;
-		width:30%;
-		background-repeat: no-repeat;
-		display: none;
+		
+		
+		top: 110px;
+		left:-30px;
+		height:70%;
+		width:50%;
+		
+}
+/*subzero*/
+#image17
+{
+		
+		
+		top: 110px;
+		left:-30px;
+		height:70%;
+		width:50%;
 }
 
 .ImageClickerPunch
@@ -451,6 +590,14 @@ body h3
 	pointer-events: none;
 }
 
+.ImageClickerPunch img
+{
+  		position: absolute;
+		background-repeat: no-repeat;
+		display:none;
+		
+}
+
 .ImageClicker:hover
 {
 	transform: scale(1.05);
@@ -458,8 +605,9 @@ body h3
 
 .ImageClickerfake{
 
-	margin-top:-7vw;
+	margin-top:-4vw;
 	height: calc(19vw - 1px);
+	margin-left: -1%;
 	background-image: url("./Ressources/Images/Ressources_Cliquables/arbre.png");
 	background-size:  contain;
 	background-repeat: no-repeat;

@@ -2,11 +2,11 @@
 //////CLASS_Boutique\\\\\\\\\\\\\\\\\\
 //gere le prix des differents Bonuss
 function BoutiqueBonus() {
-	Mine_1 = new BonusMultiplicator(100,1,"Hache");
+	Mine_1 = new BonusMultiplicator(100,2,"Hache");
 	Mine_1.setName('Ajoute+1');
 	Mine_1.setDescription('Un truc qui coupe');
 
-	Mine_2 = new BonusClick(100,2);
+	Mine_2 = new BonusClick(100,3);
 	Mine_2.setName('Click+2');
 	Mine_2.setDescription('Un truc qui coupe');
 	

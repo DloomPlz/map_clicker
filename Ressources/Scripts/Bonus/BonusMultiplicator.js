@@ -17,7 +17,7 @@ BonusMultiplicator.prototype.setBonusMultiplicator= function (nb) {
 BonusMultiplicator.prototype.Afficher= function (nb) {
 	var arrondieCost = arrondir(this.getCost());
   
-	var affiche="<div class='Bonus' value='"+nb+"'>"+this.Name+"</br>son cout : "+ arrondieCost +"</br>";
+	var affiche="<div id='BonusSelling' value='"+nb+"'>"+this.Name+"</br>son cout : "+ arrondieCost;
     return affiche;
 };
 

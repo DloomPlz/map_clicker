@@ -78,9 +78,22 @@
 							<div class="AfficheClick">
 							</div>
 							<div class="ImageClickerPunch">
-								<img id="image1" src="./Ressources/Images/Items/axe.png"></img>
-								<img id="image2" src="./Ressources/Images/Items/chainsaw.png"></img>
-								<img id="image3" src="./Ressources/Images/Items/pickaxe.png"></img>
+								
+								<img id="image3" src="./Ressources/Images/Items/Age_bois/Castor.png"></img>
+								<img id="image4" src="./Ressources/Images/Attaquants/alien.png"></img>
+								<img id="image5" src="./Ressources/Images/Attaquants/bruce-lee.png"></img>
+								<img id="image6" src="./Ressources/Images/Attaquants/chuck.png"></img>
+								<img id="image7" src="./Ressources/Images/Attaquants/cyclope.png"></img>	
+								<img id="image8" src="./Ressources/Images/Attaquants/goku.png"></img>
+								<img id="image9" src="./Ressources/Images/Attaquants/hulk.png"></img>
+								<img id="image10" src="./Ressources/Images/Attaquants/jcvd.png"></img>
+								<img id="image11" src="./Ressources/Images/Attaquants/ken.png"></img>
+								<img id="image12" src="./Ressources/Images/Attaquants/leesin.png"></img>
+								<img id="image13" src="./Ressources/Images/Attaquants/Luffy.png"></img>
+								<img id="image14" src="./Ressources/Images/Attaquants/raiden.png"></img>
+								<img id="image15" src="./Ressources/Images/Attaquants/roulette_rider.png"></img>
+								<img id="image16" src="./Ressources/Images/Attaquants/scorpion.gif"></img>
+								<img id="image17" src="./Ressources/Images/Attaquants/subzero.gif"></img>
 							</div>
 							<div class="ImageClicker" align="center">
 
@@ -129,8 +142,7 @@
 					<h2 align="center"> Boutique : </h2>
 				</div>
 					<div class="Bonus">
-						<div id="BonusSelling" style="color:white;">
-						</div>
+						
 					</div>
 						<div class="Boutique">
 							<div id="ItemSelling" style="color:white;">

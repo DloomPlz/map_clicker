@@ -40,10 +40,6 @@ $(".ImageClickerfake").on("click", function() {
 
 $(".ImageClicker").on("click", function() {
 
-	var ImageClicker = new Array ();
-      ImageClicker[1] = "image1";
-      ImageClicker[2] = "image2";
-      ImageClicker[3] = "image3";
 
 	achievementM.addValue(["click","clickx10","clickx100","clickx200"],1);
 	avancerprogress();
@@ -65,7 +61,7 @@ $(".ImageClicker").on("click", function() {
 		}
 		document.getElementById(rand).style.display="block";
 
-		setTimeout(function() { hide(rand); }, 100);  // 5 seconds
+		setTimeout(function() { hide(rand); }, 200);  // 5 seconds
 	}
 
 	function hide(rand) {
@@ -73,17 +69,33 @@ $(".ImageClicker").on("click", function() {
 	}
 
 function randomImg1() {
-      var myImages1 = new Array ();
-      myImages1[1] = "image1";
-      myImages1[2] = "image2";
-      myImages1[3] = "image3";
-      var rnd = Math.floor( Math.random() * myImages1.length );
+
+	var ImageClicker = new Array ();
+      ImageClicker[1] = "image1";
+      ImageClicker[2] = "image2";
+      ImageClicker[3] = "image3";
+      ImageClicker[4] = "image4";
+      ImageClicker[5] = "image5";
+      ImageClicker[6] = "image6";
+      ImageClicker[7] = "image7";
+      ImageClicker[8] = "image8";
+      ImageClicker[9] = "image9";
+      ImageClicker[10] = "image10";
+      ImageClicker[11] = "image11";
+      ImageClicker[12] = "image12";
+      ImageClicker[13] = "image13";
+      ImageClicker[14] = "image14";
+      ImageClicker[15] = "image15";
+      ImageClicker[16] = "image16";
+      ImageClicker[17] = "image17";
+
+      var rnd = Math.floor( Math.random() * ImageClicker.length );
       if( rnd == 0 ) {
         rnd =1;
       }
 
 
-      return myImages1[rnd];
+      return ImageClicker[rnd];
     }
 
 
