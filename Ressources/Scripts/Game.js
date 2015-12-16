@@ -115,7 +115,7 @@ Game.Update=function(){
 	$(".Bonus").children().each(function() {
 		
 		$(this).on("click", function() {
-			Game.AcheterBonus($(this).attr("value"));
+			Game.AcheterBonus($(this).attr("nb"));
 		})
 	});
 

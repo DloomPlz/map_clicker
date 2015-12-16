@@ -1,16 +1,20 @@
 //////CLASS_Bonus\\\\\\\\\\\\\\\\\\
 //gere le prix des differents Bonuss
-function Bonus(cost,nom,description) {
+function Bonus(cost,nom,description,Img) {
 	this.Name;
-
+	this.Description=description;
     this.setCost(cost);
+	this.Img=Img || null;
 
+}
 
+Bonus.prototype.setImg= function(Img){
+	this.Img = Img;
 }
 
 Bonus.prototype.setCost= function (value) {
     this.Cost = value;
-    return this;
+    
 };
 
 Bonus.prototype.getCost=function () {
