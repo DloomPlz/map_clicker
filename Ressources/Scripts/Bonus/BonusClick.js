@@ -16,7 +16,7 @@ BonusClick.prototype.setBonusClick= function (nb) {
 BonusClick.prototype.Afficher= function (nb) {
 	
   
-	var affiche="<div id='BonusSelling'><div class='img' ><img src='"+this.Img+"'></div></div>";
+	var affiche="<div class='BonusSelling'><div class='img' ><img src='"+this.Img+"'></div></div>";
     
     return affiche;
 
@@ -24,7 +24,7 @@ BonusClick.prototype.Afficher= function (nb) {
 
 BonusClick.prototype.Afficher2= function (nb) {
     var arrondieCost = arrondir(this.getCost());
-    var affiche2 = "<div id='BonusHover' value='"+nb+"'>"+this.Name+"</br>son cout : "+ arrondieCost+"</br> <p>"+ this.Description +"</p></div>";
+    var affiche2 = "<div class='BonusHover' value='"+this.BonusValue+"'>"+this.Name+"</br>son cout : "+ arrondieCost+"</br> <p>"+ this.Description +"</p></div>";
     return affiche2;
 }
 

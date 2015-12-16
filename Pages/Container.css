@@ -51,9 +51,11 @@ body{
 }
 
 #Container .FullRightContainer .Bonus{
-	height:23%;
+	height:10.5%;
 	width:100%;
 }
+
+
 
 #Container .RightContainer p{
 	text-align: center;
@@ -131,10 +133,9 @@ body{
 	height: 100%;
 }
 
-#BonusSelling 
+.BonusSelling 
 {
 	float : left;
-
 	margin-left: 1%;
 	margin-top: 1%;
 	margin-right: 1%;

@@ -7,23 +7,29 @@ function Boutique() {
 	Mine_1.setDescription('Un truc qui coupe');
 	Mine_1.setImg("./Ressources/Images/Items/Age_bois/hache_bois.png");
 
-	Mine_2 = new ItemMine(200,0.2);
+	Mine_2 = new ItemMine(100,0.2);
 	Mine_2.setName('Bucheron');
 	Mine_2.setDescription('Un peu bête, mais productif !');
-	Mine_2.setImg("./Ressources/Images/Enseigne/hache.png");
+	Mine_2.setImg("./Ressources/Images/Items/Age_bois/bucheron.png");
 
-	Mine_3 = new ItemMine(600,0.5);
-	Mine_3.setName('Atelier');
+	Mine_3 = new ItemMine(350,0.35);
+	Mine_3.setName('Castors');
 	Mine_3.setDescription("L'usine type de l'âge de pierre");
-	Mine_3.setImg("./Ressources/Images/Enseigne/pioche.png");
+	Mine_3.setImg("./Ressources/Images/Items/Age_bois/Castor.png");
+
+	Mine_4 = new ItemMine(500,0.5);
+	Mine_4.setName('Atelier');
+	Mine_4.setDescription("L'usine type de l'âge de pierre");
+	Mine_4.setImg("./Ressources/Images/Enseigne/hache.png");
 
 	var nbr_Hache = 0;
 	var nbr_Burcheron = 0;
+	var nbr_Castor = 0 ;
 	var nbr_Atelier =0;
 
 	
 
-	this.ItemArray=[Mine_1, Mine_2, Mine_3];
+	this.ItemArray=[Mine_1, Mine_2, Mine_3, Mine_4];
 }
 
 Boutique.prototype.Afficher= function (div) {

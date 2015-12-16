@@ -341,10 +341,11 @@ body h3
 	border-image: url("./Ressources/Images/Fond_Site/bordure.jpg") 42 round stretch;
 }
 
-#BonusSelling
+.BonusSelling
 {
 	position:relative;
-	border:3px solid rgb(250,250,250);
+	border:2px solid rgb(250,250,250);
+	width: 10.5%;
 }
 
 
@@ -652,21 +653,18 @@ body h3
 	float: right;
 }
 
-#BonusSelling
-{
+
+
+.BonusSelling .img img{
+	height:60px;
+	width:60px;
 
 }
 
-#BonusSelling .img img{
-	height:100%;
-	width:100%;
-
-}
-
-#BonusHover
+.BonusHover
 {
 	position:absolute;
-	
+	display:none;
 	z-index:5;
 	top:0; right:500px; 
 	width:80px; 
@@ -675,7 +673,7 @@ body h3
 	/*display : none;*/
 }
 
-#BonusSelling:hover #BonusHover
+.BonusSelling:hover .BonusHover
 {
 	display:block;
 }

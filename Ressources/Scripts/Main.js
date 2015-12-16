@@ -53,12 +53,24 @@ $(".ImageClicker").on("click", function() {
 	show();	
 })
 
+$(".Bonus").hover(function()
+{
+	nb_bonusSelling=$(".BonusSelling").length;
+	$(".Bonus").height((1 + (nb_bonusSelling / 5 ))* $(".BonusSelling").height());
+
+})
+
+$(".Bonus").on("mouseleave", function()
+{
+	
+	$(".Bonus").css("height", "10.5%");
+
+})
+
+
 	function show() {
 		var rand = randomImg1();
-		if (document.getElementById(rand).style.display="block")
-		{
-
-		}
+		
 		document.getElementById(rand).style.display="block";
 
 		setTimeout(function() { hide(rand); }, 200);  // 5 seconds

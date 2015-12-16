@@ -79,7 +79,7 @@
 							</div>
 							<div class="ImageClickerPunch">
 								
-								<img id="image3" src="./Ressources/Images/Items/Age_bois/Castor.png"></img>
+								<img id="image3" src="./Ressources/Images/Attaquants/Castor.png"></img>
 								<img id="image4" src="./Ressources/Images/Attaquants/alien.png"></img>
 								<img id="image5" src="./Ressources/Images/Attaquants/bruce-lee.png"></img>
 								<img id="image6" src="./Ressources/Images/Attaquants/chuck.png"></img>
