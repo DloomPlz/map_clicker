@@ -5,25 +5,25 @@ function BoutiqueBonus() {
 
 
 	// ----------------------  BONUS HACHE ----------------
-	Mine_1 = new BonusMultiplicator(200,0.2,"Hache");
+	Mine_1 = new BonusMultiplicator(1,2,"Hache");
 	Mine_1.setName('Silex');
 	Mine_1.setDescription("Une etincelle d'evolution");
 	Mine_1.setImg("./Ressources/Images/Bonus/Bois/silex.png");
 
 
-	Mine_2 = new BonusMultiplicator(500,0.3,"Hache");
+	Mine_2 = new BonusMultiplicator(500,3,"Hache");
 	Mine_2.setName('Basalte');
 	Mine_2.setDescription("Une etincelle d'evolution");
 	Mine_2.setImg("./Ressources/Images/Bonus/Bois/basalte.png");
 
 
-	Mine_3 = new BonusMultiplicator(700,0.4,"Hache");
+	Mine_3 = new BonusMultiplicator(700,4,"Hache");
 	Mine_3.setName('Manche en Hickory');
 	Mine_3.setDescription('La fierté des Achéens!');
 	Mine_3.setImg("./Ressources/Images/Bonus/Bois/manche_hickory.png");
 
 
-	Mine_4 = new BonusMultiplicator(1000,0.5,"Hache");
+	Mine_4 = new BonusMultiplicator(1000,5,"Hache");
 	Mine_4.setName('Granite');
 	Mine_4.setDescription("Plus dure que mes poings, c'est dire ! ");
 	Mine_4.setImg("./Ressources/Images/Bonus/Bois/granite.png");
@@ -94,8 +94,8 @@ BoutiqueBonus.prototype.Afficher= function (div) {
 	$('.Bonus').html("");
 	var nb = 0;
 	this.BonusArray.forEach(function(index,nb){
-		$('.Bonus').append(index.Afficher(null,nb));
-		$('.Bonus').append(index.Afficher2(null,nb));
+		$('.Bonus').append(index.Afficher(nb));
+		$('.Bonus').append(index.Afficher2(nb));
 		
 		nb++;
 	});

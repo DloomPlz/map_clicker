@@ -5,25 +5,15 @@ function ItemMine(cost,IncomeAmount) {
     this.Cost=cost;
     this.IncomeAmount=IncomeAmount;
     this.IDlvl=200;
+    this.Bonus=1;
 }
 ItemMine.prototype=new Item;
 ItemMine.prototype.constructor= ItemMine;
 
 
 ItemMine.prototype.setIncomeAmount= function (nb) {
-
-
     this.IncomeAmount=nb;
 };
-
-
-ItemMine.prototype.setTotalIncomeAmount= function (nb) {
-    this.TotalIncomeAmount = nb;
-}
-
-ItemMine.prototype.getTotalIncomeAmount= function (nb) {
-    return this.TotalIncomeAmount;
-}
 
 ItemMine.prototype.getIncomeAmount= function () {
 
@@ -62,7 +52,7 @@ ItemMine.prototype.Upgrade= function (MapRenderer) {
 };
 
 ItemMine.prototype.Action= function () {
-	Game.MonGold.AddGold(this.IncomeAmount);
+	Game.MonGold.AddGold(this.IncomeAmount*this.Bonus);
 };
 
 function arrondir(resultat) {
@@ -77,5 +67,5 @@ ItemMine.prototype.Increment=function () {
 };
 
 ItemMine.prototype.Add=function (val) {
-    this.multiplicator+=val;
+    this.Bonus+=val;
 };

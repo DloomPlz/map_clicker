@@ -3,6 +3,7 @@
 
 function Inventaire() {
 	this.ItemArray=[];
+	this.BonusInome;
 }
 
 Inventaire.prototype.Afficher= function (div) {
@@ -21,9 +22,17 @@ Inventaire.prototype.AddItem=function(NouveauItem){
 	
 		this.ItemArray.push(NouveauItem);
 		NouveauItem.Upgrade();
-	
-
 }
+
+Inventaire.prototype.getIncome=function(){
+	var val=0;
+	this.ItemArray.forEach(function(index){
+		val+=index.IncomeAmount*index.Bonus;
+	})
+	console.log("Total income : "+val);
+	return val;
+}
+
 
 Inventaire.prototype.UseItems=function(){
 	this.ItemArray.forEach(function(index){

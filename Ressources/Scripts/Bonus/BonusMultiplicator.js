@@ -17,13 +17,13 @@ BonusMultiplicator.prototype.setBonusMultiplicator= function (nb) {
 BonusMultiplicator.prototype.Afficher= function (nb) {
 	var arrondieCost = arrondir(this.getCost());
   
-	var affiche="<div class='BonusSelling'><div class='img' ><img src='"+this.Img+"'></div></div>";
+	var affiche="<div class='BonusSelling' value='"+nb+"'><div class='img' ><img src='"+this.Img+"'></div></div>";
     return affiche;
 };
 
 BonusMultiplicator.prototype.Afficher2= function (nb) {
     var arrondieCost = arrondir(this.getCost());
-    var affiche2 = "<div class='BonusHover' value='"+this.BonusValue+"'>"+this.Name+"</br>son cout : "+ arrondieCost+"</br> <p>"+ this.Description +"</p></div>";
+    var affiche2 = "<div class='BonusHover' value='"+nb+"'>"+this.Name+"</br>son cout : "+ arrondieCost+"</br> <p>"+ this.Description +"</p></div>";
     return affiche2;
 };
 

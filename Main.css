@@ -345,7 +345,7 @@ body h3
 {
 	position:relative;
 	border:2px solid rgb(250,250,250);
-	width: 10.5%;
+	width: 5vw;
 }
 
 
@@ -407,6 +407,7 @@ body h3
 .ImageClicker{
 
 	margin-left: 1vw;
+	margin-top: 3vw;
 
 	height: calc(20vw - 1px);
 	background-image: url("./Ressources/Images/Ressources_Cliquables/arbre.png");

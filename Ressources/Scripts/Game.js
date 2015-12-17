@@ -70,7 +70,7 @@ Game.Acheter=function(achat){
 		Game.MonInventaire.AddItem(ItemAchete);
 		Game.MaBoutique.getItem(achat).setCost(Game.MaBoutique.getItem(achat).getCost()*1.13);
 		console.log(ItemAchete.getName());
-		ItemAchete.Add(1);
+		ItemAchete.Increment();
 		achievementM.addValue([ItemAchete.getName()],1);
 		achievementM.addValue(["La Totale"],0);
 		achievementM.addValue(["achat","achatx5","achatx10","achatx15"],1);
@@ -105,6 +105,7 @@ Game.Update=function(){
 	Game.MaBoutique.Afficher();
 	Game.MonInventaire.Afficher();
 	Game.MonGold.Afficher();
+	Inventaire.getIncome();
 	$("#ItemSelling").children().each(function() {
 		
 		$(this).on("click", function() {
@@ -115,9 +116,10 @@ Game.Update=function(){
 	$(".Bonus").children().each(function() {
 		
 		$(this).on("click", function() {
-			Game.AcheterBonus($(this).attr("nb"));
+			Game.AcheterBonus($(this).attr("value"));
 		})
 	});
+	Game.MonInventaire.getIncome();
 
 }
 
