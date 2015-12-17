@@ -9,6 +9,7 @@
 	<meta name="description" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<link rel="canonical" href="http://www.alessioatzeni.com/wp-content/tutorials/jquery/simple-tooltip/index.html" />
 	 
 	<link href='Main.css' rel='stylesheet' type='text/css'>
 	<link href='Ressources/includes/ProgressBar.css' rel='stylesheet' type='text/css'>
@@ -71,8 +72,8 @@
 				<div class="Clicker">
 						<!--  <progress id="progress"value="0" max="10000"></progress>  -->
 						<div class="TitleContain">
-									<div ><p> Gold : <span id="Gold"></span></p></div>
-									<div ><p> Rps : <span id="bonus"></span></p></div>
+									<div ><p> Gold : <span id="Gold"></span></p></div></br>
+									<div ><p> Par secondes : <span id="Income"></span></p></div>
 						</div>
 						<div class="Center">
 							<div class="AfficheClick">

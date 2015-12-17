@@ -31,13 +31,13 @@ function BoutiqueBonus() {
 	
 	// --------------------BONUS BUCHERONS --------------------
 
-	Mine_5 = new BonusMultiplicator(2000,2,"Bucheron");
+	Mine_5 = new BonusMultiplicator(2000,20,"Bucheron");
 	Mine_5.setName('Stripteaseuses');
 	Mine_5.setDescription("Aucun arbre n'arrête un bucheron , surtout avec une jolie fille derrière! ");
 	Mine_5.setImg("./Ressources/Images/Bonus/Bois/poledance.png");
 
 
-	Mine_6 = new BonusMultiplicator(2000,2,"Bucheron");
+	Mine_6 = new BonusMultiplicator(2000,20,"Bucheron");
 	Mine_6.setName("Sirop d'érable");
 	Mine_6.setDescription("Les bucherons sont en forme! ");
 	Mine_6.setImg("./Ressources/Images/Bonus/Bois/sirop_derable.png");
@@ -45,13 +45,13 @@ function BoutiqueBonus() {
 
 	// --------------------BONUS Castors --------------------
 
-	Mine_7 = new BonusMultiplicator(3000,2,"Castors");
+	Mine_7 = new BonusMultiplicator(3000,20,"Castors");
 	Mine_7.setName("Dentifirice");
 	Mine_7.setDescription("Plus forte ,plus blanche : meilleurs dents! ");
 	Mine_7.setImg("./Ressources/Images/Bonus/Bois/dentifrice.png");
 
 
-	Mine_8 = new BonusMultiplicator(3000,2,"Castors");
+	Mine_8 = new BonusMultiplicator(3000,20,"Castors");
 	Mine_8.setName("Queue de fer");
 	Mine_8.setDescription("Pas de sous entendu... ");
 	Mine_8.setImg("./Ressources/Images/Bonus/Bois/queue_fer.png");
@@ -59,13 +59,13 @@ function BoutiqueBonus() {
 
 	// --------------------BONUS Castors --------------------
 
-	Mine_9 = new BonusMultiplicator(4000,2,"Atelier");
+	Mine_9 = new BonusMultiplicator(4000,20,"Atelier");
 	Mine_9.setName("Meule d'affutage");
 	Mine_9.setDescription("");
 	Mine_9.setImg("./Ressources/Images/Bonus/Bois/meule.png");
 
 
-	Mine_10 = new BonusMultiplicator(4000,2,"Atelier");
+	Mine_10 = new BonusMultiplicator(4000,20,"Atelier");
 	Mine_10.setName("Grosse soirée");
 	Mine_10.setDescription("");
 	Mine_10.setImg("./Ressources/Images/Bonus/Bois/boule_disco.png");
@@ -100,6 +100,14 @@ BoutiqueBonus.prototype.Afficher= function (div) {
 		nb++;
 	});
 
+}
+
+$('.BonusSelling').hover(function()
+{
+	$('.BonusSelling').addClass("masterTooltip");
+	$('.BonusHover').addClass("tooltip");
+	var id = $('.BonusSelling').attr("value");
+	$('.BonusHover').add
 }
 
 

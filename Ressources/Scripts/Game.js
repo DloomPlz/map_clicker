@@ -10,8 +10,8 @@ function paramgame(goldstart,pricestart,incomestart){
 	Game.MaBoutiqueBonus = new BoutiqueBonus();
 	Game.MonInventaire= new Inventaire();
 	Game.MonGold= new Gold();
-
 	Game.MonGold.AddGold(goldstart);
+
 }
 
 function resetgame(){
@@ -71,13 +71,14 @@ Game.Acheter=function(achat){
 		Game.MaBoutique.getItem(achat).setCost(Game.MaBoutique.getItem(achat).getCost()*1.13);
 		console.log(ItemAchete.getName());
 		ItemAchete.Increment();
+		Game.MaBoutique.Afficher();
 		achievementM.addValue([ItemAchete.getName()],1);
 		achievementM.addValue(["La Totale"],0);
 		achievementM.addValue(["achat","achatx5","achatx10","achatx15"],1);
 
 		
 	}
-	Game.Update();
+	
 }
 
 Game.AcheterBonus=function(achat){
@@ -89,23 +90,36 @@ Game.AcheterBonus=function(achat){
 		ItemAchete.Action();
 		Game.MaBoutiqueBonus.RemoveBonus(achat);	
 	}
-	Game.Update();
+	$(".Bonus").children().each(function() {
+		
+		$(this).on("click", function() {
+			Game.AcheterBonus($(this).attr("value"));
+		})
+	});
+	Game.MaBoutiqueBonus.Afficher();
 }
 
 Game.Start=function(){
 	Game.Update();
-
+	Game.MaBoutiqueBonus.Afficher();
+	Game.MaBoutique.Afficher();
 	Game._intervalId = setInterval(Game.run, 1000 );
+}
+
+Game.AfficherIncome=function()
+{
+
+		var arrondie = arrondir(Game.MonInventaire.getIncome());
+	    $('#Income').html(arrondie);
+		
 }
 
 Game.Update=function(){	
 	
 	achievementM.Afficher();
-	Game.MaBoutiqueBonus.Afficher();
-	Game.MaBoutique.Afficher();
-	Game.MonInventaire.Afficher();
 	Game.MonGold.Afficher();
-	Inventaire.getIncome();
+	Game.AfficherIncome();
+	
 	$("#ItemSelling").children().each(function() {
 		
 		$(this).on("click", function() {
@@ -113,13 +127,8 @@ Game.Update=function(){
 		})
 	});
 
-	$(".Bonus").children().each(function() {
-		
-		$(this).on("click", function() {
-			Game.AcheterBonus($(this).attr("value"));
-		})
-	});
-	Game.MonInventaire.getIncome();
+	
+
 
 }
 
@@ -137,3 +146,11 @@ Game.Start();
 // To stop the game, use the following:
 //clearInterval(Game._intervalId);
 
+function arrondir(resultat) {
+        
+      resultat2 = resultat*100;
+	  resultat2 = Math.round(resultat2); 
+	  resultat2 = resultat2/ 100;
+
+      return resultat2;
+}
