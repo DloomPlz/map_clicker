@@ -4,7 +4,54 @@ var ClickAdd=1;
 
 var clicked = 0;
 function avancerprogress(){
-	$('#progress').attr("value", Game.MonGold.getTotalGold());
+	var LeftImages = new Array ();
+      LeftImages[0] = "1_hit_combo.png";
+      LeftImages[1] = "2_hit_combo.png";
+      LeftImages[2] = "3_hit_combo.png";
+      LeftImages[3] = "4_hit_combo.png";
+      LeftImages[4] = "5_hit_combo.png";
+      LeftImages[5] = "6_hit_combo.png";
+      LeftImages[6] = "7_hit_combo.png";
+      LeftImages[7] = "8_hit_combo.png";
+      LeftImages[8] = "9_hit_combo.png";
+      LeftImages[9] = "10_hit_combo.png";
+      LeftImages[10] = "11_hit_combo.png";
+      LeftImages[11] = "12_hit_combo.png";
+      LeftImages[12] = "attaque_imparable.png";
+      LeftImages[13] = "brise_garde.png";
+      LeftImages[14] = "coup_critique.png";
+      LeftImages[15] = "fatality.png";
+      LeftImages[16]= "finish_him.png";
+      LeftImages[17]= "wasted.png";
+
+
+var RightImages = new Array ();
+      RightImages[0] = "image1";
+      RightImages[1] = "image2";
+      RightImages[2] = "image3";
+
+
+	 var rnd = Math.floor( Math.random() * 5 );
+      if( rnd == 0 ) {
+      	$('#leftAlert').finish();
+        //afficher left
+        var Imagernd = Math.floor( Math.random() * LeftImages.length );
+        $('#leftAlert').css("background-image", "url('./Ressources/Images/FightAlert/"+LeftImages[Imagernd]+"')");
+
+        $('#leftAlert').show();
+        var animation = $('#leftAlert').hide(4000);
+      }
+      var rnd = Math.floor( Math.random() * 20 );
+      if( rnd == 0 ) {
+      	$('#righttAlert').hide();
+        //afficher right
+        var Imagernd = Math.floor( Math.random() * LeftImages.length );
+        $('#righttAlert').css("background-image", "url('./Ressources/Images/FightAlert/"+RightImages[Imagernd]+"')");
+
+        $('#righttAlert').show();
+        $('#righttAlert').hide(6000);
+      }
+	
 }
 //////////TEST CLASS\\\\\\\\\\\\\\\\\d
 // monIncom=new ItemIncome(100,10);
@@ -37,6 +84,13 @@ $(".ImageClickerfake").on("click", function() {
 
 
 
+function incrementnbr(){
+  nbr_click=+1;
+  console.log(nbr_click);
+  
+}
+
+
 
 $(".ImageClicker").on("click", function() {
 
@@ -50,13 +104,23 @@ $(".ImageClicker").on("click", function() {
 
 	globalID = requestAnimationFrame(AnimetCoockie);
 
-	show();	
+	showImg();	
+  var nb = Math.floor(Math.random() * 25);
+  
+  if (nb==5)
+  {
+    showFrappe();
+
+  }
+  
 })
+
+
 
 $(".Bonus").hover(function()
 {
 	nb_bonusSelling=$(".BonusSelling").length;
-	$(".Bonus").height((1 + (nb_bonusSelling / 5 ))* $(".BonusSelling").height());
+	$(".Bonus").height((1 + (nb_bonusSelling / 5 ))* $(".BonusSelling").height() + $(".BonusHover").height() + 20);
 
 })
 
@@ -68,17 +132,52 @@ $(".Bonus").on("mouseleave", function()
 })
 
 
-	function show() {
+	function showImg() {
 		var rand = randomImg1();
 		
 		document.getElementById(rand).style.display="block";
 
-		setTimeout(function() { hide(rand); }, 200);  // 5 seconds
+  setTimeout(function() { hideImg(rand); }, 200);  // 5 seconds
 	}
 
-	function hide(rand) {
+  function showFrappe() {
+    var rand = randomFrappe();
+    
+    document.getElementById(rand).style.display="block";
+
+  setTimeout(function() { hideFrappe(rand); }, 500);  // 5 seconds
+  }
+
+function hideFrappe(rand) {
+    document.getElementById(rand).style.display="none";
+  }
+
+	function hideImg(rand) {
 		document.getElementById(rand).style.display="none";
 	}
+
+function randomFrappe() {
+
+  var Frappe = new Array ();
+        Frappe[1] = "Frappe1";
+        Frappe[2] = "Frappe2";
+        Frappe[3] = "Frappe3";
+        Frappe[4] = "Frappe4";
+        Frappe[5] = "Frappe5";
+        Frappe[6] = "Frappe6";
+        Frappe[7] = "Frappe7";
+
+
+      
+
+      var rnd = Math.floor( Math.random() * Frappe.length );
+      if( rnd == 0 ) {
+        rnd =1;
+      }
+
+
+      return Frappe[rnd];
+    }
 
 function randomImg1() {
 

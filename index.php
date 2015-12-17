@@ -58,7 +58,9 @@
 			<div class="texte-accueil">
 				<h1> BIENVENUE SUR NOTRE SITE !</h1></br>
 					<p>TES PARENTS SONT RENTRES DANS CETTE ARBRE ! NIQUE LUI SA RACE </br></p></br></br>
+
 					<div class="ImageClickerfake" align="center">
+
 						<i class="fa fa-arrow-left fa-4x"></i>
 					</div>
 			</div>
@@ -76,7 +78,21 @@
 									<div ><p> Par secondes : <span id="Income"></span></p></div>
 						</div>
 						<div class="Center">
+							<div class="Frappe">
+								<p id="Frappe1">Frappe-moi ! </p>
+								<p id="Frappe2">T'es nul putain ! </p>
+								<p id="Frappe3">Aie ! </p>
+								<p id="Frappe4">Je me fais chier là ! </p>
+								<p id="Frappe5">En**ler ! </p>
+								<p id="Frappe6">T'es sur de pas vouloir arréter ? </p>
+								<p id="Frappe6">C'est l'heure du DUEL !</p>
+								<p id="Frappe7">Tu peux le faire ! </p>
+							</div>
 							<div class="AfficheClick">
+							</div>
+							<div id="leftAlert">
+							</div>
+							<div id="righttAlert">
 							</div>
 							<div class="ImageClickerPunch">
 								
@@ -117,7 +133,7 @@
 					<div class="MenuPage_0 MenuPageContained" style="display:block;">
 						<div class="histoire">
 
-							<p> LE BUT EST DE DETRUIRE CES PUTAINS D'ARBRE, PENSE A TA PETITE SOEUR ECRASE PAR EUX !
+							<p> LE BUT EST DE DETRUIRE CES PUTAINS D'ARBRES, PENSE A TA PETITE SOEUR ECRASEE PAR EUX !
 	 						</p>	
 						</div>
 						<h2 align="center"> Regarde tout les putains d'achievements que t'as eu en éclatant cette putain de mère nature ! </h2>

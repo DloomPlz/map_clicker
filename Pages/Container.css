@@ -13,12 +13,17 @@ body{
 #Container .LeftContainer{
 	display:inline-block;
 	vertical-align: top;
-
-
 	width: 25%;
 	height:100%;
 	position:fixed;
+	color : white;
+	font-family: GraublauWeb;
+	font-size: 50px;
 
+}
+#Container .LeftContainer p{
+
+	font-size: 50px;
 
 }
 
@@ -53,6 +58,11 @@ body{
 #Container .FullRightContainer .Bonus{
 	height:5.7vw;
 	width:100%;
+}
+
+#Container .FullRightContainer .Item
+{
+	
 }
 
 

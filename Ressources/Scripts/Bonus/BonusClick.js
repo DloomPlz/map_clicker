@@ -14,7 +14,7 @@ BonusClick.prototype.setBonusClick= function (nb) {
 };
 
 BonusClick.prototype.Afficher= function (nb) {
-	
+	var arrondieCost = arrondir(this.getCost());
   
 	var affiche="<div class='BonusSelling' value='"+nb+"'><div class='img' ><img src='"+this.Img+"'></div></div>";
     

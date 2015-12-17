@@ -61,19 +61,19 @@ function BoutiqueBonus() {
 
 	Mine_9 = new BonusMultiplicator(4000,20,"Atelier");
 	Mine_9.setName("Meule d'affutage");
-	Mine_9.setDescription("");
+	Mine_9.setDescription("Et que ca meule !");
 	Mine_9.setImg("./Ressources/Images/Bonus/Bois/meule.png");
 
 
 	Mine_10 = new BonusMultiplicator(4000,20,"Atelier");
 	Mine_10.setName("Grosse soirée");
-	Mine_10.setDescription("");
+	Mine_10.setDescription("Party Hard ");
 	Mine_10.setImg("./Ressources/Images/Bonus/Bois/boule_disco.png");
 
 
 	// --------------------BONUS Curseurs --------------------
 
-	Mine_11 = new BonusClick(1000,4);
+	Mine_11 = new BonusClick(1,4);
 	Mine_11.setName("Main Caleuses");
 	Mine_11.setDescription("Vos mains se sont habitués à couper");
 	Mine_11.setImg("./Ressources/Images/Bonus/Bois/main.png");
@@ -102,13 +102,7 @@ BoutiqueBonus.prototype.Afficher= function (div) {
 
 }
 
-$('.BonusSelling').hover(function()
-{
-	$('.BonusSelling').addClass("masterTooltip");
-	$('.BonusHover').addClass("tooltip");
-	var id = $('.BonusSelling').attr("value");
-	$('.BonusHover').add
-}
+
 
 
 BoutiqueBonus.prototype.RemoveBonus=function(ind){

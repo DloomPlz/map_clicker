@@ -29,7 +29,7 @@ Inventaire.prototype.getIncome=function(){
 	this.ItemArray.forEach(function(index){
 		val+=index.IncomeAmount*index.Bonus;
 	})
-	console.log("Total income : "+val);
+
 	return val;
 }
 
