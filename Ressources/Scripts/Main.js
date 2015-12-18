@@ -199,6 +199,14 @@ function randomImg1() {
       ImageClicker[15] = "image15";
       ImageClicker[16] = "image16";
       ImageClicker[17] = "image17";
+      ImageClicker[18] = "image18";
+      ImageClicker[19] = "image19";
+      ImageClicker[20] = "image20";
+      ImageClicker[21] = "image21";
+      ImageClicker[22] = "image22";
+      ImageClicker[23] = "image23";
+      ImageClicker[24] = "image24";
+
 
       var rnd = Math.floor( Math.random() * ImageClicker.length );
       if( rnd == 0 ) {

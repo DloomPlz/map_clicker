@@ -57,7 +57,8 @@
 		<div class="Centerfake">
 			<div class="texte-accueil">
 				<h1> BIENVENUE SUR NOTRE SITE !</h1></br>
-					<p>TES PARENTS SONT RENTRES DANS CETTE ARBRE ! NIQUE LUI SA RACE </br></p></br></br>
+					<p>TES PARENTS SONT RENTRES DANS CETTE ARBRE !</p>
+					<h2> NIQUE LUI SA RACE </br></h2></br></br>
 
 					<div class="ImageClickerfake" align="center">
 
@@ -105,12 +106,21 @@
 								<img id="image9" src="./Ressources/Images/Attaquants/hulk.png"></img>
 								<img id="image10" src="./Ressources/Images/Attaquants/jcvd.png"></img>
 								<img id="image11" src="./Ressources/Images/Attaquants/ken.png"></img>
-								<img id="image12" src="./Ressources/Images/Attaquants/leesin.png"></img>
+								<img id="image12" src="./Ressources/Images/Attaquants/lee sin.png"></img>
 								<img id="image13" src="./Ressources/Images/Attaquants/Luffy.png"></img>
 								<img id="image14" src="./Ressources/Images/Attaquants/raiden.png"></img>
 								<img id="image15" src="./Ressources/Images/Attaquants/roulette_rider.png"></img>
 								<img id="image16" src="./Ressources/Images/Attaquants/scorpion.gif"></img>
 								<img id="image17" src="./Ressources/Images/Attaquants/subzero.gif"></img>
+
+								<img id="image18" src="./Ressources/Images/Attaquants/optimus.png"></img>
+								<img id="image19" src="./Ressources/Images/Attaquants/rocky.png"></img>
+								<img id="image20" src="./Ressources/Images/Attaquants/IronMan.png"></img>
+								<img id="image21" src="./Ressources/Images/Attaquants/luke.png"></img>
+								<img id="image22" src="./Ressources/Images/Attaquants/saitama.png"></img>
+								<img id="image23" src="./Ressources/Images/Attaquants/the rock.png"></img>
+								<img id="image24" src="./Ressources/Images/Attaquants/vador.png"></img>
+								
 							</div>
 							<div class="ImageClicker" align="center">
 
