@@ -2,6 +2,25 @@
 //////CLASS_Boutique\\\\\\\\\\\\\\\\\\
 //gere le prix des differents items
 function Boutique() {
+	
+
+	var nbr_Hache = 0;
+	var nbr_Burcheron = 0;
+	var nbr_Castor = 0 ;
+	this.nbr_Atelier =0;
+	var nbr_Pioche = 0;
+	var nbr_Sculpteur = 0;
+	var nbr_Racaillou = 0;
+	var nbr_Carriere = 0;
+	var nbr_Karateka = 0;
+	var nbr_Dojo = 0;
+
+	
+
+	this.ItemArray;
+}
+Boutique.prototype.Age1= function () {
+
 	Mine_1 = new ItemMine(25,0.1);
 	Mine_1.setName('Hache');
 	Mine_1.setDescription('Un truc qui coupe');
@@ -22,16 +41,41 @@ function Boutique() {
 	Mine_4.setDescription("L'usine type de l'âge de pierre");
 	Mine_4.setImg("./Ressources/Images/Enseigne/hache.png");
 
-	var nbr_Hache = 0;
-	var nbr_Burcheron = 0;
-	var nbr_Castor = 0 ;
-	var nbr_Atelier =0;
-
-	
-
 	this.ItemArray=[Mine_1, Mine_2, Mine_3, Mine_4];
+
 }
 
+Boutique.prototype.Age2= function () {
+	
+
+	Mine_1.setName('Pioche');
+	Mine_1.setDescription('Pique et fends');
+	Mine_1.setImg("./Ressources/Images/Items/Age_Pierre/pioche.png");
+
+	Mine_2.setName('Sculpteur');
+	Mine_2.setDescription('Artiste incompris mais productifs!');
+	Mine_2.setImg("./Ressources/Images/Items/Age_Pierre/marteau.png");
+
+
+	Mine_3.setName('Racaillou');
+	Mine_3.setDescription("Pika pika");
+	Mine_3.setImg("./Ressources/Images/Items/Age_Pierre/racaillou.png");
+
+	Mine_4.setName('Carriere');
+	Mine_4.setDescription("De grandes idées naissent de la pierre");
+	Mine_4.setImg("./Ressources/Images/Items/Age_Pierre/mine.png");
+
+	Mine_5 = new ItemMine(2000,2);
+	Mine_5.setName('Karateka');
+	Mine_5.setDescription("Wataaaa!");
+	Mine_5.setImg("./Ressources/Images/Items/Age_Pierre/ryu.png");
+
+	Mine_6 = new ItemMine(5000,5);
+	Mine_6.setName('Dojo');
+	Mine_6.setDescription("Hadjime");
+	Mine_6.setImg("./Ressources/Images/Items/Age_Pierre/dojo.png");
+	this.ItemArray=[Mine_1, Mine_2, Mine_3, Mine_4,Mine_5,Mine_6];
+}
 Boutique.prototype.Afficher= function (div) {
 	$('#ItemSelling').html("");
 	var nb = 0;

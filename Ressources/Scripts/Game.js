@@ -1,6 +1,6 @@
 //créate game instance and param it
 var Game = { };
-paramgame(0,100,5);
+paramgame(500000,100,5);
 
 
 //def game functions
@@ -8,6 +8,8 @@ function paramgame(goldstart,pricestart,incomestart){
 	resetgame();
 	Game.MaBoutique = new Boutique();
 	Game.MaBoutiqueBonus = new BoutiqueBonus();
+	Game.MaBoutiqueBonus.Age1();
+	Game.MaBoutique.Age1();
 	Game.MonInventaire= new Inventaire();
 	Game.MonGold= new Gold();
 	Game.MonGold.AddGold(goldstart);
@@ -69,14 +71,29 @@ Game.Acheter=function(achat){
 		var ItemAchete = Game.MaBoutique.getItem(achat);
 		Game.MonInventaire.AddItem(ItemAchete);
 		Game.MaBoutique.getItem(achat).setCost(Game.MaBoutique.getItem(achat).getCost()*1.13);
-		console.log(ItemAchete.getName());
+		//console.log(ItemAchete.getName());
 		ItemAchete.Increment();
 		Game.MaBoutique.Afficher();
+
+		
+		if ((ItemAchete.getName() == "Atelier"))
+		{
+			console.log("fgh "+Game.MaBoutique.nbr_Atelier);
+			if(Game.MaBoutique.nbr_Atelier >=5){
+				
+				Game.MaBoutique.Age2();
+				Game.MaBoutiqueBonus.Age2();
+				Game.MaBoutique.Afficher();
+			}
+			
+			Game.MaBoutique.nbr_Atelier++;
+		}
+
 		achievementM.addValue([ItemAchete.getName()],1);
 		achievementM.addValue(["La Totale"],0);
 		achievementM.addValue(["achat","achatx5","achatx10","achatx15"],1);
 
-		
+
 	}
 	
 }
