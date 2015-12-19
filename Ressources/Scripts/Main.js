@@ -25,33 +25,35 @@ function avancerprogress(){
       LeftImages[17]= "wasted.png";
 
 
-var RightImages = new Array ();
-      RightImages[0] = "image1";
-      RightImages[1] = "image2";
-      RightImages[2] = "image3";
+  var RightText = new Array ();
+      RightText[0] = "Frappe-moi !";
+      RightText[1] = "T'es nul putain ! ";
+      RightText[2] = "Aie !";
+      RightText[3] = "Je me fais chier là ! ";
+      RightText[4] = "En**ler !";
+      RightText[5] = "T'es sur de pas vouloir arréter ?";
+      RightText[6] = "C'est l'heure du DUEL ";
+      RightText[7] = " Tu peux le faire !"; 
+
 
 
 	 var rnd = Math.floor( Math.random() * 5 );
       if( rnd == 0 ) {
-      	$('#leftAlert').finish();
-        //afficher left
-        var Imagernd = Math.floor( Math.random() * LeftImages.length );
-        $('#leftAlert').css("background-image", "url('./Ressources/Images/FightAlert/"+LeftImages[Imagernd]+"')");
+      $('#leftAlert').finish();
+      //afficher left
+      var Imagernd = Math.floor( Math.random() * LeftImages.length );
+      $('#leftAlert').css("background-image", "url('./Ressources/Images/FightAlert/"+LeftImages[Imagernd]+"')");
 
-        $('#leftAlert').show();
-        var animation = $('#leftAlert').hide(4000);
-      }
-      var rnd = Math.floor( Math.random() * 20 );
-      if( rnd == 0 ) {
-      	$('#righttAlert').hide();
-        //afficher right
-        var Imagernd = Math.floor( Math.random() * LeftImages.length );
-        $('#righttAlert').css("background-image", "url('./Ressources/Images/FightAlert/"+RightImages[Imagernd]+"')");
-
-        $('#righttAlert').show();
-        $('#righttAlert').hide(6000);
-      }
-	
+      $('#leftAlert').show();
+      var animation = $('#leftAlert').hide(4000);
+    }
+    var rnd = Math.floor( Math.random() * 20 );
+    if( rnd == 0 ) {
+      //afficher right
+      var Textrnd = Math.floor( Math.random() * RightText.length );
+      $('#righttAlert').html(RightText[Textrnd]);
+      //alert(RightText[Textrnd]);
+  }
 }
 //////////TEST CLASS\\\\\\\\\\\\\\\\\d
 // monIncom=new ItemIncome(100,10);
@@ -245,6 +247,7 @@ function hideContent(div){
 function showContent(div){
 	$(div).show();
 }
+
 
 
 

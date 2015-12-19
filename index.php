@@ -56,9 +56,8 @@
 		
 		<div class="Centerfake">
 			<div class="texte-accueil">
-				<h1> BIENVENUE SUR NOTRE SITE !</h1></br>
-					<p>TES PARENTS SONT RENTRES DANS CETTE ARBRE !</p>
-					<h2> NIQUE LUI SA RACE </br></h2></br></br>
+				<h1> NIQUE LE ! </h1></br>
+					<p>TES PARENTS SONT RENTRES DANS CETTE ARBRE  </br></p></br></br>
 
 					<div class="ImageClickerfake" align="center">
 
@@ -79,16 +78,7 @@
 									<div ><p> Par secondes : <span id="Income"></span></p></div>
 						</div>
 						<div class="Center">
-							<div class="Frappe">
-								<p id="Frappe1">Frappe-moi ! </p>
-								<p id="Frappe2">T'es nul putain ! </p>
-								<p id="Frappe3">Aie ! </p>
-								<p id="Frappe4">Je me fais chier là ! </p>
-								<p id="Frappe5">En**ler ! </p>
-								<p id="Frappe6">T'es sur de pas vouloir arréter ? </p>
-								<p id="Frappe6">C'est l'heure du DUEL !</p>
-								<p id="Frappe7">Tu peux le faire ! </p>
-							</div>
+							
 							<div class="AfficheClick">
 							</div>
 							<div id="leftAlert">

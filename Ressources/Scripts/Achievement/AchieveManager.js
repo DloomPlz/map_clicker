@@ -41,7 +41,7 @@ AchievementManager.prototype.setValue=function (theProp, theValue)
          break;
   }
   this.mProps[theProp].mValue = theValue;
-    console.log(this.mProps[theProp]);
+    //console.log(this.mProps[theProp]);
   this.checkAchievements();
 }
 AchievementManager.prototype.addValue=function (theProps, theValue)

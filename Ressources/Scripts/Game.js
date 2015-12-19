@@ -5,6 +5,7 @@ paramgame(500000,100,5);
 
 //def game functions
 function paramgame(goldstart,pricestart,incomestart){
+	Game.MonAge=0;
 	resetgame();
 	Game.MaBoutique = new Boutique();
 	Game.MaBoutiqueBonus = new BoutiqueBonus();
@@ -84,6 +85,7 @@ Game.Acheter=function(achat){
 				Game.MaBoutique.Age2();
 				Game.MaBoutiqueBonus.Age2();
 				Game.MaBoutique.Afficher();
+				Game.UpAge();
 			}
 			
 			Game.MaBoutique.nbr_Atelier++;
@@ -96,6 +98,23 @@ Game.Acheter=function(achat){
 
 	}
 	
+}
+
+Game.UpAge = function(){
+	//TODO lance dans le start
+	Game.MonAge++;
+	switch(Game.MonAge){
+		case 1 :
+			console.log("age de pierre");
+			$('#Container').css("background-image", "url('./Ressources/Images/Fond_Site/FondRock.jpg')");
+			$('.ImageClicker').css("background-image", "url('./Ressources/Images/Ressources_Cliquables/pierre.png')");
+		break;
+
+		case 2 :
+			$('#Container').css("background-image", "url('./Ressources/Images/Fond_Site/FondRock.jpg')");
+			$('.ImageClicker').css("background-image", "url('./Ressources/Images/Ressources_Cliquables/baril.png')");
+		break;
+	}
 }
 
 Game.AcheterBonus=function(achat){

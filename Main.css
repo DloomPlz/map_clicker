@@ -178,23 +178,22 @@ body h3
 }
 
 #righttAlert{
-	display: none;
+	margin-left:45%;
+	position: absolute;
+	display: block;
 	z-index: 5;
+	-ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Safari */
+    transform: rotate(30deg);
 	float:right;
-	width: 50%;
-	height:20%;
-	-ms-transform: rotate(20deg); /* IE 9 */
-    -webkit-transform: rotate(20deg); /* Safari */
-    transform: rotate(20deg);
-    background-size: cover;
 }
 #leftAlert{
 	display: none;
 	margin-top:-20%;
 	z-index: 5;
 	float: left;
-	width: 60%;
-	height:30%;
+	width: 8vw;
+	height:5vw;
 	-ms-transform: rotate(-20deg); /* IE 9 */
     -webkit-transform: rotate(-20deg); /* Safari */
     transform: rotate(-20deg);

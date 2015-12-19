@@ -209,8 +209,16 @@ BoutiqueBonus.prototype.Afficher= function (div) {
 		
 		nb++;
 	});
+	$(".Bonus").children().each(function() {
+		
+		$(this).on("click", function() {
+			Game.AcheterBonus($(this).attr("value"));
+		})
+	});
+
 
 }
+
 
 
 
