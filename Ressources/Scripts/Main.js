@@ -129,7 +129,7 @@ $(".Bonus").hover(function()
 $(".Bonus").on("mouseleave", function()
 {
 	
-	$(".Bonus").css("height", "5.7vw");
+	$(".Bonus").css("height", "10%");
 
 })
 
