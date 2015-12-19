@@ -133,10 +133,10 @@
 					<div class="MenuPage_0 MenuPageContained" style="display:block;">
 						<div class="histoire">
 
-							<p> LE BUT EST DE DETRUIRE CES PUTAINS D'ARBRES, PENSE A TA PETITE SOEUR ECRASEE PAR EUX !
-	 						</p>	
+							<h2> LE BUT EST DE DETRUIRE CES PUTAINS DE RESSOURCES!
+	 						</h2>	
 						</div>
-						<h2 align="center"> Regarde tout les putains d'achievements que t'as eu en éclatant cette putain de mère nature ! </h2>
+						<h2 align="center"> Regarde tout les putains d'achievements que t'as eu en éclatant cette salope de mère nature ! </h2>
 						<div id="displayAchievements">
 						</div>
 

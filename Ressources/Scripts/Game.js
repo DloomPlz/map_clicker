@@ -79,12 +79,14 @@ Game.Acheter=function(achat){
 		
 		if ((ItemAchete.getName() == "Atelier"))
 		{
-			console.log("fgh "+Game.MaBoutique.nbr_Atelier);
+		
 			if(Game.MaBoutique.nbr_Atelier >=5){
 				
 				Game.MaBoutique.Age2();
 				Game.MaBoutiqueBonus.Age2();
+				Game.MaBoutiqueBonus.Afficher();
 				Game.MaBoutique.Afficher();
+				
 				Game.UpAge();
 			}
 			

@@ -97,7 +97,7 @@ BoutiqueBonus.prototype.Age1= function () {
 }
 
 BoutiqueBonus.prototype.Age2= function () {
-	this.BonusArray;
+	
 	// ----------------------  BONUS Pioche ----------------
 	Mine_13 = new BonusMultiplicator(5000,15,"Pioche");
 	Mine_13.setName('Manche en Hickory');
@@ -147,7 +147,7 @@ BoutiqueBonus.prototype.Age2= function () {
 	Mine_19 = new BonusMultiplicator(1500,15,"Karateka");
 	Mine_19.setName("Ceinture Noire");
 	Mine_19.setDescription("Yamete Senpai!");
-	Mine_19.setImg("./Ressources/Images/Bonus/Pierre/ceinture_noire.png");
+	Mine_19.setImg("./Ressources/Images/Bonus/Pierre/ceinture-noire.png");
 
 
 	Mine_20 = new BonusMultiplicator(3000,18,"Karateka");
@@ -197,7 +197,8 @@ BoutiqueBonus.prototype.Age2= function () {
 	Mine_26.setImg("./Ressources/Images/Bonus/Pierre/potion_magique.png");
 
 	// --------------------BONUS RPS --------------------
-	this.BonusArray=[Mine_13,Mine_14,Mine_15,Mine_16,Mine_17,Mine_16,Mine_17,Mine_18,Mine_19,Mine_20,Mine_23,Mine_24];
+	this.BonusArray=[Mine_13,Mine_14,Mine_15,Mine_16,Mine_17,Mine_18,Mine_19,Mine_20,Mine_23,Mine_24];
+
 }
 
 BoutiqueBonus.prototype.Afficher= function (div) {
