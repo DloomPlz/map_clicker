@@ -9,7 +9,7 @@ BoutiqueBonus.prototype.Age1= function () {
 	
 
 	// ----------------------  BONUS HACHE ----------------
-	Mine_1 = new BonusMultiplicator(1,2,"Hache");
+	Mine_1 = new BonusMultiplicator(200,2,"Hache");
 	Mine_1.setName('Silex');
 	Mine_1.setDescription("Une etincelle d'evolution");
 	Mine_1.setImg("./Ressources/Images/Bonus/Bois/silex.png");
