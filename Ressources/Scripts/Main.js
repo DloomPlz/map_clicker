@@ -96,8 +96,8 @@ function incrementnbr(){
 
 $(".ImageClicker").on("click", function() {
 
-  achievementM.addValue(["click","clickx10","clickx100","clickx200","clickx500","clickx1000","clickx10000","clickx99999"],1);
-	// achievementM.addValue(["click","clickx10","clickx100","clickx200","clickx500","clickx1000","clickx5000","clickx10000","clickx50000","clickx99999","clickx999999"],1);
+  achievementM.addValue(["click","clickx10","clickx100","clickx200","clickx500","clickx1000","clickx5000","clickx10000","clickx50000","clickx99999"],1);
+	
 	avancerprogress();
 
 	Game.MonGold.AddGold(ClickAdd);

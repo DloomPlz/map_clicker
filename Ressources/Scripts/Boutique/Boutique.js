@@ -32,7 +32,7 @@ Boutique.prototype.Age1= function () {
 
 	Mine_3 = new ItemMine(500,0.3);
 	Mine_3.setName('Castors');
-	Mine_3.setDescription("L'usine type de l'âge de pierre");
+	Mine_3.setDescription("Des animaux dociles");
 	Mine_3.setImg("./Ressources/Images/Items/Age_bois/Castor.png");
 
 	Mine_4 = new ItemMine(1000,0.5);

@@ -17,7 +17,7 @@ BoutiqueBonus.prototype.Age1= function () {
 
 	Mine_2 = new BonusMultiplicator(500,1.15,"Hache");
 	Mine_2.setName('Basalte');
-	Mine_2.setDescription("Une etincelle d'evolution (production Haches x1.15)");
+	Mine_2.setDescription("Plus dur  (production Haches x1.15)");
 	Mine_2.setImg("./Ressources/Images/Bonus/Bois/basalte.png");
 
 
@@ -29,7 +29,7 @@ BoutiqueBonus.prototype.Age1= function () {
 
 	Mine_4 = new BonusMultiplicator(1000,1.3,"Hache");
 	Mine_4.setName('Granite');
-	Mine_4.setDescription("Plus dure que mes poings, c'est dire ! (production Haches x1.30) ");
+	Mine_4.setDescription("Encore plus dur ! (production Haches x1.30) ");
 	Mine_4.setImg("./Ressources/Images/Bonus/Bois/granite.png");
 
 	
@@ -188,7 +188,7 @@ BoutiqueBonus.prototype.Age2= function () {
 	Mine_25= new BonusClick(45000,10);
 	Mine_25.setName("Poing du dragon");
 	Mine_25.setDescription("Vos mains sont en feu (Cliquer rapporte +10 ressources)");
-	Mine_25.setImg("./Ressources/Images/Bonus/Pierre/Shenron-Zenkai.png");
+	Mine_25.setImg("./Ressources/Images/Bonus/Pierre/Shenron_Zenkai.png");
 
 
 	Mine_26 = new BonusClick(50000,20);
@@ -197,7 +197,7 @@ BoutiqueBonus.prototype.Age2= function () {
 	Mine_26.setImg("./Ressources/Images/Bonus/Pierre/potion_magique.png");
 
 	// --------------------BONUS RPS --------------------
-	this.BonusArray=[Mine_13,Mine_14,Mine_15,Mine_16,Mine_17,Mine_18,Mine_19,Mine_20,Mine_23,Mine_24];
+	this.BonusArray=[Mine_13,Mine_14,Mine_15,Mine_16,Mine_17,Mine_18,Mine_19,Mine_20,Mine_21,Mine_22,Mine_23,Mine_24,Mine_25,Mine_26];
 
 }
 

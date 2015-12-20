@@ -35,9 +35,10 @@ achievementM.defineProperty("clickx100", 0, AchievementManager.ACTIVE_IF_GREATER
 achievementM.defineProperty("clickx200", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 200, "click 200x!")
 achievementM.defineProperty("clickx500", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 500, "click 500x!");
 achievementM.defineProperty("clickx1000", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 1000, "click 1000x!");
-
+achievementM.defineProperty("clickx5000", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 5000, "click 5000x!");
 achievementM.defineProperty("clickx10000", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 10000, "click 10000x!") ;
-//achievementM.defineProperty("clickx50000", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 50000, "click 50000x!");
+achievementM.defineProperty("clickx50000", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 50000, "click 50000x!") ;
+
 achievementM.defineProperty("clickx99999", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 99999, "click 99999x!");
 // achievementM.defineProperty("clickx999999", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 999999, "click 999999x!");
 achievementM.defineAchievement("Ton premier click <3 !", ["click"]);
@@ -46,9 +47,9 @@ achievementM.defineAchievement("Ca avance! Click = 100", ["clickx100"]);
 achievementM.defineAchievement("Ca avance encore! Click = 200", ["clickx200"]);
 achievementM.defineAchievement("Gotta go fast Click = 500", ["clickx500"]);
 achievementM.defineAchievement("Wut!  Click = 1000", ["clickx1000"]);
-
+achievementM.defineAchievement("PGM!  Click = 5000", ["clickx5000"]);
 achievementM.defineAchievement("Tu hack? Click = 10000", ["clickx10000"]);
-//achievementM.defineAchievement("Well, that escalated quickly! Click = 50000", ["click50000"]);
+achievementM.defineAchievement("Well that escalated quickly? Click = 50000", ["clickx50000"]);
 achievementM.defineAchievement("T'es un Dieu ( ou un Hacker ) click 99999x!", ["clickx99999"]);
 // achievementM.defineAchievement("Ton premier click <3 ! Oh wait", ["clickx999999"]);
 
