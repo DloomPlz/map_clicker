@@ -9,83 +9,83 @@ BoutiqueBonus.prototype.Age1= function () {
 	
 
 	// ----------------------  BONUS HACHE ----------------
-	Mine_1 = new BonusMultiplicator(200,2,"Hache");
+	Mine_1 = new BonusMultiplicator(200,1.1,"Hache");
 	Mine_1.setName('Silex');
-	Mine_1.setDescription("Une etincelle d'evolution");
+	Mine_1.setDescription("Une etincelle d'evolution (production Haches x1.10)");
 	Mine_1.setImg("./Ressources/Images/Bonus/Bois/silex.png");
 
 
-	Mine_2 = new BonusMultiplicator(500,3,"Hache");
+	Mine_2 = new BonusMultiplicator(500,1.15,"Hache");
 	Mine_2.setName('Basalte');
-	Mine_2.setDescription("Une etincelle d'evolution");
+	Mine_2.setDescription("Une etincelle d'evolution (production Haches x1.15)");
 	Mine_2.setImg("./Ressources/Images/Bonus/Bois/basalte.png");
 
 
-	Mine_3 = new BonusMultiplicator(700,4,"Hache");
+	Mine_3 = new BonusMultiplicator(750,1.2,"Hache");
 	Mine_3.setName('Manche en Hickory');
-	Mine_3.setDescription('La fierté des Achéens!');
+	Mine_3.setDescription('La fierté des Achéens! (production Haches x1.20)');
 	Mine_3.setImg("./Ressources/Images/Bonus/Bois/manche_hickory.png");
 
 
-	Mine_4 = new BonusMultiplicator(1000,5,"Hache");
+	Mine_4 = new BonusMultiplicator(1000,1.3,"Hache");
 	Mine_4.setName('Granite');
-	Mine_4.setDescription("Plus dure que mes poings, c'est dire ! ");
+	Mine_4.setDescription("Plus dure que mes poings, c'est dire ! (production Haches x1.30) ");
 	Mine_4.setImg("./Ressources/Images/Bonus/Bois/granite.png");
 
 	
 	// --------------------BONUS BUCHERONS --------------------
 
-	Mine_5 = new BonusMultiplicator(1800,18,"Bucheron");
+	Mine_5 = new BonusMultiplicator(1300,1.25,"Bucheron");
 	Mine_5.setName('Stripteaseuses');
-	Mine_5.setDescription("Aucun arbre n'arrête un bucheron , surtout avec une jolie fille derrière! ");
+	Mine_5.setDescription("Aucun arbre n'arrête un bucheron , surtout avec une jolie fille derrière! (production Bucherons x1.25)");
 	Mine_5.setImg("./Ressources/Images/Bonus/Bois/poledance.png");
 
 
-	Mine_6 = new BonusMultiplicator(1800,18,"Bucheron");
+	Mine_6 = new BonusMultiplicator(2000,1.3,"Bucheron");
 	Mine_6.setName("Sirop d'érable");
-	Mine_6.setDescription("Les bucherons sont en forme! ");
+	Mine_6.setDescription("Les bucherons sont en forme! (production Bucherons x1.3)");
 	Mine_6.setImg("./Ressources/Images/Bonus/Bois/sirop_derable.png");
 
 
 	// --------------------BONUS Castors --------------------
 
-	Mine_7 = new BonusMultiplicator(3000,18,"Castors");
+	Mine_7 = new BonusMultiplicator(2500,1.4,"Castors");
 	Mine_7.setName("Dentifirice");
-	Mine_7.setDescription("Plus forte ,plus blanche : meilleurs dents! ");
+	Mine_7.setDescription("Plus forte ,plus blanche : meilleurs dents! (production Castors x1.4) ");
 	Mine_7.setImg("./Ressources/Images/Bonus/Bois/dentifrice.png");
 
 
-	Mine_8 = new BonusMultiplicator(3000,18,"Castors");
+	Mine_8 = new BonusMultiplicator(3000,1.5,"Castors");
 	Mine_8.setName("Queue de fer");
-	Mine_8.setDescription("Pas de sous entendu... ");
+	Mine_8.setDescription("Pas de sous entendu... (production Castors x1.5) ");
 	Mine_8.setImg("./Ressources/Images/Bonus/Bois/queue_fer.png");
 
 
-	// --------------------BONUS Castors --------------------
+	// --------------------BONUS Atelier--------------------
 
-	Mine_9 = new BonusMultiplicator(4000,18,"Atelier");
+	Mine_9 = new BonusMultiplicator(3500,1.75,"Atelier");
 	Mine_9.setName("Meule d'affutage");
-	Mine_9.setDescription("Et que ca meule !");
+	Mine_9.setDescription("Et que ca meule ! (production Ateliers x1.75) ");
 	Mine_9.setImg("./Ressources/Images/Bonus/Bois/meule.png");
 
 
-	Mine_10 = new BonusMultiplicator(4000,18,"Atelier");
+	Mine_10 = new BonusMultiplicator(4000,2,"Atelier");
 	Mine_10.setName("Grosse soirée");
-	Mine_10.setDescription("Party Hard ");
+	Mine_10.setDescription("Party Hard  (production Ateliers x2)");
 	Mine_10.setImg("./Ressources/Images/Bonus/Bois/boule_disco.png");
 
 
 	// --------------------BONUS Curseurs --------------------
 
-	Mine_11 = new BonusClick(1,4);
+	Mine_11 = new BonusClick(1000,2);
 	Mine_11.setName("Main Caleuses");
-	Mine_11.setDescription("Vos mains se sont habitués à couper");
+	Mine_11.setDescription("Vos mains se sont habitués à couper (Cliquer rapporte +2 ressources)");
 	Mine_11.setImg("./Ressources/Images/Bonus/Bois/main.png");
 
 
-	Mine_12 = new BonusClick(1800,5);
+	Mine_12 = new BonusClick(2000,10);
 	Mine_12.setName("Fap fap fap fap...");
-	Mine_12.setDescription("Fap");
+	Mine_12.setDescription("Fap  (Cliquer rapporte +10 ressources)");
 	Mine_12.setImg("./Ressources/Images/Bonus/Bois/fap.png");
 
 	// --------------------BONUS RPS --------------------
@@ -97,6 +97,111 @@ BoutiqueBonus.prototype.Age1= function () {
 }
 
 BoutiqueBonus.prototype.Age2= function () {
+	
+	// ----------------------  BONUS Pioche ----------------
+	Mine_13 = new BonusMultiplicator(5000,1.1,"Pioche");
+	Mine_13.setName('Manche en Hickory');
+	Mine_13.setDescription("Le même manche , mais en mieux  (production Pioches x1.1)");
+	Mine_13.setImg("./Ressources/Images/Bonus/Pierre/manche_hickory.png");
+
+
+	Mine_14 = new BonusMultiplicator(7500,1.2,"Pioche");
+	Mine_14.setName('Affutage');
+	Mine_14.setDescription("Ca rentre comme papa dans maman! (production Pioches x1.2)");
+	Mine_14.setImg("./Ressources/Images/Bonus/Pierre/pierre_afutage.png");
+
+
+	
+
+	
+	// --------------------BONUS Sculpteur --------------------
+
+	Mine_15 = new BonusMultiplicator(10000,1.3,"Sculpteur");
+	Mine_15.setName('Gradine');
+	Mine_15.setDescription("Précision digne d'un aimbot! (production Sculpteurs x1.3) ");
+	Mine_15.setImg("./Ressources/Images/Bonus/Pierre/gradine.png");
+
+
+	Mine_16 = new BonusMultiplicator(12500,1.4,"Sculpteur");
+	Mine_16.setName("Bonne zik");
+	Mine_16.setDescription("On se met bien !  (production Sculpteurs x1.4) ");
+	Mine_16.setImg("./Ressources/Images/Bonus/Pierre/enceinte.png");
+
+
+	// --------------------BONUS Racaillou --------------------
+
+	Mine_17 = new BonusMultiplicator(15000,1.5,"Racaillou");
+	Mine_17.setName("Centre Pokemon");
+	Mine_17.setDescription("Voulez-vous les soigner? (production Racaillous x1.5)");
+	Mine_17.setImg("./Ressources/Images/Bonus/Pierre/centre_pokemon.png");
+
+
+	Mine_18 = new BonusMultiplicator(17500,1.6,"Racaillou");
+	Mine_18.setName("Pierre Feu");
+	Mine_18.setDescription("Quoi ? On dirait que racaillou évolue !  (production Racaillous x1.6)");
+	Mine_18.setImg("./Ressources/Images/Bonus/Pierre/Pierre_feu.png");
+
+
+	// --------------------BONUS Karateka --------------------
+
+	Mine_19 = new BonusMultiplicator(20000,1.7,"Karateka");
+	Mine_19.setName("Ceinture Noire");
+	Mine_19.setDescription("Yamete Senpai! (production Karateka x1.7)");
+	Mine_19.setImg("./Ressources/Images/Bonus/Pierre/ceinture-noire.png");
+
+
+	Mine_20 = new BonusMultiplicator(25000,1.8,"Karateka");
+	Mine_20.setName("Concentration");
+	Mine_20.setDescription("Ahhhhmmmmmmmmmmmmm (production Karateka x1.8)");
+	Mine_20.setImg("./Ressources/Images/Bonus/Pierre/concentration.png");
+
+	// --------------------BONUS Carriere --------------------
+
+	Mine_21 = new BonusMultiplicator(27500,1.9,"Carriere");
+	Mine_21.setName("Brouette");
+	Mine_21.setDescription("Et je parle pas de la position! (production Carriere x1.9)");
+	Mine_21.setImg("./Ressources/Images/Bonus/Pierre/brouette.png");
+
+
+	Mine_22 = new BonusMultiplicator(30000,2,"Carriere");
+	Mine_22.setName("Shoot de poudre");
+	Mine_22.setDescription("Pas la pierre (production Karateka x2)");
+	Mine_22.setImg("./Ressources/Images/Bonus/Pierre/coc.png");
+
+// --------------------BONUS Dojo --------------------
+
+	Mine_23 = new BonusMultiplicator(35000,1.5,"Dojo");
+	Mine_23.setName("Mannequin de bois");
+	Mine_23.setDescription("Le karate coupant! (production Dojos x1.5)");
+	Mine_23.setImg("./Ressources/Images/Bonus/Pierre/mannequin-de-bois.png");
+
+
+	Mine_24 = new BonusMultiplicator(40000,2,"Dojo");
+	Mine_24.setName("Nunchaku");
+	Mine_24.setDescription("Avec de l'equipement, ca va plus vite (production Dojos x2)");
+	Mine_24.setImg("./Ressources/Images/Bonus/Pierre/nunchaku.png");
+
+
+
+	// --------------------BONUS Clique --------------------
+
+	Mine_25= new BonusClick(45000,10);
+	Mine_25.setName("Poing du dragon");
+	Mine_25.setDescription("Vos mains sont en feu (Cliquer rapporte +10 ressources)");
+	Mine_25.setImg("./Ressources/Images/Bonus/Pierre/Shenron-Zenkai.png");
+
+
+	Mine_26 = new BonusClick(50000,20);
+	Mine_26.setName("Potion Magique");
+	Mine_26.setDescription("Les Gaulois avait donc raison... (Cliquer rapporte +20 ressources)");
+	Mine_26.setImg("./Ressources/Images/Bonus/Pierre/potion_magique.png");
+
+	// --------------------BONUS RPS --------------------
+	this.BonusArray=[Mine_13,Mine_14,Mine_15,Mine_16,Mine_17,Mine_18,Mine_19,Mine_20,Mine_23,Mine_24];
+
+}
+
+BoutiqueBonus.prototype.Age3= function () {
 	
 	// ----------------------  BONUS Pioche ----------------
 	Mine_13 = new BonusMultiplicator(5000,15,"Pioche");

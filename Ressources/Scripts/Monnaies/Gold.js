@@ -35,6 +35,7 @@ function Gold(){
 	};
 	Gold.prototype.Afficher = function(){
 		var arrondie = arrondir(this.getGold());
+		arrondie = formatMillier(arrondie);
 	    $('#Gold').html(arrondie);
 	};
 	Gold.prototype.RemoveGold = function(int){
@@ -55,4 +56,12 @@ function arrondir(resultat) {
 var mongold = new Gold();
 
 
-
+function formatMillier( nombre){
+  nombre += '';
+  var sep = ' ';
+  var reg = /(\d+)(\d{3})/;
+  while( reg.test( nombre)) {
+    nombre = nombre.replace( reg, '$1' +sep +'$2');
+  }
+  return nombre;
+}

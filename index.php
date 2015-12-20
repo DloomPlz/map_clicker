@@ -136,13 +136,13 @@
 							<h2> LE BUT EST DE DETRUIRE CES PUTAINS DE RESSOURCES!
 	 						</h2>	
 						</div>
-						<h2 align="center"> Regarde tout les putains d'achievements que t'as eu en éclatant cette salope de mère nature ! </h2>
+						<h2 align="center"> Regarde tous les putains d'achievements que t'as eu en éclatant cette salope de mère nature ! </h2>
 						<div id="displayAchievements">
 						</div>
 
 						<div class="contacts">
 							<h2>Nous contacter :  </h2></br>
-								<div class="logos">
+								<div class="logos" align="center">
 								<a class="hvr-float" href="mailto:evolutionclicker@gmail.com " style="text-decoration: none; color: inherit; " target="_new"><i class="fa fa-envelope-square fa-3x"></i></a>
 
 								<a class="hvr-float" href="https://www.facebook.com/evolutionclicker?hc_location=ufi" target="_new" style="text-decoration: none; color: inherit; "><i class="fa fa-facebook-official fa-3x"></i></a>

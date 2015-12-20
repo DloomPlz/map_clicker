@@ -33,10 +33,25 @@ achievementM.defineProperty("click", 0, AchievementManager.ACTIVE_IF_GREATER_THA
 achievementM.defineProperty("clickx10", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 10, "click 10x!");
 achievementM.defineProperty("clickx100", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 100, "click 100x!")
 achievementM.defineProperty("clickx200", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 200, "click 200x!")
-achievementM.defineAchievement("click", ["click"]);
-achievementM.defineAchievement("clickx10", ["clickx10"]);
-achievementM.defineAchievement("clickx100", ["clickx100"]);
-achievementM.defineAchievement("clickx200", ["clickx200"]);
+achievementM.defineProperty("clickx500", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 500, "click 500x!");
+achievementM.defineProperty("clickx1000", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 1000, "click 1000x!");
+
+achievementM.defineProperty("clickx10000", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 10000, "click 10000x!") ;
+//achievementM.defineProperty("clickx50000", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 50000, "click 50000x!");
+achievementM.defineProperty("clickx99999", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 99999, "click 99999x!");
+// achievementM.defineProperty("clickx999999", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 999999, "click 999999x!");
+achievementM.defineAchievement("Ton premier click <3 !", ["click"]);
+achievementM.defineAchievement("Keep it up! Click = 10", ["clickx10"]);
+achievementM.defineAchievement("Ca avance! Click = 100", ["clickx100"]);
+achievementM.defineAchievement("Ca avance encore! Click = 200", ["clickx200"]);
+achievementM.defineAchievement("Gotta go fast Click = 500", ["clickx500"]);
+achievementM.defineAchievement("Wut!  Click = 1000", ["clickx1000"]);
+
+achievementM.defineAchievement("Tu hack? Click = 10000", ["clickx10000"]);
+//achievementM.defineAchievement("Well, that escalated quickly! Click = 50000", ["click50000"]);
+achievementM.defineAchievement("T'es un Dieu ( ou un Hacker ) click 99999x!", ["clickx99999"]);
+// achievementM.defineAchievement("Ton premier click <3 ! Oh wait", ["clickx999999"]);
+
 
 
 ///////////////////////ACHIEVEMENT NB_ACHAT/////////////////////////////
@@ -53,13 +68,22 @@ achievementM.defineAchievement("achachatx15", ["achatx15"]);
 achievementM.defineProperty("Hache", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 0, "Hache");
 achievementM.defineProperty("Bucheron", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 0, "Bucheron");
 achievementM.defineProperty("Atelier", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO,0 , "Atelier");
-achievementM.defineProperty("income", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 0, "income");
+achievementM.defineProperty("Poing", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 0, "Poing");
+achievementM.defineProperty("Castors", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 0, "Castors");
 achievementM.defineAchievement("Hache", ["Hache"]);
 achievementM.defineAchievement("Bucheron", ["Bucheron"]);
 achievementM.defineAchievement("Atelier", ["Atelier"]);
-achievementM.defineAchievement("income", ["income"]);
-achievementM.defineAchievement("La Totale", ["Hache","Bucheron","Atelier",]);
+achievementM.defineAchievement("Poing", ["Poing"]);
+achievementM.defineAchievement("Castors", ["Castors"]);
+achievementM.defineAchievement("Age 1 : Tout les items ! GG ", ["Hache","Bucheron","Atelier","Poing","Castors"]);
 
+achievementM.defineProperty("Karateka", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 0, "Karateka");
+achievementM.defineProperty("Dojo", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 0, "Dojo");
+
+
+achievementM.defineAchievement("Karateka", ["Karateka"]);
+achievementM.defineAchievement("Dojo", ["Dojo"]);
+achievementM.defineAchievement("Age 2 : Tout les items ! GG*2 ", ["Karateka","Dojo"]);
 
 //console.log(achievementM.mAchievements[0]);
 
@@ -71,7 +95,7 @@ Game.Acheter=function(achat){
 		Game.MonGold.RemoveGold(Game.MaBoutique.getItem(achat).getCost());
 		var ItemAchete = Game.MaBoutique.getItem(achat);
 		Game.MonInventaire.AddItem(ItemAchete);
-		Game.MaBoutique.getItem(achat).setCost(Game.MaBoutique.getItem(achat).getCost()*1.13);
+		Game.MaBoutique.getItem(achat).setCost(Game.MaBoutique.getItem(achat).getCost()*1.4);
 		//console.log(ItemAchete.getName());
 		ItemAchete.Increment();
 		Game.MaBoutique.Afficher();
@@ -80,7 +104,7 @@ Game.Acheter=function(achat){
 		if ((ItemAchete.getName() == "Atelier"))
 		{
 		
-			if(Game.MaBoutique.nbr_Atelier >=5){
+			if(Game.MaBoutique.nbr_Atelier >=4){
 				
 				Game.MaBoutique.Age2();
 				Game.MaBoutiqueBonus.Age2();
@@ -92,6 +116,39 @@ Game.Acheter=function(achat){
 			
 			Game.MaBoutique.nbr_Atelier++;
 		}
+
+		if ((ItemAchete.getName() == "Dojo"))
+		{
+		
+			if(Game.MaBoutique.nbr_Dojo >=9){
+				
+				Game.MaBoutique.Age3();
+				Game.MaBoutiqueBonus.Age3();
+				Game.MaBoutiqueBonus.Afficher();
+				Game.MaBoutique.Afficher();
+				
+				Game.UpAge();
+			}
+			
+			Game.MaBoutique.nbr_Dojo++;
+		}
+
+		if ((ItemAchete.getName() == "Transformer"))
+			{
+		
+			if(Game.MaBoutique.nbr_Transformer >=19){
+				
+				Game.MaBoutique.Age4();
+				Game.MaBoutiqueBonus.Age4();
+				Game.MaBoutiqueBonus.Afficher();
+				Game.MaBoutique.Afficher();
+				
+				Game.UpAge();
+			}
+			
+			Game.MaBoutique.nbr_Transformer++;
+		}
+
 
 		achievementM.addValue([ItemAchete.getName()],1);
 		achievementM.addValue(["La Totale"],0);
@@ -107,7 +164,7 @@ Game.UpAge = function(){
 	Game.MonAge++;
 	switch(Game.MonAge){
 		case 1 :
-			console.log("age de pierre");
+
 			$('#Container').css("background-image", "url('./Ressources/Images/Fond_Site/FondRock.jpg')");
 			$('.ImageClicker').css("background-image", "url('./Ressources/Images/Ressources_Cliquables/pierre.png')");
 		break;
@@ -147,7 +204,7 @@ Game.Start=function(){
 Game.AfficherIncome=function()
 {
 
-		var arrondie = arrondir(Game.MonInventaire.getIncome());
+		var arrondie = arrondirBonus(Game.MonInventaire.getIncome());
 	    $('#Income').html(arrondie);
 		
 }
@@ -184,11 +241,30 @@ Game.Start();
 // To stop the game, use the following:
 //clearInterval(Game._intervalId);
 
-function arrondir(resultat) {
+function arrondirBonus(resultat) {
         
       resultat2 = resultat*100;
 	  resultat2 = Math.round(resultat2); 
 	  resultat2 = resultat2/ 100;
 
       return resultat2;
+}
+
+function arrondir(resultat) {
+        
+
+	  resultat2 = Math.round(resultat); 
+
+
+      return resultat2;
+}
+
+function formatMillier( nombre){
+  nombre += '';
+  var sep = ' ';
+  var reg = /(\d+)(\d{3})/;
+  while( reg.test( nombre)) {
+    nombre = nombre.replace( reg, '$1' +sep +'$2');
+  }
+  return nombre;
 }

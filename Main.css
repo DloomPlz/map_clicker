@@ -186,6 +186,7 @@ body h3
     -webkit-transform: rotate(30deg); /* Safari */
     transform: rotate(30deg);
 	float:right;
+	pointer-events:none;
 }
 #leftAlert{
 	display: none;
@@ -794,12 +795,17 @@ margin-top: 80%;
 
 .Item{
 	padding-top:0.5vw;
-	margin-top:2vw;
-	margin-left:1.7vw;
-
-	width: 85%;
+	margin-top:0.5vw;
+	padding-left: 2vw;
 
 
+
+
+}
+
+.Item .description
+{
+	font-size:20px;
 }
 
 .Item:hover{
@@ -809,8 +815,8 @@ margin-top: 80%;
 .Item .img  {
 	padding-top: 10px;
 }
-.Item .img p{
-	font-size: 15px;
+.Item p{
+	font-size:  20px;
 	float: right;
 	padding-right: 10px;
 	padding-left: 10px;
@@ -836,13 +842,14 @@ margin-top: 80%;
 	position:absolute;
 	border:1px solid #333;
 	background-color:#161616;
-	top:13vw;
+	bottom:0;
 	height:8vw;
 	border-radius:5px;
 	padding:10px;
 	color:#fff;
 	font-size:12px Arial;
 	z-index: 10;
+	bottom:0;
 
 }
 

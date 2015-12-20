@@ -31,9 +31,9 @@ function avancerprogress(){
       RightText[2] = "Aie !";
       RightText[3] = "Je me fais chier là ! ";
       RightText[4] = "En**ler !";
-      RightText[5] = "T'es sur de pas vouloir arréter ?";
-      RightText[6] = "C'est l'heure du DUEL ";
-      RightText[7] = " Tu peux le faire !"; 
+
+      RightText[5] = "C'est l'heure du DUEL ";
+      RightText[6] = " Tu peux le faire !"; 
 
 
 
@@ -96,8 +96,8 @@ function incrementnbr(){
 
 $(".ImageClicker").on("click", function() {
 
-
-	achievementM.addValue(["click","clickx10","clickx100","clickx200"],1);
+  achievementM.addValue(["click","clickx10","clickx100","clickx200","clickx500","clickx1000","clickx10000","clickx99999"],1);
+	// achievementM.addValue(["click","clickx10","clickx100","clickx200","clickx500","clickx1000","clickx5000","clickx10000","clickx50000","clickx99999","clickx999999"],1);
 	avancerprogress();
 
 	Game.MonGold.AddGold(ClickAdd);
