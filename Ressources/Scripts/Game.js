@@ -1,6 +1,6 @@
 //créate game instance and param it
 var Game = { };
-paramgame(0,100,5);
+paramgame(999999,100,5);
 
 
 //def game functions
@@ -95,7 +95,7 @@ Game.Acheter=function(achat){
 		Game.MonGold.RemoveGold(Game.MaBoutique.getItem(achat).getCost());
 		var ItemAchete = Game.MaBoutique.getItem(achat);
 		Game.MonInventaire.AddItem(ItemAchete);
-		Game.MaBoutique.getItem(achat).setCost(Game.MaBoutique.getItem(achat).getCost()*1.4);
+		Game.MaBoutique.getItem(achat).setCost(Game.MaBoutique.getItem(achat).getCost()*1.25);
 		//console.log(ItemAchete.getName());
 		ItemAchete.Increment();
 		Game.MaBoutique.Afficher();

@@ -360,10 +360,10 @@ body h3
 
 	height:80%;
 	border-bottom:12px solid rgb(250,250,250);
-	border-top:12px solid rgb(250,250,250);
+	overflow-y: scroll;
 	border-left:0;
 	border-right:0;
-	border-image: url("./Ressources/Images/Fond_Site/bordure.jpg") 42 round stretch;
+
 }
 
 .BonusSelling
