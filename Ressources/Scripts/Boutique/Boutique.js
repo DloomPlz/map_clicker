@@ -20,22 +20,22 @@ Boutique.prototype.Age1= function () {
 
 
 
-	Mine_1 = new ItemMine(100,0.15);
+	Mine_1 = new ItemMine(75,0.2);
 	Mine_1.setName('Hache');
 	Mine_1.setDescription('Un truc qui coupe');
 	Mine_1.setImg("./Ressources/Images/Items/Age_bois/hache_bois.png");
 
-	Mine_2 = new ItemMine(250,0.2);
+	Mine_2 = new ItemMine(250,0.3);
 	Mine_2.setName('Bucheron');
 	Mine_2.setDescription('Un peu bête, mais productif !');
 	Mine_2.setImg("./Ressources/Images/Items/Age_bois/bucheron.png");
 
-	Mine_3 = new ItemMine(500,0.3);
+	Mine_3 = new ItemMine(500,0.5);
 	Mine_3.setName('Castors');
 	Mine_3.setDescription("Des animaux dociles");
 	Mine_3.setImg("./Ressources/Images/Items/Age_bois/Castor.png");
 
-	Mine_4 = new ItemMine(1000,0.5);
+	Mine_4 = new ItemMine(1000,1);
 	Mine_4.setName('Atelier');
 	Mine_4.setDescription("L'usine type de l'âge de pierre (ACHETER EN 5 POUR PASSER D'AGE)");
 	Mine_4.setImg("./Ressources/Images/Enseigne/hache.png");
@@ -54,7 +54,7 @@ Boutique.prototype.Age2= function () {
 
 	Mine_5.setName('Tranche');
 	Mine_5.setDescription("Technique Ancestrale!");
-	Mine_5.setImg("./Ressources/Images/Items/Age_Pierre/ryu.png");
+	Mine_5.setImg("./Ressources/Images/Items/Age_Pierre/karate_chop.png");
 
 	Mine_1.setName('Pioche');
 	Mine_1.setDescription('Pique et fends');
@@ -78,7 +78,7 @@ Boutique.prototype.Age2= function () {
 	Mine_6.setDescription("Wataaaa!");
 	Mine_6.setImg("./Ressources/Images/Items/Age_Pierre/ryu.png");
 
-	Mine_7 = new ItemMine(10000,5);
+	Mine_7 = new ItemMine(7500,5);
 	Mine_7.setName('Dojo');
 	Mine_7.setDescription("Hadjime (ACHETER EN 10 POUR PASSER D'AGE)");
 	Mine_7.setImg("./Ressources/Images/Items/Age_Pierre/dojo.png");
@@ -89,44 +89,44 @@ Boutique.prototype.Age2= function () {
 Boutique.prototype.Age3= function () {
 	Mine_5.setName('Baffe');
 	Mine_5.setDescription("La fameuse!");
-	Mine_5.setImg("./Ressources/Images/Items/Age_Pierre/paume.png");
+	Mine_5.setImg("./Ressources/Images/Items/Age_petrole/paume.png");
 
 	Mine_1.setName('Foreuse');
 	Mine_1.setDescription('Ca creuse');
-	Mine_1.setImg("./Ressources/Images/Items/Age_Pierre/pioche.png");
+	Mine_1.setImg("./Ressources/Images/Items/Age_petrole/foreuse.png");
 
 	Mine_2.setName('Soudeur');
 	Mine_2.setDescription('Un homme avec un gros briquet');
-	Mine_2.setImg("./Ressources/Images/Items/Age_Pierre/nitro.png");
+	Mine_2.setImg("./Ressources/Images/Items/Age_petrole/soudeur.png");
 
 
 	Mine_3.setName('Chat');
 	Mine_3.setDescription("Wouf");
-	Mine_3.setImg("./Ressources/Images/Items/Age_Pierre/racaillou.png");
+	Mine_3.setImg("./Ressources/Images/Items/Age_petrole/chat3.png");
 
 	Mine_4.setName('Monsanto');
-	Mine_4.setDescription("olé");
-	Mine_4.setImg("./Ressources/Images/Items/Age_Pierre/mine.png");
+	Mine_4.setDescription("La force obscure monétisée");
+	Mine_4.setImg("./Ressources/Images/Items/Age_petrole/monsanto.png");
 
 
 	Mine_6.setName('IronMan');
 	Mine_6.setDescription("Wataaaa!");
-	Mine_6.setImg("./Ressources/Images/Items/Age_Pierre/ryu.png");
+	Mine_6.setImg("./Ressources/Images/Items/Age_petrole/IronMan.png");
 
 
-	Mine_7.setName('Salle de Muscu');
+	Mine_7.setName('FitnessPark');
 	Mine_7.setDescription("Allez on squat les filles");
-	Mine_7.setImg("./Ressources/Images/Items/Age_Pierre/dojo.png");
+	Mine_7.setImg("./Ressources/Images/Items/Age_petrole/muscu.png");
 
-	Mine_8 = new ItemMine(125000,2.5);
+	Mine_8 = new ItemMine(15000,6);
 	Mine_8.setName('Internet');
-	Mine_8.setDescription("Le boss du XXI siecle");
-	Mine_8.setImg("./Ressources/Images/Items/Age_Pierre/dojo.png");
+	Mine_8.setDescription("un petit pas pour l'homme...");
+	Mine_8.setImg("./Ressources/Images/Items/Age_petrole/ie_troll.png");
 
-	Mine_9 = new ItemMine(150000,5);
+	Mine_9 = new ItemMine(30000,10);
 	Mine_9.setName('Transformer');
 	Mine_9.setDescription("Decepticon en avant (ACHETER EN 20 POUR PASSER D'AGE)");
-	Mine_9.setImg("./Ressources/Images/Items/Age_Pierre/optimus.png");
+	Mine_9.setImg("./Ressources/Images/Items/Age_petrole/optimus.png");
 	this.ItemArray=[Mine_5,Mine_1, Mine_2, Mine_3, Mine_4,,Mine_6,Mine_7,Mine_8,Mine_9];
 }
 

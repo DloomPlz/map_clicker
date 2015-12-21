@@ -55,16 +55,6 @@ achievementM.defineAchievement("T'es un Dieu ( ou un Hacker ) click 99999x!", ["
 
 
 
-///////////////////////ACHIEVEMENT NB_ACHAT/////////////////////////////
-achievementM.defineProperty("achat", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 0, "un achat !");
-achievementM.defineProperty("achatx5", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 5, "un petit village");
-achievementM.defineProperty("achatx10", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 10, "une petite ville");
-achievementM.defineProperty("achatx15", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 15, "CAPITAL ! Bravo !");
-achievementM.defineAchievement("achat", ["achat"]);
-achievementM.defineAchievement("achatx5", ["achatx5"]);
-achievementM.defineAchievement("achatx10", ["achatx10"]);
-achievementM.defineAchievement("achachatx15", ["achatx15"]);
-
 ///////////////////////ACHIEVEMENT ACHAT/////////////////////////////
 achievementM.defineProperty("Hache", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 0, "Hache");
 achievementM.defineProperty("Bucheron", 0, AchievementManager.ACTIVE_IF_GREATER_THAN_OR_EQUALS_TO, 0, "Bucheron");
@@ -153,7 +143,7 @@ Game.Acheter=function(achat){
 
 		achievementM.addValue([ItemAchete.getName()],1);
 		achievementM.addValue(["La Totale"],0);
-		achievementM.addValue(["achat","achatx5","achatx10","achatx15"],1);
+		
 
 
 	}
@@ -168,11 +158,21 @@ Game.UpAge = function(){
 
 			$('#Container').css("background-image", "url('./Ressources/Images/Fond_Site/FondRock.jpg')");
 			$('.ImageClicker').css("background-image", "url('./Ressources/Images/Ressources_Cliquables/pierre.png')");
+
+
 		break;
 
 		case 2 :
-			$('#Container').css("background-image", "url('./Ressources/Images/Fond_Site/FondRock.jpg')");
+			$('#Container').css("background-image", "url('./Ressources/Images/Fond_Site/FondActuel.jpg')");
 			$('.ImageClicker').css("background-image", "url('./Ressources/Images/Ressources_Cliquables/baril.png')");
+			$('.MiddleWood').css("background-image", "url('./Ressources/Images/Fond_Site/bordure_metalv.png')");
+
+			$('#Container .RightContainer').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalv.png') 42 round stretch");
+	
+			$('.TitleContain').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalh.png') 42 round stretch");
+			$('#displayAchievements').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalh.png') 42 round stretch");
+			$('.Bonus').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalh.png') 42 round stretch");
+			$('.Menu').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalh.png') 42 round stretch");
 		break;
 	}
 }
@@ -223,11 +223,13 @@ Game.Update=function(){
 		})
 	});
 
-	
-
 
 }
 
+Game.Save=function()
+{
+	
+}
 
 
 Game.run = function() {
