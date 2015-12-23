@@ -32,8 +32,7 @@
 	
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/hover-min.css">
-	<link rel="stylesheet" href="css/bootstrap/css/bootstrap-min.css">
-	<link rel="stylesheet" href="css/bootstrap/js/bootstrap-min.js">
+
 
     
 

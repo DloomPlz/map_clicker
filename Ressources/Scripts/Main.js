@@ -122,14 +122,14 @@ $(".ImageClicker").on("click", function() {
 $(".Bonus").hover(function()
 {
 	nb_bonusSelling=$(".BonusSelling").length;
-	$(".Bonus").height((1 + (nb_bonusSelling / 5 ))* $(".BonusSelling").height() + $(".BonusHover").height() + 20);
+	$(".Bonus").height((1 + (nb_bonusSelling / 5 ))* $(".BonusSelling").height() + $(".BonusHover").height()*1.3);
 
 })
 
 $(".Bonus").on("mouseleave", function()
 {
 	
-	$(".Bonus").css("height", "10%");
+	$(".Bonus").css("height", $(".BonusSelling").height()*1.2);
 
 })
 
