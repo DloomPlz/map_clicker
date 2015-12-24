@@ -1,4 +1,4 @@
-
+cpt_click=0;
 var ClickAdd=1;
 /////////////////////////////////////////////////
 
@@ -68,7 +68,7 @@ function AnimetCoockie() {
 }
 
 $(".ImageClickerfake").on("click", function() {
-
+  cpt_click++;
 	avancerprogress();
 
 	Game.MonGold.AddGold(ClickAdd);
@@ -83,6 +83,26 @@ $(".ImageClickerfake").on("click", function() {
 	
 })
 
+$("#Stats").on("click", function() {
+
+
+  $("#Achivements_in").hide();
+  $("#Stats_in").show();
+
+
+  
+})
+
+$("#Stats_achivements").on("click", function() {
+
+
+  $("#Achivements_in").show();
+  $("#Stats_in").hide();
+
+
+  
+})
+
 
 
 
@@ -95,6 +115,9 @@ function incrementnbr(){
 
 
 $(".ImageClicker").on("click", function() {
+
+  cpt_click++;
+
 
   achievementM.addValue(["click","clickx10","clickx100","clickx200","clickx500","clickx1000","clickx5000","clickx10000","clickx50000","clickx99999"],1);
 	
@@ -122,7 +145,7 @@ $(".ImageClicker").on("click", function() {
 $(".Bonus").hover(function()
 {
 	nb_bonusSelling=$(".BonusSelling").length;
-	$(".Bonus").height((1 + (nb_bonusSelling / 5 ))* $(".BonusSelling").height() + $(".BonusHover").height()*1.3);
+	$(".Bonus").height((1 + (nb_bonusSelling / 4 ))* $(".BonusSelling").height() + $(".BonusHover").height());
 
 })
 

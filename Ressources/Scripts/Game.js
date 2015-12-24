@@ -1,4 +1,6 @@
 //créate game instance and param it
+cpt_bonus_ht = 0;
+cpt_item_ht = 0 ;
 var Game = { };
 paramgame(0,100,5);
 
@@ -82,7 +84,7 @@ Game.Acheter=function(achat){
 	if(Game.MonGold.getGold()>=Game.MaBoutique.getItem(achat).getCost())
 	{
 		
-
+		cpt_item_ht++;
 		Game.MonGold.RemoveGold(Game.MaBoutique.getItem(achat).getCost());
 		var ItemAchete = Game.MaBoutique.getItem(achat);
 		Game.MonInventaire.AddItem(ItemAchete);
@@ -140,15 +142,12 @@ Game.Acheter=function(achat){
 			Game.MaBoutique.nbr_Transformer++;
 		}
 
-		if ((ItemAchete.getName() == "Jésus (resurrection)"))
+		if ((ItemAchete.getName() == "Jesus"))
 			{
 		
 			if(Game.MaBoutique.nbr_Jesus >=19){
 				
-				Game.MaBoutique.Age4();
-				Game.MaBoutiqueBonus.Age4();
-				Game.MaBoutiqueBonus.Afficher();
-				Game.MaBoutique.Afficher();
+				
 				
 				Game.UpAge();
 			}
@@ -190,19 +189,29 @@ Game.UpAge = function(){
 			$('#displayAchievements').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalh.png') 42 round stretch");
 			$('.Bonus').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalh.png') 42 round stretch");
 			$('.Menu').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalh.png') 42 round stretch");
-
+			break;
 		case 3:
 			$('#Container').css("background-image", "url('./Ressources/Images/Fond_Site/background_futur.jpg')");
-			$('.ImageClicker').css("background-image", "url('./Ressources/Images/Ressources_Cliquables/baril.png')");
-			$('.MiddleWood').css("background-image", "url('./Ressources/Images/Fond_Site/bordure_metalv.png')");
+			$('.ImageClicker').css("background-image", "url('./Ressources/Images/Ressources_Cliquables/goldorak.png')");
+			$('.MiddleWood').css("background-image", "url('./Ressources/Images/Fond_Site/bordure_futur.jpg')");
 
-			$('#Container .RightContainer').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalv.png') 42 round stretch");
+			$('#Container .RightContainer').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_futur.jpg') 42 round stretch");
 	
-			$('.TitleContain').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalh.png') 42 round stretch");
-			$('#displayAchievements').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalh.png') 42 round stretch");
-			$('.Bonus').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalh.png') 42 round stretch");
-			$('.Menu').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalh.png') 42 round stretch");
+			$('.TitleContain').css("border-image", "url('./Ressources/Images/Fond_Site/bordureh_futur.jpg') 42 round stretch");
+			$('#displayAchievements').css("border-image", "url('./Ressources/Images/Fond_Site/bordureh_futur.jpg') 42 round stretch");
+			$('.Bonus').css("border-image", "url('./Ressources/Images/Fond_Site/bordureh_futur.jpg') 42 round stretch");
+			$('.Menu').css("border-image", "url('./Ressources/Images/Fond_Site/bordureh_futur.jpg') 42 round stretch");
 		break;
+		case 4:
+			$('#fin').css("background-image","url('./Ressources/Images/Fond_Site/mlg_fond.png')");
+			$('#fin').css("display","block");
+			$("#Stats_in_cpt").append("<span class='fin_stat'>Vous avez cliqué:<span class='fin_cpt'>"+cpt_click+"</span> fois.</span><br>");
+			$("#Stats_in_cpt").append("Vous avec achetez: <span class='fin_cpt'>"+cpt_item_ht+"</span> items</span><br>");
+			$("#Stats_in_cpt").append("Vous avez achetez: <span class='fin_cpt'>"+cpt_bonus_ht+"</span> bonus</span><br>");
+			$("#Stats_in_cpt").append("Vous avez gagnez: <span class='fin_cpt'>"+Game.MonGold.TotalGold+"</span> ressources pendant votre partie!</span><br>");
+			$("#Stats_in_cpt").append("Vous avez finis votre partie avec: <span class='fin_cpt'>"+Game.MonGold.gold+"</span> ressources!</span>");
+		break;
+		
 	}
 }
 
@@ -210,6 +219,7 @@ Game.AcheterBonus=function(achat){
 	console.log(achat);
 	if(Game.MonGold.getGold()>=Game.MaBoutiqueBonus.getBonus(achat).getCost())
 	{
+		cpt_bonus_ht++;
 		Game.MonGold.RemoveGold(Game.MaBoutiqueBonus.getBonus(achat).getCost());
 		var ItemAchete = Game.MaBoutiqueBonus.getBonus(achat);
 		ItemAchete.Action();

@@ -67,6 +67,35 @@
 		</div>
 		
 	</div>
+		<div id="fin">
+			<img id="snoop" src="./Ressources/Images/gif/snoop_dogg.gif"></img>
+			<img id="travolta" src="./Ressources/Images/gif/travolta.gif"></img>
+			<img id="wow" src="./Ressources/Images/gif/wow.gif"></img>
+			<img id="doritos" src="./Ressources/Images/gif/doritos.gif"></img>
+			<h1> GG </h1>
+			<div id="statsdisplay">
+			<ul>
+				
+					<li><a id="Stats">Stats</a></li>				
+  					<li><a id="Stats_achivements">Achievements</a></li>
+  					
+  				
+  			</ul>
+  			<div id="Stats_in">
+				<h2> Stats </h2>
+				<div id="Stats_in_cpt">
+				</div>
+			</div>
+
+			<div id="Achivements_in">
+  				
+  				<div class="displayAchievements">
+				</div>
+  			</div>
+  			
+			</div>
+
+		</div>
 		<div id="Container">
 			<div class="LeftContainer">
 
@@ -136,7 +165,7 @@
 	 						</h2>	
 						</div>
 						<h2 align="center"> Regarde tous les putains d'achievements que t'as eu en éclatant cette salope de mère nature ! </h2>
-						<div id="displayAchievements">
+						<div class="displayAchievements">
 						</div>
 
 						<div class="contacts">

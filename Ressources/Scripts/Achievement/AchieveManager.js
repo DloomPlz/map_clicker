@@ -91,13 +91,13 @@ AchievementManager.prototype.checkAchievements= function (){
 }
 
 AchievementManager.prototype.Afficher= function (){
-  $('#displayAchievements').html("");
+  $('.displayAchievements').html("");
 
   for (var n in this.mAchievements) {
     if(this.mAchievements[n].mUnlocked == true){
       var aAchivement = this.mAchievements[n];
       console.log("index");
-      $('#displayAchievements').append("<div>"+aAchivement.mName+"</div>");
+      $('.displayAchievements').append("<div>"+aAchivement.mName+"</div>");
     }
   }
 

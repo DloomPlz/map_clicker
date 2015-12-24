@@ -11,7 +11,7 @@ function Boutique() {
 
 	this.nbr_Transformer=0;
 
-	this.nbrJesus=0;
+	this.nbr_Jesus=0;
 
 
 	
@@ -179,8 +179,8 @@ Boutique.prototype.Age4= function () {
 	Mine_10.setImg("./Ressources/Images/Items/Age_futur/trou_noir.png");
 
 	Mine_11 = new ItemMine(70000,100);
-	Mine_11.setName('Jésus (résurrection)');
-	Mine_11.setDescription("Alléluia (ACHETER EN 20 POUR FINIR)");
+	Mine_11.setName('Jesus');
+	Mine_11.setDescription(" LA RESURRECTION ! Alléluia (ACHETER EN 20 POUR FINIR)");
 	Mine_11.setImg("./Ressources/Images/Items/Age_futur/jesus_christ.png");
 	this.ItemArray=[Mine_5,Mine_1, Mine_2, Mine_3, Mine_4,,Mine_6,Mine_7,Mine_8,Mine_9,Mine_10,Mine_11];
 
