@@ -9,7 +9,9 @@ function Boutique() {
 	
 	this.nbr_Dojo = 0;
 
-	this.nbrTransformer=0;
+	this.nbr_Transformer=0;
+
+	this.nbrJesus=0;
 
 
 	
@@ -118,18 +120,72 @@ Boutique.prototype.Age3= function () {
 	Mine_7.setDescription("Allez on squat les filles");
 	Mine_7.setImg("./Ressources/Images/Items/Age_petrole/muscu.png");
 
-	Mine_8 = new ItemMine(15000,6);
+	Mine_8 = new ItemMine(12000,6);
 	Mine_8.setName('Internet');
 	Mine_8.setDescription("un petit pas pour l'homme...");
 	Mine_8.setImg("./Ressources/Images/Items/Age_petrole/ie_troll.png");
 
-	Mine_9 = new ItemMine(30000,10);
+	Mine_9 = new ItemMine(25000,10);
 	Mine_9.setName('Transformer');
 	Mine_9.setDescription("Decepticon en avant (ACHETER EN 20 POUR PASSER D'AGE)");
 	Mine_9.setImg("./Ressources/Images/Items/Age_petrole/optimus.png");
 	this.ItemArray=[Mine_5,Mine_1, Mine_2, Mine_3, Mine_4,,Mine_6,Mine_7,Mine_8,Mine_9];
 }
 
+Boutique.prototype.Age4= function () {
+	Mine_5.setName('Biffle');
+	Mine_5.setDescription("Le phallus de la vérité!");
+	Mine_5.setImg("./Ressources/Images/Items/Age_futur/penis.png");
+
+	Mine_1.setName('Sabre Laser');
+	Mine_1.setDescription('Briquet du futur');
+	Mine_1.setImg("./Ressources/Images/Items/Age_futur/sabre_laser.png");
+
+	Mine_2.setName('Terminator');
+	Mine_2.setDescription("La douleur n'est qu'une simple information");
+	Mine_2.setImg("./Ressources/Images/Items/Age_futur/terminator.png");
+
+
+	Mine_3.setName('Alien');
+	Mine_3.setDescription("Miaou ??..");
+	Mine_3.setImg("./Ressources/Images/Items/Age_futur/alien.png");
+
+	Mine_4.setName('Aperture Science');
+	Mine_4.setDescription("Come eat a piece of cake");
+	Mine_4.setImg("./Ressources/Images/Items/Age_futur/aperture_science.png");
+
+
+	Mine_6.setName('Neo');
+	Mine_6.setDescription("La cuillere n'existe pas");
+	Mine_6.setImg("./Ressources/Images/Items/Age_futur/neo.png");
+
+
+	Mine_7.setName('Salle du temps');
+	Mine_7.setDescription("Entraine des Super Saiyans");
+	Mine_7.setImg("./Ressources/Images/Items/Age_futur/salle_temps.png");
+
+	
+	Mine_8.setName('Cerebro');
+	Mine_8.setDescription("C'est gros , c'est rond , tout ce que j'aime!");
+	Mine_8.setImg("./Ressources/Images/Items/Age_futur/cerebro.png");
+
+	Mine_9.setName('DeLorean');
+	Mine_9.setDescription("Autant prendre une caisse qui a d'la gueule");
+	Mine_9.setImg("./Ressources/Images/Items/Age_futur/delorean.png");
+
+	Mine_10 = new ItemMine(50000,50);
+	Mine_10.setName('Trou Noir');
+	Mine_10.setDescription("un petit pas pour l'homme...");
+	Mine_10.setImg("./Ressources/Images/Items/Age_futur/trou_noir.png");
+
+	Mine_11 = new ItemMine(70000,100);
+	Mine_11.setName('Jésus (résurrection)');
+	Mine_11.setDescription("Alléluia (ACHETER EN 20 POUR FINIR)");
+	Mine_11.setImg("./Ressources/Images/Items/Age_futur/jesus_christ.png");
+	this.ItemArray=[Mine_5,Mine_1, Mine_2, Mine_3, Mine_4,,Mine_6,Mine_7,Mine_8,Mine_9,Mine_10,Mine_11];
+
+
+}
 
 
 

@@ -223,13 +223,13 @@ BoutiqueBonus.prototype.Age3= function () {
 
 	Mine_29 = new BonusMultiplicator(20000,1.5,"Soudeurs");
 	Mine_29.setName('Alchimie');
-	Mine_29.setDescription("(production soudeurs x2)");
+	Mine_29.setDescription("(production soudeurs x1.5)");
 	Mine_29.setImg("./Ressources/Images/Bonus/Petrole/erlenmeyer.png");
 
 
 	Mine_30 = new BonusMultiplicator(25000,2,"Soudeurs");
 	Mine_30.setName('Lance-Flamme');
-	Mine_30.setDescription("(production Soudeurs x1.5)");
+	Mine_30.setDescription("(production Soudeurs x2)");
 	Mine_30.setImg("./Ressources/Images/Bonus/Petrole/lance_flamme.png");
 
 
@@ -331,6 +331,166 @@ BoutiqueBonus.prototype.Age3= function () {
 
 	// --------------------BONUS RPS --------------------
 	this.BonusArray=[Mine_27,Mine_28,Mine_29,Mine_30,Mine_31,Mine_32,Mine_33,Mine_34,Mine_35,Mine_36,Mine_37,Mine_38,Mine_39,Mine_40,Mine_41,Mine_42,Mine_43,Mine_44];
+
+}
+
+BoutiqueBonus.prototype.Age4= function () {
+	
+	// ----------------------  BONUS Sabre Laser ----------------
+	Mine_45 = new BonusMultiplicator(50000,1.5,"Sabre Laser");
+	Mine_45.setName('Force Obscur!');
+	Mine_45.setDescription("Join the dark side ! (production sabre Laser x1.5)");
+	Mine_45.setImg("./Ressources/Images/Bonus/Futur/force_obscur.png");
+
+
+	Mine_46 = new BonusMultiplicator(75000,2,"Sabre Laser");
+	Mine_46.setName('Sabre double-lame');
+	Mine_46.setDescription("Le dernier Sith ! (production sabres laser x2)");
+	Mine_46.setImg("./Ressources/Images/Bonus/Futur/sabre_double.png");
+
+
+	
+
+	
+	// --------------------BONUS  Terminator --------------------
+
+	Mine_47 = new BonusMultiplicator(20000,1.5,"Terminator");
+	Mine_47.setName('T-800');
+	Mine_47.setDescription(" Il est revenu (production Terminator x1.5)");
+	Mine_47.setImg("./Ressources/Images/Bonus/Futur/t800.png");
+
+
+	Mine_48 = new BonusMultiplicator(25000,2,"Terminator");
+	Mine_48.setName('T-1000');
+	Mine_48.setDescription("Tes parents sont morts John (production Terminator x2)");
+	Mine_48.setImg("./Ressources/Images/Bonus/Futur/t2000.png");
+
+
+	// --------------------BONUS Alien --------------------
+
+	Mine_49= new BonusMultiplicator(30000,1.5,"Alien");
+	Mine_49.setName("Eiffel65");
+	Mine_49.setDescription("Dabedi dabedaaaa (production des aliens x1.5) ");
+	Mine_49.setImg("./Ressources/Images/Bonus/Futur/blue.png");
+
+
+	Mine_50 = new BonusMultiplicator(35000,2,"Alien");
+	Mine_50.setName("Predalien");
+	Mine_50.setDescription(" Très moche, mais très fort(production des aliens x2) ");
+	Mine_50.setImg("./Ressources/Images/Bonus/Futur/predalien.png");
+
+
+	// --------------------BONUS Aperture Science --------------------
+
+	Mine_51 = new BonusMultiplicator(45000,1.5,"Aperture Science");
+	Mine_51.setName("Portal Gun");
+	Mine_51.setDescription(" créé des mini trou de verre (production des Aperture Science x1.5)");
+	Mine_51.setImg("./Ressources/Images/Bonus/Futur/portal_gun.png");
+
+
+	Mine_52 = new BonusMultiplicator(50000,2,"Aperture Science");
+	Mine_52.setName("Glados");
+	Mine_52.setDescription(" Staying Alive , Staying Alive ... (production des Aperture Science x2)");
+	Mine_52.setImg("./Ressources/Images/Bonus/Futur/glados.png");
+
+	// --------------------BONUS Neo --------------------
+
+	Mine_53 = new BonusMultiplicator(60000,1.5,"Neo");
+	Mine_53.setName("Lunette de soleil");
+	Mine_53.setDescription("Parce que c'est plus classe (production de Neo x1.5)");
+	Mine_53.setImg("./Ressources/Images/Bonus/Futur/lunettes_neo.png");
+
+
+	Mine_54 = new BonusMultiplicator(75000,1.8,"Neo");
+	Mine_54.setName("Bombe EMP");
+	Mine_54.setDescription(" Défonce tous les robots (production de Neo x1.8)");
+	Mine_54.setImg("./Ressources/Images/Bonus/Futur/emp_grenade.png");
+
+// --------------------BONUS Salle du temps --------------------
+
+	Mine_55 = new BonusMultiplicator(85000,1.5,"Salle du temps");
+	Mine_55.setName("Haricots Magiques");
+	Mine_55.setDescription("Repas à emporter! (production de la Salle du temps x1.5) ");
+	Mine_55.setImg("./Ressources/Images/Bonus/Futur/haricot_magique.png");
+
+
+	Mine_56 = new BonusMultiplicator(100000,2,"Salle du temps");
+	Mine_56.setName("Super Sayans God");
+	Mine_56.setDescription("La puissance d'un dieu? (production de la Salle du temps x2)");
+	Mine_56.setImg("./Ressources/Images/Bonus/Futur/super_saiyan_god.png");
+
+
+
+	
+
+	// --------------------BONUS Cerebro --------------------
+
+	Mine_57 = new BonusMultiplicator(85000,1.5,"Cerebro");
+	Mine_57.setName("Fauteuil Roulant");
+	Mine_57.setDescription(" C'est plus stylé dans un Cerebro (production de Cerebro x1.5) ");
+	Mine_57.setImg("./Ressources/Images/Bonus/Futur/fauteuil_xavier.png");
+
+
+	Mine_58 = new BonusMultiplicator(100000,2,"Cerebro");
+	Mine_58.setName("Crane Rasé");
+	Mine_58.setDescription(" Meilleurs transmission (production de Cerebro x2)");
+	Mine_58.setImg("./Ressources/Images/Bonus/Futur/crane_rasée.png");
+
+	// --------------------BONUS Delorean --------------------
+
+	Mine_59 = new BonusMultiplicator(85000,1.5,"DeLorean");
+	Mine_59.setName("2.21 Gigowatts");
+	Mine_59.setDescription(" Nom de ZEUS ! (production des Deloreans x1.5) ");
+	Mine_59.setImg("./Ressources/Images/Bonus/Futur/2.21gigowatts.png");
+
+
+	Mine_60 = new BonusMultiplicator(100000,2,"DeLorean");
+	Mine_60.setName("Voiture volante");
+	Mine_60.setDescription(" Oh c'est l'pied (production des Deloreans x2)");
+	Mine_60.setImg("./Ressources/Images/Bonus/Futur/delorean_volante.png");
+
+	// --------------------BONUS Trou Noir --------------------
+
+	Mine_61 = new BonusMultiplicator(85000,1.5,"Trou Noir");
+	Mine_61.setName("Trou de verre");
+	Mine_61.setDescription(" 2 trous noirs qui font un pont ! (production des Trous Noir x1.5) ");
+	Mine_61.setImg("./Ressources/Images/Bonus/Futur/trou_ver.png");
+
+
+	Mine_62 = new BonusMultiplicator(100000,2,"Trou Noir");
+	Mine_62.setName("Pays des licornes");
+	Mine_62.setDescription(" Et des cacapapillons (production des Trous Noir x2)");
+	Mine_62.setImg("./Ressources/Images/Bonus/Futur/licorne.png");
+
+
+	// --------------------BONUS Jésus(resurrection) --------------------
+
+	Mine_63 = new BonusMultiplicator(85000,1.5,"Jésus (résurrection)");
+	Mine_63.setName("Chorégraphie Zombie");
+	Mine_63.setDescription(" Thrillerrrrr ! (production des jesus x1.5) ");
+	Mine_63.setImg("./Ressources/Images/Bonus/Futur/chorégraphie_zombie.png");
+
+
+	Mine_64 = new BonusMultiplicator(100000,5,"Jésus (résurrection)");
+	Mine_64.setName("Benediction herbologique");
+	Mine_64.setDescription(" sssssssuuuppppp bitchhhh (production des Jesus x5)");
+	Mine_64.setImg("./Ressources/Images/Bonus/Futur/benediction_herbologique.png");
+
+	// --------------------BONUS Clique --------------------
+
+	Mine_65= new BonusClick(45000,150);
+	Mine_65.setName("5 doigts et la paume");
+	Mine_65.setDescription(" Font exploser le coeur de l'ennemi(production des click +150)");
+	Mine_65.setImg("./Ressources/Images/Bonus/Futur/main.png");
+
+
+	Mine_66 = new BonusClick(50000,300);
+	Mine_66.setName("Main divine");
+	Mine_66.setDescription(" Permet de découper le cake(production des click +300)");
+	Mine_66.setImg("./Ressources/Images/Bonus/Futur/main_divine.png");
+
+	// --------------------BONUS RPS --------------------
+	this.BonusArray=[Mine_45,Mine_46,Mine_47,Mine_48,Mine_49,Mine_50,Mine_51,Mine_52,Mine_53,Mine_54,Mine_55,Mine_56,Mine_57,Mine_58,Mine_59,Mine_60,Mine_61,Mine_62,Mine_63,Mine_64,Mine_65,Mine_66];
 
 }
 

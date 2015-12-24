@@ -1,6 +1,6 @@
 //créate game instance and param it
 var Game = { };
-paramgame(0,100,5);
+paramgame(99999999,100,5);
 
 
 //def game functions
@@ -140,6 +140,23 @@ Game.Acheter=function(achat){
 			Game.MaBoutique.nbr_Transformer++;
 		}
 
+		if ((ItemAchete.getName() == "Jésus (resurrection)"))
+			{
+		
+			if(Game.MaBoutique.nbr_Jesus >=19){
+				
+				Game.MaBoutique.Age4();
+				Game.MaBoutiqueBonus.Age4();
+				Game.MaBoutiqueBonus.Afficher();
+				Game.MaBoutique.Afficher();
+				
+				Game.UpAge();
+			}
+			
+			Game.MaBoutique.nbr_Jesus++;
+		}
+
+
 
 		achievementM.addValue([ItemAchete.getName()],1);
 		achievementM.addValue(["La Totale"],0);
@@ -164,6 +181,18 @@ Game.UpAge = function(){
 
 		case 2 :
 			$('#Container').css("background-image", "url('./Ressources/Images/Fond_Site/FondActuel.jpg')");
+			$('.ImageClicker').css("background-image", "url('./Ressources/Images/Ressources_Cliquables/baril.png')");
+			$('.MiddleWood').css("background-image", "url('./Ressources/Images/Fond_Site/bordure_metalv.png')");
+
+			$('#Container .RightContainer').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalv.png') 42 round stretch");
+	
+			$('.TitleContain').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalh.png') 42 round stretch");
+			$('#displayAchievements').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalh.png') 42 round stretch");
+			$('.Bonus').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalh.png') 42 round stretch");
+			$('.Menu').css("border-image", "url('./Ressources/Images/Fond_Site/bordure_metalh.png') 42 round stretch");
+
+		case 3:
+			$('#Container').css("background-image", "url('./Ressources/Images/Fond_Site/background_futur.jpg')");
 			$('.ImageClicker').css("background-image", "url('./Ressources/Images/Ressources_Cliquables/baril.png')");
 			$('.MiddleWood').css("background-image", "url('./Ressources/Images/Fond_Site/bordure_metalv.png')");
 
